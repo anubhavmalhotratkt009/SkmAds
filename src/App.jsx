@@ -18,7 +18,7 @@ const PrivacyAndPolicy = lazy(() =>
 
 const App = () => {
   return (
-    <BrowserRouter basename="/SkmAds/">
+    <BrowserRouter>
       <Navbar />
       <Routes>
         {/* individual routes to respective pages */}
