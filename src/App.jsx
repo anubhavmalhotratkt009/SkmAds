@@ -18,26 +18,24 @@ const PrivacyAndPolicy = lazy(() =>
 
 const App = () => {
   return (
-    <>
-      <BrowserRouter base="/">
-        <Navbar />
-        <Routes>
-          {/* individual routes to respective pages */}
-          <Route path="home" element={<HomeRoutes />} />
-          <Route path="services" element={<Services />} />
-          <Route path="solutions" element={<Solutions />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="careers" element={<Careers />} />
-          <Route path="privacy-and-policy" element={<PrivacyAndPolicy />} />
-          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        {/* individual routes to respective pages */}
+        <Route path="home" element={<HomeRoutes />} />
+        <Route path="services" element={<Services />} />
+        <Route path="solutions" element={<Solutions />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="careers" element={<Careers />} />
+        <Route path="privacy-and-policy" element={<PrivacyAndPolicy />} />
+        <Route path="terms-and-conditions" element={<TermsAndConditions />} />
 
-          {/* website load route below */}
-          <Route index element={<HomeRoutes />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </>
+        {/* website load route below */}
+        <Route index element={<HomeRoutes />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 };
 
