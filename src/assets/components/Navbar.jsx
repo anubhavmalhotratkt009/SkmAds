@@ -18,27 +18,27 @@ const AppNavbar = () => {
       <Navbar.Collapse id="navbarNav">
         <Nav className="ms-5">
           <Nav.Item>
-            <Nav.Link href="/" className="nav-link">
+            <Nav.Link href="/SkmAds/" className="nav-link">
               Home
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/about" className="nav-link">
+            <Nav.Link href="/SkmAds/about" className="nav-link">
               About
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/solutions" className="nav-link">
+            <Nav.Link href="/SkmAds/solutions" className="nav-link">
               Solutions
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/services" className="nav-link">
+            <Nav.Link href="/SkmAds/services" className="nav-link">
               Services
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/contact" className="nav-link">
+            <Nav.Link href="/SkmAds/contact" className="nav-link">
               Contact
             </Nav.Link>
           </Nav.Item>
