@@ -114,7 +114,7 @@ const Services = () => {
                   <div className="row" style={{ backgroundColor: "#fafafa" }}>
                     <div className="col-lg-6 p-0">
                       <img
-                        src={`src/images/${service.img}`}
+                        src={`images/${service.img}`}
                         className="img-fluid"
                       />
                     </div>
@@ -159,7 +159,7 @@ const Services = () => {
                     </div>
                     <div className="col-lg-6 p-0">
                       <img
-                        src={`src/images/${service.img}`}
+                        src={`images/${service.img}`}
                         className="img-fluid"
                       />
                     </div>

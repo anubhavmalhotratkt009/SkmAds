@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../../images/banner.webp";
+import Banner from "../../../public/images/banner.webp";
 import "../../index.css";
 
 const HeroContainer = () => {

@@ -64,7 +64,7 @@ const About = () => {
 
           <div className="d-flex mt-5 about-inner-container">
             <div className="col-lg-6 col-12">
-              <img src="src/images/a-1.jpeg" className="img-fluid" />
+              <img src="images/a-1.jpeg" className="img-fluid" />
             </div>
             <div className="col-lg-6 col-12 about-desc  text-start">
               <span className="fs-6 text-muted fw-light ">
@@ -161,7 +161,7 @@ const About = () => {
                 <div className="col-lg-4 col-11" key={i}>
                   <div className="w-100">
                     <img
-                      src={`src/images/${t.img}`}
+                      src={`images/${t.img}`}
                       className="img-fluid team-img"
                     />
                     <div className="p-2">

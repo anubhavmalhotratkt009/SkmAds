@@ -1,5 +1,5 @@
 import React from "react";
-import CareersImage from "../../images/careers.webp";
+import CareersImage from "../../../public/images/careers.webp";
 
 const Careers = () => {
   return (

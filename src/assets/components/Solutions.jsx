@@ -42,7 +42,7 @@ const Solutions = () => {
                 <div className="row" style={{ backgroundColor: "#fafafa" }}>
                   <div className="col-lg-6 p-0">
                     <img
-                      src={`src/images/${service.img}`}
+                      src={`images/${service.img}`}
                       className="img-fluid w-100"
                     />
                   </div>
@@ -65,7 +65,7 @@ const Solutions = () => {
                   </div>
                   <div className="col-lg-6 p-0">
                     <img
-                      src={`src/images/${service.img}`}
+                      src={`images/${service.img}`}
                       className="img-fluid"
                     />
                   </div>

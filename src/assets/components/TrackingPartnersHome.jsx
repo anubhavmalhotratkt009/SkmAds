@@ -31,7 +31,7 @@ const TrackingPartnersHome = () => {
             {imagesDetails.map((i) => {
               return (
                 <div className="col-lg-2 col-4 mt-3">
-                  <img src={`src/images/${i.img}`} className="img-fluid w-75" />
+                  <img src={`images/${i.img}`} className="img-fluid w-75" />
                 </div>
               );
             })}

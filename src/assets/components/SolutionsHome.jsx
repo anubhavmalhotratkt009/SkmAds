@@ -39,7 +39,7 @@ const SolutionsHome = () => {
               return (
                 <div className="card bg-white col-lg-3 col-12 p-0 col rounded-5 border-white shadow-sm">
                   <img
-                    src={`src/images/${sol.img}`}
+                    src={`images/${sol.img}`}
                     className="img-fluid w-100 rounded-top"
                   />
                   <div className="container p-3">

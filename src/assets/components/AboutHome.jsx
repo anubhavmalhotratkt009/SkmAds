@@ -1,7 +1,7 @@
 import React from "react";
-import About1 from "../../images/abouthome1.webp";
-import About2 from "../../images/abouthome2.webp";
-import About3 from "../../images/abouthome3.webp";
+import About1 from "../../../public/images/abouthome1.webp";
+import About2 from "../../../public/images/abouthome2.webp";
+import About3 from "../../../public/images/abouthome3.webp";
 import "../../index.css";
 
 const AboutHome = () => {
