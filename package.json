@@ -11,6 +11,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "homepage": "https://anubhavmalhotratkt009.github.io/SkmAds/",
   "dependencies": {
     "@tsparticles/react": "^3.0.0",
     "bootstrap": "^5.3.2",
