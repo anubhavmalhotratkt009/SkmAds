@@ -24,9 +24,9 @@ const TestimonialsHome = () => {
       <div className="testimonials-con py-5 d-flex justify-content-center">
         <div className="container col-lg-10 d-flex row pb-4 gap-4">
           <div className="col-lg-6 col">
-            {testimonialsDetails.map((test) => {
+            {testimonialsDetails.map((test, i) => {
               return (
-                <div className={`d-flex ${test.class} mt-4`}>
+                <div key={i} className={`d-flex ${test.class} mt-4`}>
                   <div className={`w-75 p-4 bg-white shadow mt-2 rounded-4`}>
                     <div className="d-flex justify-content-between">
                       <div>
@@ -34,7 +34,7 @@ const TestimonialsHome = () => {
                       </div>
                       <div>
                         <i
-                          class="fa-brands fa-twitter"
+                          className="fa-brands fa-twitter"
                           style={{ color: "#243758", fontSize: "22px" }}
                         ></i>
                       </div>
@@ -48,18 +48,33 @@ const TestimonialsHome = () => {
           <div className="col-lg-6 row align-items-center">
             <div className="col">
               <h1 className="fw-bold">Hear from them</h1>
-              <p className="text-muted mt-3 fs-6 ">
+              <p className="text-muted mt-3 fs-5 ">
                 As a leading digital agency in Paris, we look to engage with our
                 clients beyond the conventional design and development agency
                 relationship, becoming a partner to the people and companies we
                 work with.
               </p>
 
-              <a href="/contact">
-                <button className="hero-btn mt-3 rounded-1 p-3">
-                  Start your campaign
-                </button>
-              </a>
+              <div className="d-flex gap-5 hero-btn-con">
+                <div className="col-lg-6">
+                  <a href="/SkmAds/contact">
+                    <button
+                      className="hero-btn mt-5 rounded-1 p-4"
+                      onMouseEnter={() => setShow(true)}
+                      onMouseLeave={() => setShow(!show)}
+                    >
+                      <span className="hero-txt">Start your campaign </span>
+                    </button>
+                  </a>
+                </div>
+                <div className="col-lg-6">
+                  <img
+                    src="https://modernagency.liquid-themes.com/elementor/wp-content/uploads/2021/07/asset-11.svg"
+                    width="120"
+                    className="hero-btn-img"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

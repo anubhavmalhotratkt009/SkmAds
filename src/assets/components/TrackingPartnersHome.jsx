@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const imagesDetails = [
   {
@@ -25,12 +26,34 @@ const TrackingPartnersHome = () => {
   return (
     <>
       <div className="text-center col py-5">
-        <h4 className="fw-bolder tracking-header">OUR TRACKING PARTNERS</h4>
+        <h4 className="text-center fw-bold tracking-header">
+          OUR TRACKING
+          <span
+            className="fw-bold tracking-header mt-5"
+            style={{
+              display: "inline-table",
+              fontSize: "24px",
+            }}
+          >
+            &nbsp;PARTNERS
+            <motion.hr
+              initial={{ width: "0%" }}
+              whileInView={{ width: "100%" }}
+              transition={{ type: "tween", duration: 1.5 }}
+              style={{
+                width: "100%",
+                borderBottom: "8px solid #05518c",
+                marginTop: "-6px",
+                opacity: 0.9,
+              }}
+            />
+          </span>
+        </h4>
         <div className="d-flex justify-content-center">
           <div className="col-lg-9 d-flex mt-3 flex-wrap">
-            {imagesDetails.map((i) => {
+            {imagesDetails.map((i, index) => {
               return (
-                <div className="col-lg-2 col-4 mt-3">
+                <div key={index} className="col-lg-2 col-4 mt-3">
                   <img src={`images/${i.img}`} className="img-fluid w-75" />
                 </div>
               );

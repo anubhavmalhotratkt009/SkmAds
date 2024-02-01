@@ -92,13 +92,17 @@ const PrivacyAndPolicy = () => {
           This policy is incorporated into, and subject to, SKMADS’s Terms of
           Service.
         </p>
-        {details.map((detail) => {
+        {details.map((detail, index) => {
           const temp = detail.desc.split(".");
           return (
-            <div>
+            <div key={index}>
               <h3 className="text-secondary fw-bold">{detail.title}</h3>
-              {temp.map((a) => {
-                return <p className="mt-2 text-secondary">{a}</p>;
+              {temp.map((a, i) => {
+                return (
+                  <p key={i} className="mt-2 text-secondary">
+                    {a}
+                  </p>
+                );
               })}
             </div>
           );

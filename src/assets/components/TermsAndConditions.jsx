@@ -3,7 +3,7 @@ import React from "react";
 const details = [
   {
     title: "",
-    desc: `The SKMADS Mobile Advertising Agency (“Service”), owned and operated by SKMTEK PTE. LTD., a company incorporated under the laws of India, is provided to you (“Member”, “Advertiser”, “Publisher”) under the Terms and Conditions (“Terms”) of this Service Agreement (“Agreement”), and any amendments thereto and any operating rules or policies. SKMADS reserves the right, in its sole discretion, to change, modify, add or remove all or part of the Agreement at any time. If any modification to this agreement is unacceptable to you, your only recourse will be to terminate this agreement. Your continued participation with the Service following our posting of a new agreement on our site will constitute a binding acceptance of the change.
+    desc: `The SKMADS Mobile Advertising Agency (“Service”), owned and operated by SKMTEK PTE LTD, a company incorporated under the laws of India, is provided to you (“Member”, “Advertiser”, “Publisher”) under the Terms and Conditions (“Terms”) of this Service Agreement (“Agreement”), and any amendments thereto and any operating rules or policies. SKMADS reserves the right, in its sole discretion, to change, modify, add or remove all or part of the Agreement at any time. If any modification to this agreement is unacceptable to you, your only recourse will be to terminate this agreement. Your continued participation with the Service following our posting of a new agreement on our site will constitute a binding acceptance of the change.
 
 By accepting the Terms of the Agreement, the Member
 
@@ -168,13 +168,17 @@ const TermsAndConditions = () => {
     <>
       <div className="d-flex flex-column p-5">
         <h1 className="fw-bold text-center mb-5">Terms and Conditions</h1>
-        {details.map((detail) => {
+        {details.map((detail, i) => {
           const temp = detail.desc.split(".");
           return (
-            <div>
+            <div key={i}>
               <h3 className="text-secondary fw-bold mt-4">{detail.title}</h3>
-              {temp.map((a) => {
-                return <p className="mt-4 text-secondary">{a}</p>;
+              {temp.map((a, ind) => {
+                return (
+                  <p key={ind} className="mt-4 text-secondary">
+                    {a}
+                  </p>
+                );
               })}
             </div>
           );

@@ -5,32 +5,32 @@ const servicesDetails = [
   {
     title: "Programmatic Buying",
     desc: "Proprietary performance distribution platform for programmatic buying for performance campaigns.",
-    class: "fa fa-bar-chart",
+    class: "lqd-icn-ess icon-lqd-presentation",
   },
   {
     title: "Media Buying",
     desc: "We do plan for your brand to achieve results from all the channels including social media.",
-    class: "fa-solid fa-pager",
+    class: "lqd-icn-ess icon-lqd-mobile",
   },
   {
     title: "User Acquisition",
     desc: "Multi-Channel user acquisition technology to get you unique users.",
-    class: "fa-regular fa-user",
+    class: "lqd-icn-ess icon-lqd-user",
   },
   {
     title: "Transparency",
     desc: "Proactive approach ensures compliant traffic and allows full-brand safety and transparency to the advertisers.",
-    class: "fa-regular fa-eye",
+    class: "lqd-icn-ess icon-lqd-tools",
   },
   {
     title: "Data Analysis",
     desc: "Analyzing massive amounts of data to quickly identify opportunities and take advantage of it.",
-    class: "fa-solid fa-magnifying-glass-chart",
+    class: "fa-solid fa-database",
   },
   {
     title: "Explicit Targeting",
     desc: "Customized targeting by zip codes, gender, device id and other parameters according to your campaign requirement.",
-    class: "fa-solid fa-bullseye",
+    class: "lqd-icn-ess icon-lqd-target",
   },
 ];
 
@@ -54,12 +54,15 @@ const ServicesHome = () => {
         </div>
         <div className="d-flex justify-content-center mt-5">
           <div className="col-lg-12 d-flex flex-wrap gap-4 justify-content-center">
-            {servicesDetails.map((services) => {
+            {servicesDetails.map((services, i) => {
               return (
-                <div className="col-lg-3 col-11 bg-white py-5 rounded-3 shadow-sm">
+                <div
+                  key={i}
+                  className="col-lg-3 col-11 bg-white py-5 rounded-3 shadow-sm"
+                >
                   <div className="d-flex justify-content-center">
                     <span className="icon-con">
-                      <i class={`${services.class} icon-services`}></i>
+                      <i className={`${services.class} icon-services`}></i>
                     </span>
                   </div>
                   <div className="mt-4 text-center px-3">

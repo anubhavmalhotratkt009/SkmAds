@@ -1,5 +1,6 @@
 import React from "react";
 import "../../index.css";
+import { motion } from "framer-motion";
 
 const solutionsDetails = [
   {
@@ -25,9 +26,28 @@ const SolutionsHome = () => {
       <div className="solutions-home-con">
         <h1
           className="text-center fw-bold solutions-header"
-          style={{ color: "#05518c" }}
+          style={{ color: "#232e6c" }}
         >
-          Our Solutions
+          Our
+          <span
+            className="about-con-header mt-5"
+            style={{
+              display: "inline-table",
+            }}
+          >
+            &nbsp;Solutions
+            <motion.hr
+              initial={{ width: "0%" }}
+              whileInView={{ width: "100%" }}
+              transition={{ type: "tween", duration: 1.5 }}
+              style={{
+                width: "100%",
+                borderBottom: "15px solid #05518c",
+                marginTop: "-30px",
+                opacity: 0.5,
+              }}
+            />
+          </span>
         </h1>
         <p className="fs-6  mt-3 text-center" style={{ color: "#7a7a7a" }}>
           We unleash your business potential by maximising the innovation.
@@ -35,9 +55,12 @@ const SolutionsHome = () => {
 
         <div className="d-flex justify-content-center mt-4">
           <div className="col-lg-12 row justify-content-center gap-4">
-            {solutionsDetails?.map((sol) => {
+            {solutionsDetails?.map((sol, i) => {
               return (
-                <div className="card bg-white col-lg-3 col-12 p-0 col rounded-5 border-white shadow-sm">
+                <div
+                  key={i}
+                  className="card bg-white col-lg-3 col-12 p-0 col rounded-5 border-white shadow-sm"
+                >
                   <img
                     src={`images/${sol.img}`}
                     className="img-fluid w-100 rounded-top"
@@ -51,10 +74,10 @@ const SolutionsHome = () => {
 
                     <p className="text-muted sol-desc">{sol.desc}</p>
 
-                    <a>
+                    <a href="/SkmAds/about" style={{ textDecoration: "none" }}>
                       <p className="fw-bold" style={{ color: "#05518c" }}>
                         EXPLORE
-                        <i class="fa-solid fa-chevron-right fw-bold ms-2"></i>
+                        <i className="fa-solid fa-chevron-right fw-bold ms-2"></i>
                       </p>
                     </a>
                   </div>
@@ -74,7 +97,21 @@ const SolutionsHome = () => {
         <div className="d-flex justify-content-center mt-4">
           <div className="col-lg-10 row justify-content-center">
             <div className="col col-lg-3 text-center">
-              <h1 className="fw-bolder sol-extra-header">33+</h1>
+              <h1 className="fw-bolder  sol-extra-header d-flex flex-column justify-content-center align-items-center">
+                33+
+                <motion.hr
+                  initial={{ width: "0%" }}
+                  whileInView={{ width: "40%" }}
+                  transition={{ type: "tween", duration: 1.5 }}
+                  style={{
+                    width: "100%",
+                    borderBottom: "12px solid #05518c",
+                    marginTop: "-25px",
+                    opacity: 0.7,
+                  }}
+                  className="hr-tag"
+                />
+              </h1>
               <h6
                 className="text-center sol-inner-des fw-semibold"
                 style={{ color: "#05518c" }}
@@ -83,7 +120,21 @@ const SolutionsHome = () => {
               </h6>
             </div>
             <div className="col col-lg-3 text-center">
-              <h1 className="fw-bolder sol-extra-header">4000+</h1>
+              <h1 className="fw-bolder  sol-extra-header d-flex flex-column justify-content-center align-items-center">
+                4000+
+                <motion.hr
+                  initial={{ width: "0%" }}
+                  whileInView={{ width: "70%" }}
+                  transition={{ type: "tween", duration: 1.5 }}
+                  style={{
+                    width: "100%",
+                    borderBottom: "12px solid #05518c",
+                    marginTop: "-25px",
+                    opacity: 0.7,
+                  }}
+                  className="hr-tag"
+                />
+              </h1>
               <h6
                 className="text-center sol-inner-des fw-semibold"
                 style={{ color: "#05518c" }}
@@ -92,7 +143,21 @@ const SolutionsHome = () => {
               </h6>
             </div>
             <div className="col col-lg-3 text-center">
-              <h1 className="fw-bolder sol-extra-header">2.5Mn+</h1>
+              <h1 className="fw-bolder  sol-extra-header d-flex flex-column justify-content-center align-items-center">
+                2.5Mn+
+                <motion.hr
+                  initial={{ width: "0%" }}
+                  whileInView={{ width: "70%" }}
+                  transition={{ type: "tween", duration: 1.5 }}
+                  style={{
+                    width: "100%",
+                    borderBottom: "12px solid #05518c",
+                    marginTop: "-25px",
+                    opacity: 0.7,
+                  }}
+                  className="hr-tag"
+                />
+              </h1>
               <h6
                 className="text-center sol-inner-des fw-semibold"
                 style={{ color: "#05518c" }}
@@ -101,7 +166,21 @@ const SolutionsHome = () => {
               </h6>
             </div>
             <div className="col col-lg-3 text-center">
-              <h1 className="fw-bolder sol-extra-header">30+</h1>
+              <h1 className="fw-bolder  sol-extra-header d-flex flex-column justify-content-center align-items-center">
+                30+
+                <motion.hr
+                  initial={{ width: "0%" }}
+                  whileInView={{ width: "40%" }}
+                  transition={{ type: "tween", duration: 1.5 }}
+                  style={{
+                    width: "100%",
+                    borderBottom: "12px solid #05518c",
+                    marginTop: "-25px",
+                    opacity: 0.7,
+                  }}
+                  className="hr-tag"
+                />
+              </h1>
               <h6
                 className="text-center sol-inner-des fw-semibold"
                 style={{ color: "#05518c" }}

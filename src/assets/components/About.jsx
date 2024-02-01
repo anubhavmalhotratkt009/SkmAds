@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const betterDetails = [
   {
@@ -53,11 +54,32 @@ const teamDetails = [
 
 const About = () => {
   return (
-    <div className="services-con col justify-content-center pt-5 pb-0">
-      <div className="row justify-content-center p-0">
-        <div className="col text-center">
-          <h1 className="fw-bold services-header">About SKMADS</h1>
-          <p className="text-muted fw-semibold services-inner-desc">
+    <div className="services-con col justify-content-center pt-2 pb-0">
+      <div className="row justify-content-center p-0 abt-conn">
+        <div className="d-flex flex-column text-center justify-content-center align-items-center">
+          <h1 className="text-center fw-bold services-header">
+            About&nbsp;
+            <span
+              className="services-header mt-5"
+              style={{
+                display: "inline-table",
+              }}
+            >
+              SKMADS
+              <motion.hr
+                initial={{ width: "0%" }}
+                whileInView={{ width: "100%" }}
+                transition={{ type: "tween", duration: 1.5 }}
+                style={{
+                  width: "100%",
+                  borderBottom: "15px solid #f74900",
+                  marginTop: "-20px",
+                  opacity: 0.6,
+                }}
+              />
+            </span>
+          </h1>
+          <p className="text-secondary col-lg-5 col-10 services-inner-desc mt-3">
             SKMADS provides targeted and transparent advertising solutions to
             help businesses grow
           </p>
@@ -67,7 +89,7 @@ const About = () => {
               <img src="images/a-1.jpeg" className="img-fluid" />
             </div>
             <div className="col-lg-6 col-12 about-desc  text-start">
-              <span className="fs-6 text-muted fw-light ">
+              <span className="text-dark fs-6 fw-light desc-size">
                 SKMADS is a leading advertising company that specializes in
                 providing in-app and web advertising services through our
                 powerful dashboards. Our team of skilled professionals is
@@ -75,12 +97,14 @@ const About = () => {
                 ourselves on offering innovative and tailored solutions to meet
                 our clients' unique needs.​
                 <br />
+                <br />
                 With years of experience in the industry, SKMADS has established
                 itself as a trusted partner for businesses looking to enhance
                 their online presence and reach their target audience. Our
                 in-house team of experts possesses extensive knowledge in
                 creating and managing effective advertising campaigns that drive
                 results.​
+                <br />
                 <br />
                 At SKMADS, we believe in the power of collaboration, and we work
                 closely with our clients to understand their goals and
@@ -109,13 +133,12 @@ const About = () => {
         <h2 className="fw-bold">Why We’re Better.</h2>
         <div className="d-flex justify-content-center mt-5">
           <div className="col-lg-8 row">
-            {betterDetails.map((det) => {
+            {betterDetails.map((det, index) => {
               return (
                 <>
-                  <div className="col col-12 col-lg-3 mt-3">
-                    <span className="details-outer">
-                      <i class={`${det.class} details-icon`}></i>
-                    </span>
+                  <div key={index} className="col col-12 col-lg-3 mt-3">
+                    <i className={`${det.class} details-icon`}></i>
+
                     <div className="mt-3 col text-center details-inner-des">
                       <h6>{det.title}</h6>
                       <p className="text-muted details-desc">{det.desc}</p>
@@ -158,7 +181,7 @@ const About = () => {
           <div className="row justify-content-center mt-5">
             {teamDetails.map((t, i) => {
               return (
-                <div className="col-lg-4 col-11" key={i}>
+                <div className="col-lg-4 col-8" key={i}>
                   <div className="w-100">
                     <img
                       src={`images/${t.img}`}
