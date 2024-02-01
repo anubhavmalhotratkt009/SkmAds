@@ -29,7 +29,9 @@ const AppNavbar = () => {
       <Navbar.Brand href="#">
         <img src={Logo} className="img-fluid logo" alt="Logo" />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbarNav" className="nav-tog" />
+      <Navbar.Toggle aria-controls="navbarNav" className="nav-tog">
+        <i class="fas fa-bars fs-1"></i>
+      </Navbar.Toggle>
       <Navbar.Collapse id="navbarNav">
         <Nav className="ms-5 gap-2">
           <Nav.Item>
