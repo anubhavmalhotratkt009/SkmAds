@@ -500,6 +500,9 @@ button {
     padding: 15px;
   }
 
+  #tsparticles {
+    z-index: 999;
+  }
   .logo {
     width: 200px;
   }
@@ -562,8 +565,13 @@ button {
   }
   .ban-1 {
     margin-top: 0px;
-    margin-left: 0px;
+    margin-left: 10px;
     margin-bottom: 40px;
+  }
+
+  .nav-tog {
+    margin-right: -10px;
+    font-size: 10px !important;
   }
 
   .contact-con {

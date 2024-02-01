@@ -75,7 +75,7 @@ const HeroContainer = React.memo(() => {
           </section>
         </div>
       </motion.div>
-      <div className="col-lg-7 col-md-10 col-11 hero-inner-2">
+      <div className="col-lg-7 col-md-10 col-12 hero-inner-2">
         <img src={Banner} className="img-fluid ban-1" />
       </div>
     </div>

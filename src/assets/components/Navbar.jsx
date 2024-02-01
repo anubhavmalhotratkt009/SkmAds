@@ -29,10 +29,7 @@ const AppNavbar = () => {
       <Navbar.Brand href="#">
         <img src={Logo} className="img-fluid logo" alt="Logo" />
       </Navbar.Brand>
-      <Navbar.Toggle
-        aria-controls="navbarNav"
-        style={{ width: "100px", height: "80px" }}
-      />
+      <Navbar.Toggle aria-controls="navbarNav" className="nav-tog" />
       <Navbar.Collapse id="navbarNav">
         <Nav className="ms-5 gap-2">
           <Nav.Item>
