@@ -30,7 +30,7 @@ RESPONSIVE CSS
 .navbar {
   background-color: #f3f3f31a;
   z-index: 99;
-  backdrop-filter: blur(3px) !important;
+  backdrop-filter: blur(2px) !important;
   position: sticky;
   top: 0;
 }
@@ -495,7 +495,13 @@ button {
 
 @media only screen and (max-width: 480px) {
   /* Navbar */
-
+  .navbar {
+    background-color: #f3f3f31a;
+    z-index: 99;
+    backdrop-filter: blur(2px) !important;
+    position: static;
+    top: 0;
+  }
   .navbar {
     padding: 15px;
   }
