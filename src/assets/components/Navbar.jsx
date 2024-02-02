@@ -25,7 +25,7 @@ const AppNavbar = () => {
   };
 
   return (
-    <Navbar expand="xl" className="px-4 pt-4">
+    <Navbar expand="xl" className="px-4 pt-4 navbar">
       <Navbar.Brand href="#">
         <img src={Logo} className="img-fluid logo" alt="Logo" />
       </Navbar.Brand>

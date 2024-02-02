@@ -14,9 +14,7 @@ RESPONSIVE CSS
 
 /* 1.general css below */
 
-html,
-body,
-#root {
+html {
   overflow-x: hidden !important;
 }
 .hero-btn-con {
@@ -45,8 +43,8 @@ body,
   background-color: #f3f3f31a;
   z-index: 99;
   backdrop-filter: blur(2px) !important;
-  position: sticky;
-  top: 0;
+  position: sticky !important;
+  top: 0 !important;
   padding: 28px 50px !important;
 }
 .main-con-hero {
