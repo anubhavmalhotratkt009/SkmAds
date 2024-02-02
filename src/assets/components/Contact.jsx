@@ -31,7 +31,7 @@ const Contact = () => {
     <>
       <div className="container py-5">
         <div className="d-flex flex-row justify-content-center ">
-          <div className="col-lg-10 d-flex col-12 flex-row contact-con justify-content-center">
+          <div className="col-lg-11 d-flex col-12 gap-5 flex-row contact-con justify-content-center">
             <div
               className="col-lg-6 col-12 col contact-inner1 align-items-center rounded-1"
               style={{ border: "1px solid #e3e3e3" }}
@@ -76,47 +76,49 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="col-lg-6 col-md-12 p-5">
-              <div className="w-100 col">
+            <div className="col-lg-5 col-md-12 px-3 py-1 d-flex justify-content-center ">
+              <div className="w-100 col ms-5">
                 {show ? (
                   <form ref={form} onSubmit={sendEmail}>
-                    <label className="text-muted required">Your name</label>
+                    <label className="text-muted required contact-label">
+                      Your name
+                    </label>
                     <input
                       type="text"
-                      className="form-control form-color mt-3 required mt-2 rounded-0 p-2"
+                      className="form-control form-color mt-3 required mt-2 rounded-0 contact-inp"
                       name="name"
                       required
                     />
-                    <label className="text-muted mt-4 required">
+                    <label className="text-muted mt-4 required contact-label">
                       Your email
                     </label>
                     <input
                       type="text"
-                      className="form-control form-color mt-3 mt-2 rounded-0 p-2"
+                      className="form-control form-color mt-3 mt-2 rounded-0 contact-inp"
                       name="email"
                       required
                     />
-                    <label className="text-muted mt-4 required">
+                    <label className="text-muted mt-4 required contact-label">
                       Your subject
                     </label>
                     <input
                       type="text"
-                      className="form-control form-color mt-3 mt-2 rounded-0 p-2"
+                      className="form-control form-color mt-3 mt-2 rounded-0 contact-inp"
                       name="subject"
                       required
                     />
-                    <label className="text-muted mt-4 required ">
+                    <label className="text-muted mt-4 required contact-label">
                       Your message
                     </label>
                     <textarea
-                      className="form-control form-color mt-3 required mt-2 rounded-0 p-2"
-                      style={{ height: "200px" }}
+                      className="form-control form-color mt-3 required mt-2 rounded-0 "
+                      style={{ height: "210px", border: "none" }}
                       name="message"
                       required
                     />
                     <div className="d-flex justify-content-start mt-4 w-100">
                       <input
-                        value="Send"
+                        value="Submit"
                         type="submit"
                         className="mt-3 rounded-1 px-3 py-2  btn btn-success w-25"
                       />

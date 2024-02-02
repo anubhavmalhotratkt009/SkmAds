@@ -14,6 +14,14 @@ RESPONSIVE CSS
 
 /* 1.general css below */
 
+html,
+body,
+#root {
+  overflow-x: hidden !important;
+}
+.hero-btn-con {
+  margin-top: -165px !important;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -26,29 +34,45 @@ RESPONSIVE CSS
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.inner-solu {
+  font-size: 18px;
+}
 
+.contact-label {
+  font-size: 18px;
+}
 .navbar {
   background-color: #f3f3f31a;
   z-index: 99;
   backdrop-filter: blur(2px) !important;
   position: sticky;
   top: 0;
+  padding: 28px 50px !important;
+}
+.main-con-hero {
+  margin-left: 170px;
 }
 
+#tsparticles {
+  width: 800px !important;
+}
 /* 2.navbar css below */
 .about-home-inner-2 {
-  width: 45% !important;
+  width: 48% !important;
+  margin-top: -30px;
 }
 .logo {
   width: 150px;
 }
 select {
   color: #d3d3d3 !important;
+  font-size: 18px !important;
 }
 .form-control::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #d3d3d3;
   opacity: 1; /* Firefox */
+  font-size: 18px;
 }
 
 .c-txt {
@@ -59,8 +83,8 @@ select {
 }
 
 .nav-item {
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 650;
+  font-size: 14.2px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -79,8 +103,9 @@ select {
 /* 3.home page css below */
 
 .ban-1 {
-  margin-top: -330px;
-  margin-left: 85px;
+  margin-top: -100px;
+  margin-left: -26px;
+  min-width: 715px;
 }
 
 @font-face {
@@ -92,7 +117,7 @@ select {
   font-display: swap;
 }
 
-.hero-con {
+.main-con-hero {
   background-image: url("https://skmads.com/wp-content/uploads/2021/07/modernagencyBG@2x1.jpg");
   font-family: "Roboto", Sans-serif;
   font-size: 100%;
@@ -104,6 +129,11 @@ select {
   position: relative;
 }
 
+.contact-inp {
+  padding: 12px 20px;
+  border: none;
+}
+
 #tsparticles {
   position: absolute;
   width: 100%;
@@ -113,24 +143,20 @@ select {
 .particle-con {
   height: 100vh !important;
 }
-.banner-1 {
-  margin-top: -240px !important;
-  min-width: 720px !important;
-  margin-left: 30px;
-}
 .skmads-text {
   border-bottom: 20px solid #fb470080;
   position: relative; /* or absolute */
   margin-top: -30px; /* Move border bottom 10px up */
 }
 .hero-btn-img {
-  margin-left: 80px;
+  margin-left: 65px;
+  margin-top: 20px;
 }
 .hero-inner-2 {
   z-index: 2;
 }
 .con-1 {
-  margin-top: -140px;
+  margin-top: 65px;
 }
 
 mark {
@@ -158,7 +184,7 @@ span {
 .hero-btn {
   background-color: #05518c;
   color: white;
-  padding: 25px 40px;
+  padding: 20px 50px !important;
   border-radius: 50px;
   font-size: 16px;
   font-weight: 600;
@@ -222,10 +248,11 @@ span {
 .hero-btn2 {
   background-color: #05518c;
   color: white;
-  padding: 25px 50px;
+  padding: 25px 40px;
   border-radius: 50px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
+  letter-spacing: -10px !important;
   z-index: 99 !important;
   border: none;
   transition: transform 1s ease-in-out;
@@ -253,7 +280,7 @@ button {
   position: absolute;
   top: 1.7em;
   left: 0;
-  font-size: 14px;
+  font-size: 12px !important;
   width: 100%;
   letter-spacing: 3px;
   font-weight: 800;
@@ -267,24 +294,28 @@ button {
   transform: translate(100%, 0);
 }
 .hero-btn2 div {
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 13px;
+  padding: 0px 10px;
   transition: all 0.3s ease-in-out;
 }
 
 .about-con-header {
   line-height: 1.7;
-  font-size: 38px;
+  font-size: 44px;
   font-weight: 700;
+  margin-top: -10px;
 }
 
 .inner-desc-about {
   max-width: 70%;
+  font-size: 20px !important;
+  color: #7a7a7a;
 }
 
 .solutions-home-con {
-  padding: 50px;
+  padding: 0px;
   background-color: #fefefe !important;
 }
 
@@ -297,12 +328,18 @@ button {
   font-size: 14px !important;
 }
 .sol-extra-header {
-  font-size: 55px;
+  font-size: 58px;
 }
 .sol-inner-des {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   color: #374679 !important;
+}
+.ser-desc-inner {
+  font-size: 18px;
+}
+.ser-title {
+  font-size: 22px;
 }
 
 #inner-sol {
@@ -318,7 +355,7 @@ button {
 
 .icon-services {
   font-size: 40px !important;
-  padding: 20px;
+  padding: 25px;
   border: 1px solid #3a6ea0;
   color: #3a6ea0;
   border-radius: 50%;
@@ -334,12 +371,23 @@ button {
 /* 4.footer css below */
 .footer-con {
   background-color: #05518c;
-  padding: 70px 40px;
+  padding: 60px 20px 110px 20px;
   z-index: 99 !important;
+}
+
+.add-foot {
+  font-size: 15px;
+}
+
+.add-foot2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .credits {
   font-size: 12px;
+  padding: 0px !important;
 }
 
 .footer-btn {
@@ -388,7 +436,7 @@ button {
 
 /* 6.about css below */
 .about-desc {
-  padding: 140px 150px 140px 40px;
+  padding: 100px 150px 0px 60px !important;
 }
 
 .details-icon {
@@ -400,7 +448,7 @@ button {
 }
 
 .details-desc {
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .process-con {
@@ -447,6 +495,13 @@ button {
   color: #05518c;
   background-color: white;
   border-radius: 5px;
+}
+
+.hero-text {
+  font-size: 50px;
+  font-weight: 550 !important;
+  letter-spacing: -1px;
+  line-height: 60px;
 }
 
 /* 9. Solutions css below */
@@ -505,6 +560,9 @@ button {
   .navbar {
     padding: 15px;
   }
+  .hero-btn-con {
+    margin-top: 0px !important;
+  }
 
   #tsparticles {
     z-index: 999;
@@ -517,10 +575,11 @@ button {
     margin-top: -10px !important;
   }
   /* Hero-Container */
-  .hero-con {
+  .main-con-hero {
     display: flex;
     flex-direction: column;
-    height: 780px !important;
+    height: 880px !important;
+    margin-left: 0px;
   }
 
   .hero-inner-2 {
@@ -543,6 +602,7 @@ button {
 
   .hero-text-con {
     padding: 20px 0px 0px 30px;
+    margin-top: -180px;
   }
 
   .hero-btn-con {
@@ -563,16 +623,22 @@ button {
 
   .about-home-con {
     padding: 160px 10px !important;
-    height: 1250px;
+    height: 1450px;
   }
   .about-home-inner-2 {
-    width: 100% !important;
-    margin-top: -140px;
+    width: 90% !important;
+    margin-top: -70px;
+    margin-left: 20px !important;
   }
   .ban-1 {
     margin-top: 0px;
     margin-left: 10px;
     margin-bottom: 40px;
+    min-width: 100px;
+  }
+
+  #tsparticles {
+    width: 300px !important;
   }
 
   .nav-tog {
@@ -670,7 +736,7 @@ button {
     flex-direction: column;
   }
   .about-desc {
-    padding: 25px;
+    padding: 30px !important;
   }
   .details-inner-des {
     padding: 0px 70px;
@@ -689,9 +755,13 @@ button {
     display: none;
     visibility: hidden;
   }
+
+  .team-img {
+    height: 200px;
+  }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 959px) {
+@media only screen and (min-width: 480px) and (max-width: 850px) {
   .services-inner-main-con {
     margin-left: 0px;
   }
@@ -700,7 +770,15 @@ button {
     flex-direction: column !important;
   }
 
-  .hero-con {
+  .hero-text-con {
+    padding: 20px 0px 0px 30px;
+    margin-top: -180px;
+  }
+
+  #tsparticles {
+    width: 550px !important;
+  }
+  .main-con-hero {
     display: flex;
     flex-direction: column;
     height: 1350px !important;
@@ -725,6 +803,11 @@ button {
 
   .ban-1 {
     margin-bottom: 60px;
+    margin-left: -60px !important;
+  }
+
+  .hero-btn-con {
+    margin-top: 0px !important;
   }
 
   .about-home-con {
@@ -733,7 +816,7 @@ button {
     padding: 40px;
   }
   .about-desc {
-    padding: 30px;
+    padding: 30px !important;
   }
 
   .inner-desc-about {
@@ -756,7 +839,8 @@ button {
     margin-top: 0px;
   }
   .about-home-inner-2 {
-    width: 100% !important;
+    width: 90% !important;
+    margin-left: -30px;
   }
 
   .ban-1 {
@@ -779,22 +863,113 @@ button {
   }
 } */
 
-@media only screen and (min-width: 960px) and (max-width: 1090px) {
-  .hero-inner-1 {
-    min-width: 700px !important;
-    order: 2;
+@media only screen and (min-width: 851px) and (max-width: 1089px) {
+  .services-inner-main-con {
+    margin-left: 0px;
   }
-  .ban-1 {
-    margin-bottom: 160px;
+  .services-inner-3 {
+    display: flex !important;
+    flex-direction: column !important;
   }
-  .hero-con {
+
+  .hero-text-con {
+    padding: 20px 0px 0px 30px;
+    margin-top: -180px;
+    margin-left: -100px;
+  }
+
+  #tsparticles {
+    width: 550px !important;
+  }
+  .main-con-hero {
     display: flex;
     flex-direction: column;
     height: 1350px !important;
   }
 
+  .team-img {
+    height: 400px;
+  }
+
+  .about-inner-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-inner-2 {
+    order: 1 !important;
+  }
+
+  .hero-inner-1 {
+    order: 2 !important;
+    margin-top: 100px !important;
+  }
+
+  .ban-1 {
+    margin-bottom: 60px;
+    margin-left: -60px !important;
+  }
+
+  .hero-btn-con {
+    margin-top: 0px !important;
+  }
+
+  .about-home-con {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 40px;
+  }
+  .about-desc {
+    padding: 30px !important;
+  }
+
+  .inner-desc-about {
+    min-width: 100%;
+  }
+  .hero-text {
+    font-size: 40px;
+  }
+
+  .serv-img-con {
+    height: 400px;
+    width: 100%;
+  }
+  .contact-con {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .ban-1 {
+    margin-top: 0px;
+  }
+  .about-home-inner-2 {
+    width: 90% !important;
+    margin-left: -30px;
+  }
+
+  .ban-1 {
+    margin-top: 0px;
+    min-width: 380px !important;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1020px) {
+  .hero-inner-1 {
+    min-width: 700px !important;
+    order: 2;
+  }
+  .main-con-hero {
+    display: flex;
+    flex-direction: column;
+    height: 1650px !important;
+  }
+
   .about-home-inner-2 {
     width: 100% !important;
+  }
+
+  .hero-btn-con {
+    margin-top: 0px !important;
   }
   .about-home-con {
     flex-direction: column;
@@ -805,6 +980,7 @@ button {
   .hero-text {
     font-size: 66px !important;
     margin-left: -50px;
+    line-height: 80px !important;
   }
   .navbar {
     z-index: 99;
@@ -838,15 +1014,19 @@ button {
   }
   .contact-con {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: row !important;
   }
 
   .ban-1 {
     margin-top: 0px;
-    min-width: 670px !important;
+    min-width: 870px !important;
+    margin-left: -40px !important;
+  }
+  .about-desc {
+    padding: 20px !important;
   }
 }
-@media only screen and (min-width: 1091px) and (max-width: 1380px) {
+@media only screen and (min-width: 1024px) and (max-width: 1124px) {
   .hero-inner-1 {
     min-width: 700px !important;
   }
@@ -855,7 +1035,7 @@ button {
     margin-left: -180px;
   }
 
-  .hero-con {
+  .main-con-hero {
     display: flex;
     flex-direction: row;
     height: 750px !important;
@@ -865,6 +1045,12 @@ button {
   .hero-text {
     font-size: 36px !important;
   }
+
+  .about-inner-container {
+    display: flex;
+    flex-direction: row !important;
+  }
+
   .navbar {
     z-index: 99;
     background-color: transparent !important;
@@ -878,9 +1064,61 @@ button {
     padding: 0px !important;
   }
 
+  .about-desc {
+    padding: 30px;
+  }
+  .team-img {
+    height: 200px;
+  }
+
+  .about-home-con {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-home-inner-2 {
+    width: 100% !important;
+  }
+
+  .hero-btn-con {
+    margin-top: 0px !important;
+  }
   .contact-con {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: row !important;
+  }
+}
+@media only screen and (min-width: 1124px) and (max-width: 1380px) {
+  .hero-inner-1 {
+    min-width: 700px !important;
+  }
+
+  .ban-1 {
+    margin-left: -180px;
+  }
+
+  .main-con-hero {
+    display: flex;
+    flex-direction: row;
+    height: 750px !important;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .hero-text {
+    font-size: 36px !important;
+  }
+
+  .navbar {
+    z-index: 99;
+    background-color: transparent !important;
+  }
+
+  .img-about {
+    width: 1000px;
+  }
+  .about-home-inner-2 {
+    width: 900px;
+    padding: 0px !important;
   }
   .about-desc {
     padding: 30px;
@@ -896,5 +1134,13 @@ button {
 
   .about-home-inner-2 {
     width: 100% !important;
+  }
+
+  .hero-btn-con {
+    margin-top: 0px !important;
+  }
+  .contact-con {
+    display: flex;
+    flex-direction: row !important;
   }
 }

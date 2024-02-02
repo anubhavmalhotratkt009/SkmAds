@@ -8,14 +8,14 @@ import "../../index.css";
 const AboutHome = () => {
   return (
     <>
-      <div className="about-home-con ps-5 gap-5">
+      <div className="about-home-con ps-5 ">
         <motion.div
           initial={{ y: 0 }}
           transition={{ type: "tween", duration: 1.2 }}
-          whileInView={{ y: -80 }}
-          className="col-lg-6 px-5 align-items-center img-about "
+          whileInView={{ y: -50 }}
+          className="col-lg-6  align-items-center img-about "
         >
-          <div className="row">
+          <div className="row w-100">
             <div className="col-lg-7">
               <img src={About1} className="img-fluid rounded" />
             </div>
@@ -24,12 +24,14 @@ const AboutHome = () => {
               <img src={About2} className="img-fluid rounded" />
             </div>
           </div>
-          <div className="col-lg-8 d-flex justify-content-end w-100 mt-4">
-            <img src={About3} className="img-fluid rounded w-75" />
+          <div className="w-100 d-flex justify-content-center ">
+            <div className="col-lg-9 d-flex justify-content-end mt-4">
+              <img src={About3} className="img-fluid rounded w-75" />
+            </div>
           </div>
         </motion.div>
 
-        <div className="col-lg-6 col-12 about-home-inner-2">
+        <div className="col-lg-6 col-11 about-home-inner-2 ms-5">
           <h1 className="about-con-header">
             About
             <span
@@ -55,7 +57,7 @@ const AboutHome = () => {
           </h1>
 
           <p
-            className="fs-5 fw-bold mt-3 about-header-inner"
+            className="fs-5 fw-bold mt-4 about-header-inner"
             style={{ color: "#7a7a7a" }}
           >
             "SKMADS - Innovate. Advertise. Succeed."

@@ -54,7 +54,7 @@ const teamDetails = [
 
 const About = () => {
   return (
-    <div className="services-con col justify-content-center pt-2 pb-0">
+    <div className="services-con col justify-content-center pt-2 pb-0 mt-4">
       <div className="row justify-content-center p-0 abt-conn">
         <div className="d-flex flex-column text-center justify-content-center align-items-center">
           <h1 className="text-center fw-bold services-header">
@@ -79,7 +79,7 @@ const About = () => {
               />
             </span>
           </h1>
-          <p className="text-secondary col-lg-5 col-10 services-inner-desc mt-3">
+          <p className="text-secondary col-lg-5 col-10 services-inner-desc mt-3 mb-5">
             SKMADS provides targeted and transparent advertising solutions to
             help businesses grow
           </p>
@@ -130,7 +130,7 @@ const About = () => {
         className="col text-center better-con"
         style={{ backgroundColor: "#f0f0f0" }}
       >
-        <h2 className="fw-bold">Why We’re Better.</h2>
+        <h1 className="fw-bold">Why We’re Better.</h1>
         <div className="d-flex justify-content-center mt-5">
           <div className="col-lg-8 row">
             {betterDetails.map((det, index) => {
@@ -153,17 +153,17 @@ const About = () => {
 
       <div className="row justify-content-center process-con">
         <div className="col-lg-10 row justify-content-center">
-          <div className="col-lg-2 text-start">
+          <div className="col-lg-3 text-start">
             <h2>The Process</h2>
           </div>
           {processDetails.map((pro, index) => {
             const a = pro.title.split("/");
             return (
-              <div key={index} className="col">
+              <div key={index} className="col col-lg-2 text-start">
                 <h2>
                   {a[0]} <span style={{ fontSize: "11px" }}>/{a[1]}</span>
                 </h2>
-                <p style={{ fontSize: "11px" }} className="text-muted">
+                <p style={{ fontSize: "11px" }} className="text-muted w-75">
                   {pro.desc}
                 </p>
               </div>
@@ -173,11 +173,11 @@ const About = () => {
       </div>
 
       <div
-        className="row justify-content-center py-5"
+        className="row justify-content-start py-5"
         style={{ backgroundColor: "#f0f0f0" }}
       >
         <div className="col-lg-10 col justify-content-center">
-          <h1 className="fw-bold text-center">Meet the Team</h1>
+          <h1 className="fw-bold  w-50 text-center ms-5">Meet the Team</h1>
           <div className="row justify-content-center mt-5">
             {teamDetails.map((t, i) => {
               return (

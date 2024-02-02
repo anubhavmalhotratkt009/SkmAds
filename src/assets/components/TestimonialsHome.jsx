@@ -23,11 +23,13 @@ const TestimonialsHome = () => {
     <>
       <div className="testimonials-con py-5 d-flex justify-content-center">
         <div className="container col-lg-10 d-flex row pb-4 gap-4">
-          <div className="col-lg-6 col">
+          <div className="col-lg-7 col">
             {testimonialsDetails.map((test, i) => {
               return (
                 <div key={i} className={`d-flex ${test.class} mt-4`}>
-                  <div className={`w-75 p-4 bg-white shadow mt-2 rounded-4`}>
+                  <div
+                    className={`w-75 px-5 py-4 bg-white shadow mt-2 rounded-4`}
+                  >
                     <div className="d-flex justify-content-between">
                       <div>
                         <p>{test.title}</p>
@@ -45,7 +47,7 @@ const TestimonialsHome = () => {
               );
             })}
           </div>
-          <div className="col-lg-6 row align-items-center">
+          <div className="col-lg-5 row align-items-center">
             <div className="col">
               <h1 className="fw-bold">Hear from them</h1>
               <p className="text-muted mt-3 fs-5 ">
@@ -55,11 +57,11 @@ const TestimonialsHome = () => {
                 work with.
               </p>
 
-              <div className="d-flex gap-5 hero-btn-con">
-                <div className="col-lg-6">
+              <div className="d-flex gap-5 hero-btn-con3">
+                <div className="col-lg-8">
                   <a href="/SkmAds/contact">
                     <button
-                      className="hero-btn mt-5 rounded-1 p-4"
+                      className="hero-btn mt-5 rounded-1 "
                       onMouseEnter={() => setShow(true)}
                       onMouseLeave={() => setShow(!show)}
                     >

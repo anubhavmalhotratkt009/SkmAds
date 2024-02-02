@@ -104,7 +104,7 @@ const Services = () => {
 
   return (
     <>
-      <div className="services-con col justify-content-center pt-3">
+      <div className="services-con col justify-content-center ">
         <div className="row justify-content-center">
           <div className="d-flex flex-column text-center justify-content-center align-items-center">
             <h1 className="text-center fw-bold services-header">
@@ -129,18 +129,18 @@ const Services = () => {
                 />
               </span>
             </h1>
-            <p className="text-secondary col-lg-5 col-10 services-inner-desc mt-3">
+            <p className="text-secondary col-lg-5 col-10 services-inner-desc mt-3 ">
               SKMADS provides targeted and transparent advertising solutions to
               help businesses grow
             </p>
           </div>
-          <div className="d-flex justify-content-center services-inner-main-con my-5">
-            <div className="d-flex gap-3 w-75 services-inner-3">
+          <div className="d-flex justify-content-center services-inner-main-con col-lg-11 my-5">
+            <div className="d-flex gap-4 w-75 container services-inner-3">
               {servicesDetails.map((ser, index) => {
                 return (
                   <div
                     key={index}
-                    className={`col-lg-2 col-12 col-md-12 py-4 px-1 rounded-3 ser-inner-con justify-content-center text-center mt-3`}
+                    className={`col-lg-2 col-12 col-md-12 py-3 px-1 rounded-3 ser-inner-con justify-content-center text-center mt-3 r`}
                     style={{
                       transition: "transform 0.3s ease", // Apply transition to transform property
                       transform:

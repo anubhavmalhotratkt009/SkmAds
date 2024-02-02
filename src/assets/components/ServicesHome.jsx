@@ -40,13 +40,13 @@ const ServicesHome = () => {
       <div className="services-home-con p-5">
         <div className="text-center">
           <span
-            className="p-3 rounded-5 services-header-outer"
+            className="py-2 px-4 mt-5 rounded-5 services-header-outer"
             style={{ backgroundColor: "#eee8f9", color: "#884ff0" }}
           >
             OUR SERVICES
           </span>
         </div>
-        <div className="d-flex justify-content-center text-center mt-5 fw-bold">
+        <div className="d-flex justify-content-center text-center mt-4 fw-bold">
           <h1 className="w-75 fw-bold services-home-inner-header">
             Why SKMADS is the Ultimate Partner for Your Digital Advertising
             Needs
@@ -58,7 +58,7 @@ const ServicesHome = () => {
               return (
                 <div
                   key={i}
-                  className="col-lg-3 col-11 bg-white py-5 rounded-3 shadow-sm"
+                  className="col-lg-3 col-11 bg-white py-4 px-2 rounded-3 shadow-sm"
                 >
                   <div className="d-flex justify-content-center">
                     <span className="icon-con">
@@ -66,8 +66,10 @@ const ServicesHome = () => {
                     </span>
                   </div>
                   <div className="mt-4 text-center px-3">
-                    <h5 className="fw-bolder">{services.title}</h5>
-                    <p className="text-muted ">{services.desc}</p>
+                    <h5 className="fw-bolder ser-title">{services.title}</h5>
+                    <p className="text-muted mt-3 ser-desc-inner">
+                      {services.desc}
+                    </p>
                   </div>
                 </div>
               );

@@ -30,7 +30,7 @@ const SolutionsHome = () => {
         >
           Our
           <span
-            className="about-con-header mt-5"
+            className="about-con-header mt-4"
             style={{
               display: "inline-table",
             }}
@@ -49,17 +49,20 @@ const SolutionsHome = () => {
             />
           </span>
         </h1>
-        <p className="fs-6  mt-3 text-center" style={{ color: "#7a7a7a" }}>
+        <p
+          className="inner-solu  py-3 text-center"
+          style={{ color: "#7a7a7a" }}
+        >
           We unleash your business potential by maximising the innovation.
         </p>
 
         <div className="d-flex justify-content-center mt-4">
-          <div className="col-lg-12 row justify-content-center gap-4">
+          <div className="col-lg-11 row justify-content-center gap-5">
             {solutionsDetails?.map((sol, i) => {
               return (
                 <div
                   key={i}
-                  className="card bg-white col-lg-3 col-12 p-0 col rounded-5 border-white shadow-sm"
+                  className="card bg-white col-lg-3 col-10 p-0 col rounded-5 border-white shadow-sm"
                 >
                   <img
                     src={`images/${sol.img}`}
@@ -87,15 +90,15 @@ const SolutionsHome = () => {
           </div>
         </div>
         <h6
-          className="text-center fw-semibold sol-inner-des"
+          className="text-center fw-semibold sol-inner-des py-5"
           id="inner-sol"
           style={{ color: "#05518c" }}
         >
           TAKE THE RIGHT STEP , DO BIG THINGS
         </h6>
 
-        <div className="d-flex justify-content-center mt-4">
-          <div className="col-lg-10 row justify-content-center">
+        <div className="d-flex justify-content-center">
+          <div className="col-lg-10 col-10 row justify-content-center pb-5">
             <div className="col col-lg-3 text-center">
               <h1 className="fw-bolder  sol-extra-header d-flex flex-column justify-content-center align-items-center">
                 33+

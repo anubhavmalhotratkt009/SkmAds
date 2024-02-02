@@ -32,21 +32,21 @@ const Footer = () => {
         <div className="col-lg-10 d-flex footer-inner-con">
           <div className="col-lg-4 col ">
             <h5 className="text-white mb-5 fw-bold">SKMTEK PTE. LTD.</h5>
-            <h6 className="text-white">68 CIRCULAR ROAD</h6>
-            <h6 className="text-white">#02-01D</h6>
-            <h6 className="text-white">SINGAPORE - 049422</h6>
+            <h6 className="text-white fw-light add-foot">68 CIRCULAR ROAD</h6>
+            <h6 className="text-white fw-light add-foot">#02-01D</h6>
+            <h6 className="text-white fw-light add-foot">SINGAPORE - 049422</h6>
 
             <a
               href="mailto:sales@skmads.com"
               style={{ textDecoration: "none" }}
             >
-              <p className="mt-3 text-white">
+              <p className="mt-3 text-white fw-bold">
                 <i className="fa-regular fa-envelope"></i>&nbsp;
                 sales@skmads.com
               </p>
             </a>
-            <a href="tel:++6531581448" style={{ textDecoration: "none" }}>
-              <p className="mt-3 text-white">
+            <a href="tel:+6531581448" style={{ textDecoration: "none" }}>
+              <p className="mt-4 text-white fw-bold">
                 <i className="fa-solid fa-phone"></i> &nbsp;+65 3158 1448
               </p>
             </a>
@@ -59,16 +59,16 @@ const Footer = () => {
               href="/SkmAds/privacy-and-policy"
               style={{ textDecoration: "none" }}
             >
-              <h6 className="text-white">Privacy and Policy</h6>
+              <h6 className="text-white add-foot2">Privacy and Policy</h6>
             </a>
             <a
               href="/SkmAds/terms-and-conditions"
               style={{ textDecoration: "none" }}
             >
-              <h6 className="text-white">Terms and Conditions</h6>
+              <h6 className="text-white add-foot2">Terms and Conditions</h6>
             </a>
             <a href="/SkmAds/careers" style={{ textDecoration: "none" }}>
-              <h6 className="text-white">Careers</h6>
+              <h6 className="text-white add-foot2">Careers</h6>
             </a>
           </div>
 
@@ -78,25 +78,25 @@ const Footer = () => {
                 <h5 className="text-white mb-5 fw-bold">Get a Quote</h5>
                 <input
                   className="form-control rounded-0 p-2"
-                  placeholder="Name"
+                  placeholder="      Name"
                   name="name"
                   r
                   required
                 />
                 <input
-                  className="form-control mt-2 rounded-0 p-2"
-                  placeholder="Email"
+                  className="form-control mt-3 rounded-0 p-2"
+                  placeholder="      E-mail"
                   name="email"
                   required
                 />
                 <select
-                  className="form-select mt-2 mt-2 rounded-0 p-2"
+                  className="form-select mt-3  rounded-0 p-2"
                   aria-label="Default select example"
                   name="option"
                   required
                 >
                   <option style={{ color: "#d3d3d3" }}>
-                    Please choose an option
+                    &nbsp;&nbsp;&nbsp;&nbsp;-Please choose an option-
                   </option>
                   <option value="I want to advertise my application/website">
                     I want to advertise my application/website
@@ -106,7 +106,7 @@ const Footer = () => {
                   </option>
                 </select>
 
-                <button className="footer-btn p-2 text-white mt-3 border-0 rounded-1 px-5">
+                <button className="footer-btn p-2 text-white mt-4 border-0 rounded-1 px-5 fs-6">
                   Send Email
                 </button>
               </form>
@@ -127,7 +127,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center bg-black text-white py-2">
+      <div className="text-center bg-black text-white pt-2 py-3">
         <small className="credits">
           © 2023 SKMADS all rights reserved. Owned and Operated By SKMTEK PTE.
           LTD.

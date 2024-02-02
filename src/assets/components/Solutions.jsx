@@ -30,7 +30,7 @@ const Solutions = () => {
           <h1 className="text-center fw-bold services-header">
             Our&nbsp;
             <span
-              className="services-header mt-5"
+              className="services-header mt-4"
               style={{
                 display: "inline-table",
               }}
@@ -49,7 +49,7 @@ const Solutions = () => {
               />
             </span>
           </h1>
-          <p className="text-secondary col-lg-5 col-10services-inner-desc mt-3">
+          <p className="text-secondary col-lg-5 col-10 services-inner-desc mt-3">
             SKMADS provides targeted and transparent advertising solutions to
             help businesses grow
           </p>

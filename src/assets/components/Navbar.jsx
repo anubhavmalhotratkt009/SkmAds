@@ -33,7 +33,7 @@ const AppNavbar = () => {
         <i class="fas fa-bars fs-1"></i>
       </Navbar.Toggle>
       <Navbar.Collapse id="navbarNav">
-        <Nav className="ms-5 gap-2">
+        <Nav className=" " style={{ marginLeft: "40px", gap: "12px" }}>
           <Nav.Item>
             <Nav.Link
               href="/SkmAds/"

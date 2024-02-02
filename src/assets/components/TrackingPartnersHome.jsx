@@ -25,7 +25,7 @@ const imagesDetails = [
 const TrackingPartnersHome = () => {
   return (
     <>
-      <div className="text-center col py-5">
+      <div className="text-center col pb-5">
         <h4 className="text-center fw-bold tracking-header">
           OUR TRACKING
           <span
