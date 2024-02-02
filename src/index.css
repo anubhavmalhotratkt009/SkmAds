@@ -18,7 +18,7 @@ html {
   overflow-x: hidden !important;
 }
 .hero-btn-con {
-  margin-top: -165px !important;
+  margin-top: -155px !important;
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -154,7 +154,7 @@ select {
   z-index: 2;
 }
 .con-1 {
-  margin-top: 65px;
+  margin-top: 35px;
 }
 
 mark {
