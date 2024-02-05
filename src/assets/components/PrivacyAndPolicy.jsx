@@ -77,36 +77,38 @@ const details = [
 const PrivacyAndPolicy = () => {
   return (
     <>
-      <div className="d-flex flex-column p-5">
-        <h1 className="fw-bold text-center">Privacy and Policy</h1>
-        <p className="my-5">
-          SKMADS, (“SKMADS”, “we”, or “our”) values the privacy of our users,
-          members, and others who visit and use www.skmads.com (the “SKMADS
-          Site”) (collectively or individually “Users” or “you”). The SKMADS
-          Site may contain information regarding a variety of services offered
-          by SKMADS (collectively the “Service”). This statement (“Privacy
-          Policy”) governs information you provide to us or that we learn from
-          your use of the SKMADS Site and tells you how we may collect, use, and
-          in some instances share this information.
-          <br />
-          This policy is incorporated into, and subject to, SKMADS’s Terms of
-          Service.
-        </p>
-        {details.map((detail, index) => {
-          const temp = detail.desc.split(".");
-          return (
-            <div key={index}>
-              <h3 className="text-secondary fw-bold">{detail.title}</h3>
-              {temp.map((a, i) => {
-                return (
-                  <p key={i} className="mt-2 text-secondary">
-                    {a}
-                  </p>
-                );
-              })}
-            </div>
-          );
-        })}
+      <div className="d-flex flex-column p-5  justify-content-center align-items-center">
+        <div className="d-flex flex-column col-11">
+          <h1 className="fw-bold text-center">Privacy and Policy</h1>
+          <p className="mb-5 mt-2">
+            SKMADS, (“SKMADS”, “we”, or “our”) values the privacy of our users,
+            members, and others who visit and use www.skmads.com (the “SKMADS
+            Site”) (collectively or individually “Users” or “you”). The SKMADS
+            Site may contain information regarding a variety of services offered
+            by SKMADS (collectively the “Service”). This statement (“Privacy
+            Policy”) governs information you provide to us or that we learn from
+            your use of the SKMADS Site and tells you how we may collect, use,
+            and in some instances share this information.
+            <br />
+            This policy is incorporated into, and subject to, SKMADS’s Terms of
+            Service.
+          </p>
+          {details.map((detail, index) => {
+            const temp = detail.desc.split("  ");
+            return (
+              <div key={index}>
+                <h3 className="text-dark fw-bold">{detail.title}</h3>
+                {temp.map((a, i) => {
+                  return (
+                    <p key={i} className="mt-2 text-dark">
+                      {a}
+                    </p>
+                  );
+                })}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );

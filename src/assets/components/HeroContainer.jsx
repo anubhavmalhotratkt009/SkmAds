@@ -14,9 +14,9 @@ const HeroContainer = React.memo(() => {
           animate={{ scale: 1 }}
           initial={{ scale: 0.7 }}
           transition={{ type: "tween", duration: 0.8 }}
-          className="col-lg-6 col-12 col-md-5 d-flex justify-content-end hero-inner-1"
+          className="col-lg-6 col-12 col-md-5 d-flex justify-content-center hero-inner-1"
         >
-          <div className="d-flex row  con-1">
+          <div className="d-flex row con-1">
             <h1 className="hero-text-con">
               <div>
                 <span className="hero-text">Unleash your brand's</span>

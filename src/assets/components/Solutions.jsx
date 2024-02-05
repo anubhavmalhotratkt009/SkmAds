@@ -26,7 +26,7 @@ const Solutions = () => {
   return (
     <div className="solutions-con col justify-content-center pt-2 pb-0">
       <div className="row justify-content-center p-0">
-        <div className="d-flex flex-column text-center justify-content-center align-items-center mb-5">
+        <div className="d-flex flex-column text-center justify-content-center align-items-center col-11  mb-5">
           <h1 className="text-center fw-bold services-header">
             Our&nbsp;
             <span

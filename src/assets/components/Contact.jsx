@@ -74,6 +74,14 @@ const Contact = () => {
                   </p>
                 </a>
               </div>
+              <div className="map col-12 mt-5">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8126478369927!2d103.8490602!3d1.2864665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190bb6085c15%3A0x2d5559570c3c6678!2s68%20Circular%20Rd%2C%20%2302%2001d%2C%20Singapore%20049422!5e0!3m2!1sen!2sin!4v1707125682280!5m2!1sen!2sin"
+                  style={{ border: "0" }}
+                  allowfullscreen="true"
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
 
             <div className="col-lg-5 col-md-12 px-3 py-1 d-flex justify-content-center ">

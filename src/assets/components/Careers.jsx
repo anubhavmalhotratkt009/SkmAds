@@ -13,7 +13,7 @@ const Careers = () => {
               businesses to looking for a partner of their digital media.
             </h4>
             <div className="d-flex justify-content-start mt-4">
-              <a href="/contact">
+              <a href="/SkmAds/contact">
                 <button className="hero-btn mt-3 rounded-5 px-5 py-3 fw-bold">
                   JOB OPENINGS
                 </button>

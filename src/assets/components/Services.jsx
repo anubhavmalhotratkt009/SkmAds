@@ -106,7 +106,7 @@ const Services = () => {
     <>
       <div className="services-con col justify-content-center ">
         <div className="row justify-content-center">
-          <div className="d-flex flex-column text-center justify-content-center align-items-center">
+          <div className="d-flex flex-column text-center justify-content-center align-items-center col-11">
             <h1 className="text-center fw-bold services-header">
               Our&nbsp;
               <span
@@ -177,7 +177,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="serv-inner">
           {servicesDetails.map((service, index) => (
             <React.Fragment key={index}>
               {service.left ? (

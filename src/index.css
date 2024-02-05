@@ -14,6 +14,13 @@ RESPONSIVE CSS
 
 /* 1.general css below */
 
+.serv-inner {
+  margin-top: 32px !important;
+}
+.map iframe {
+  width: 100% !important;
+  height: 100%;
+}
 .text-success {
   font-size: 25px !important;
   color: #69c072 !important;
@@ -57,7 +64,8 @@ html {
 }
 
 #tsparticles {
-  width: 800px !important;
+  width: 1800px !important;
+  z-index: 99;
 }
 /* 2.navbar css below */
 .about-home-inner-2 {
@@ -107,7 +115,7 @@ select {
 
 .ban-1 {
   margin-top: -100px;
-  margin-left: -26px;
+  margin-left: -66px;
   min-width: 715px;
 }
 
@@ -128,6 +136,7 @@ select {
   height: 100vh !important;
   color: var(--color-font);
   font-weight: 400;
+  min-width: 100% !important;
 
   position: relative;
 }
@@ -160,6 +169,7 @@ select {
 }
 .con-1 {
   margin-top: 35px;
+  margin-right: -450px;
 }
 
 mark {
@@ -312,7 +322,7 @@ button {
 }
 
 .inner-desc-about {
-  max-width: 70%;
+  max-width: 85%;
   font-size: 20px !important;
   color: #7a7a7a;
 }
@@ -399,6 +409,8 @@ button {
 
 /* 5.services css below  */
 .services-header {
+  margin-top: -6px;
+  letter-spacing: 1px;
   font-size: 52px;
 }
 .services-inner-desc {
@@ -419,7 +431,7 @@ button {
   font-size: 14px;
 }
 .services-inner-main-con {
-  margin-left: -100px;
+  margin-left: -130px;
 }
 .services-inner-text-con {
   padding: 50px 70px;

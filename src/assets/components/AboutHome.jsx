@@ -8,7 +8,7 @@ import "../../index.css";
 const AboutHome = () => {
   return (
     <>
-      <div className="about-home-con ps-5 ">
+      <div className="about-home-con ps-5 gap-3">
         <motion.div
           initial={{ y: 0 }}
           transition={{ type: "tween", duration: 1.2 }}

@@ -166,23 +166,25 @@ BY COMPLETING THE ACCOUNT REGISTRATION PROCESS, AND CLICKING THE “Register” 
 const TermsAndConditions = () => {
   return (
     <>
-      <div className="d-flex flex-column p-5">
-        <h1 className="fw-bold text-center mb-5">Terms and Conditions</h1>
-        {details.map((detail, i) => {
-          const temp = detail.desc.split(".");
-          return (
-            <div key={i}>
-              <h3 className="text-secondary fw-bold mt-4">{detail.title}</h3>
-              {temp.map((a, ind) => {
-                return (
-                  <p key={ind} className="mt-4 text-secondary">
-                    {a}
-                  </p>
-                );
-              })}
-            </div>
-          );
-        })}
+      <div className="d-flex flex-column p-5  justify-content-center align-items-center">
+        <div className="d-flex flex-column col-11 ">
+          <h1 className="fw-bold text-center mb-2">Terms and Conditions</h1>
+          {details.map((detail, i) => {
+            const temp = detail.desc.split(".");
+            return (
+              <div key={i}>
+                <h3 className="text-dark fw-bold mt-4">{detail.title}</h3>
+                {temp.map((a, ind) => {
+                  return (
+                    <p key={ind} className="text-dark">
+                      {a}
+                    </p>
+                  );
+                })}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );

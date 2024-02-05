@@ -84,7 +84,7 @@ const About = () => {
             help businesses grow
           </p>
 
-          <div className="d-flex mt-5 about-inner-container">
+          <div className="d-flex mt-5 about-inner-cont">
             <div className="col-lg-6 col-12">
               <img src="images/a-1.jpeg" className="img-fluid" />
             </div>
@@ -176,12 +176,12 @@ const About = () => {
         className="row justify-content-start py-5"
         style={{ backgroundColor: "#f0f0f0" }}
       >
-        <div className="col-lg-10 col justify-content-center">
-          <h1 className="fw-bold  w-50 text-center ms-5">Meet the Team</h1>
+        <div className="col-lg-12  col justify-content-center">
+          <h1 className="fw-bold text-center ms-5">Meet the Team</h1>
           <div className="row justify-content-center mt-5">
             {teamDetails.map((t, i) => {
               return (
-                <div className="col-lg-4 col-8" key={i}>
+                <div className="col-lg-3 col-8" key={i}>
                   <div className="w-100">
                     <img
                       src={`images/${t.img}`}
