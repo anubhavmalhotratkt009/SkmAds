@@ -36,8 +36,8 @@ const Contact = () => {
               className="col-lg-6 col-12 col contact-inner1 align-items-center rounded-1"
               style={{ border: "1px solid #e3e3e3" }}
             >
-              <h1 className="fw-semibold">Contact Us</h1>
-              <p className="text-muted mt-5">
+              <h2 className="fw-bold">Contact Us</h2>
+              <p className="text-muted mt-5 contact-text">
                 We are here to answer any question you may have. Feel free to
                 reach via contact form or you can mail us to sales@skmads.com.
               </p>
@@ -46,7 +46,7 @@ const Contact = () => {
                   <span className="contact-icon-con">
                     <i className="fa-solid fa-location-dot contact-icon"></i>
                   </span>
-                  <span className="fs-6 mt-4 ms-2 fw-semibold">
+                  <span className="contact-text-bottom mt-4 ms-2 fw-bold">
                     68 CIRCULAR ROAD
                     <br />
                     #02-01D
@@ -58,15 +58,15 @@ const Contact = () => {
                   href="mailto:sales@skmads.com"
                   style={{ textDecoration: "none" }}
                 >
-                  <p className=" text-muted fw-semibold">
+                  <p className="contact-text-bottom text-muted fw-semibold">
                     <span className="contact-icon-con">
                       <i className="fa-regular fa-envelope contact-icon"></i>
                     </span>
                     &nbsp; sales@skmads.com
                   </p>
                 </a>
-                <a href="tel:++6531581448" style={{ textDecoration: "none" }}>
-                  <p className=" text-muted fw-semibold">
+                <a href="tel:+6531581448" style={{ textDecoration: "none" }}>
+                  <p className="contact-text-bottom text-muted fw-semibold">
                     <span className="contact-icon-con">
                       <i className="fa-solid fa-phone contact-icon"></i>
                     </span>

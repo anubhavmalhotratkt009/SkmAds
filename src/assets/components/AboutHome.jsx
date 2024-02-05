@@ -70,8 +70,8 @@ const AboutHome = () => {
             innovative and tailored solutions to meet our clients' unique needs.
           </p>
           <a href="/SkmAds/about">
-            <button className="hero-btn2 mt-5 " data-hover="More about us">
-              <div>More about us</div>
+            <button className="hero-btn mt-5">
+              <span className="hero-txt">More about us</span>
             </button>
           </a>
         </div>

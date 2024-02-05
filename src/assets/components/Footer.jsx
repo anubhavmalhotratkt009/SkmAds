@@ -129,7 +129,7 @@ const Footer = () => {
       </div>
       <div className="text-center bg-black text-white pt-2 py-3">
         <small className="credits">
-          © 2023 SKMADS all rights reserved. Owned and Operated By SKMTEK PTE.
+          © 2024 SKMADS all rights reserved. Owned and Operated By SKMTEK PTE.
           LTD.
         </small>
       </div>

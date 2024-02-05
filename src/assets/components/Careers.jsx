@@ -36,8 +36,9 @@ const Careers = () => {
                 <div>
                   <small className="text-secondary">Bangalore, India</small>
                 </div>
-
-                <button className="careers-btn m-0">Apply</button>
+                <a href="mailto:sales@skmads.com">
+                  <button className="careers-btn m-0">Apply</button>
+                </a>
               </div>
 
               <div className="d-flex justify-content-between p-4">
@@ -47,8 +48,9 @@ const Careers = () => {
                 <div>
                   <small className="text-secondary">Bangalore, India</small>
                 </div>
-
-                <button className="careers-btn m-0">Apply</button>
+                <a href="mailto:sales@skmads.com">
+                  <button className="careers-btn m-0">Apply</button>
+                </a>
               </div>
 
               <div className="d-flex justify-content-between p-4">
@@ -59,7 +61,9 @@ const Careers = () => {
                   <small className="text-secondary">Bangalore, India</small>
                 </div>
 
-                <button className="careers-btn m-0">Apply</button>
+                <a href="mailto:sales@skmads.com">
+                  <button className="careers-btn m-0">Apply</button>
+                </a>
               </div>
             </div>
           </div>

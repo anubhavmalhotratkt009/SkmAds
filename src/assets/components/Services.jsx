@@ -15,8 +15,8 @@ const servicesDetails = [
     ],
     img: "s-1.jpg",
     left: window.innerWidth > 1068 ? true : true,
-    newColor: "text-danger ",
-    newBg: "#fff6f6",
+    newColor: "#05518c",
+    newBg: "#fff1ed",
   },
   {
     title: "Media Buying",
@@ -30,8 +30,8 @@ const servicesDetails = [
     ],
     img: "s-2.jpg",
     left: window.innerWidth > 1068 ? false : true,
-    newColor: "text-success",
-    newBg: "#eefdee",
+    newColor: "#05518c",
+    newBg: "#fff1ed",
   },
   {
     title: "User Acquisition",
@@ -44,8 +44,8 @@ const servicesDetails = [
     ],
     img: "s-3.jpg",
     left: window.innerWidth > 1068 ? true : true,
-    newColor: "text-info",
-    newBg: "#fbf4ff",
+    newColor: "#05518c",
+    newBg: "#fff1ed",
   },
   {
     title: "Transparency",
@@ -58,8 +58,8 @@ const servicesDetails = [
     ],
     img: "s-4.jpg",
     left: window.innerWidth > 1068 ? false : true,
-    newColor: "text-warning",
-    newBg: "#f9fbe4",
+    newColor: "#05518c",
+    newBg: "#fff1ed",
   },
   {
     title: "Data Analysis",
@@ -72,8 +72,8 @@ const servicesDetails = [
     ],
     img: "s-5.jpg",
     left: window.innerWidth > 1068 ? true : true,
-    newColor: "text-info",
-    newBg: "#fff6f6",
+    newColor: "#05518c",
+    newBg: "#fff1ed",
   },
   {
     title: "Explicit Targeting",
@@ -86,8 +86,8 @@ const servicesDetails = [
     ],
     img: "s-6.jpg",
     left: window.innerWidth > 1068 ? false : true,
-    newColor: "text-danger",
-    newBg: "#f1ffff",
+    newColor: "#05518c",
+    newBg: "#fff1ed",
   },
 ];
 
@@ -146,6 +146,7 @@ const Services = () => {
                       transform:
                         hoveredIndex === index ? "scale(1.1)" : "scale(1)",
                       backgroundColor: hoveredIndex === index ? ser.newBg : "",
+                      color: hoveredIndex === index ? ser.newColor : "",
                     }}
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={handleMouseLeave}
@@ -153,9 +154,12 @@ const Services = () => {
                     <i
                       className={
                         hoveredIndex === index
-                          ? `${ser.class} text-danger icon-services2 `
+                          ? `${ser.class}  icon-services2 `
                           : `${ser.class} icon-services2`
                       }
+                      style={{
+                        color: hoveredIndex === index ? ser.newColor : "",
+                      }}
                     ></i>
                     <h6
                       className={
@@ -195,10 +199,23 @@ const Services = () => {
                       {service.highlights.map((ser, i) => {
                         return (
                           <>
-                            <p key={i} className="text-serv">
-                              <i className="fa-solid fa-square-check text-success fs-5 mb-3"></i>
+                            <p
+                              key={i}
+                              className="text-serv"
+                              style={{
+                                display: "inline-flex",
+                              }}
+                            >
+                              <i className="fa-solid fa-square-check text-success d-flex mb-3"></i>
                               &nbsp; &nbsp;
-                              {ser}
+                              <span
+                                className="fw-light"
+                                style={{
+                                  fontSize: "14px",
+                                }}
+                              >
+                                {ser}
+                              </span>
                             </p>
                           </>
                         );
@@ -217,10 +234,23 @@ const Services = () => {
                       {service.highlights.map((ser, i) => {
                         return (
                           <>
-                            <p key={i} className="text-serv">
-                              <i className="fa-solid fa-square-check text-success fs-5 mb-3"></i>
+                            <p
+                              key={i}
+                              className="text-serv"
+                              style={{
+                                display: "inline-flex",
+                              }}
+                            >
+                              <i className="fa-solid fa-square-check text-success d-flex mb-3"></i>
                               &nbsp; &nbsp;
-                              {ser}
+                              <span
+                                className="fw-light"
+                                style={{
+                                  fontSize: "14px",
+                                }}
+                              >
+                                {ser}
+                              </span>
                             </p>
                           </>
                         );
