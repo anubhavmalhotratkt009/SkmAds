@@ -102,7 +102,7 @@ const AboutHome = () => {
                     <span className="split-inner" style={{}}>
                       Ways
                       <mark className="lqd-highlight">
-                        <span className="lqd-highlight-txt">to advertise</span>
+                        <span className="lqd-highlight-txt">we Advertise</span>
                         <span
                           className="bottom-0 left-0 lqd-highlight-inner bg-purple-100 style-9pqpl"
                           id="style-9pqpl"
@@ -237,7 +237,8 @@ const AboutHome = () => {
                               >
                                 <a href="#contact-modal" className="btn">
                                   <span
-                                    className="btn-txt mt-4"
+                                    className="btn-txt mt-4 fw-bold"
+                                    style={{ fontSize: "14px" }}
                                     data-text="Explore"
                                   >
                                     Explore

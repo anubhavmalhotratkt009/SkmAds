@@ -108,7 +108,7 @@ button:not(:disabled) {
 }
 
 .w-230 {
-  width: 230px;
+  width: 250px;
 }
 
 .border-thin {
@@ -181,4 +181,51 @@ h4 {
 
 .w-90 {
   width: 95% !important;
+}
+
+@font-face {
+  font-family: "lqd-essentials";
+  src: url(../../../public/fonts/lqd-essentials.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.lqd-icn-ess {
+  display: inline-block;
+  font-family: "lqd-essentials";
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-lqd-mobile::before {
+  content: "";
+}
+.icon-lqd-presentation::before {
+  content: "";
+}
+
+.icon-lqd-user::before {
+  content: "";
+}
+
+.icon-lqd-tools::before {
+  content: "";
+}
+
+.icon-lqd-target::before {
+  content: "";
+}
+.icon-services {
+  background-color: whitesmoke;
+  color: black;
+  padding: 20px;
+  font-size: 80px !important;
+  border-radius: 50%;
+}
+.services-home-con:hover {
+  cursor: pointer;
 }

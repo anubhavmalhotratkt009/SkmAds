@@ -1,5 +1,5 @@
 .snipcss-5mnKy {
-  height: 787px;
+  height: 767px;
 }
 
 .pb-200 {
@@ -21,7 +21,13 @@
   bottom: 0;
   left: 0;
 }
-
+.bottom-10 {
+  bottom: -8px;
+}
+.text-38 {
+  font-size: 40px;
+  line-height: 45px;
+}
 .bg-slate-200 {
   background-color: var(--lqd-color-slate-200);
   height: 25px;
@@ -89,6 +95,9 @@
   transition-property: color, background;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+}
+.text-12 {
+  font-size: 12px;
 }
 
 .iconbox p {
@@ -163,7 +172,6 @@ mark {
   justify-content: center;
   position: relative;
 }
-
 .iconbox-icon-ripple .iconbox-icon-container::before {
   content: "";
   display: inline-block;
@@ -173,7 +181,7 @@ mark {
   top: 0;
   left: 0;
   border-radius: inherit;
-  border: 1px solid var(--lqd-color-primary);
+
   animation: iconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
 }
 

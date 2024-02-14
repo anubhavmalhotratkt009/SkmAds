@@ -24,7 +24,7 @@ const servicesDetails = [
   {
     title: "User Acquisition",
     class: "lqd-icn-ess icon-lqd-user",
-    desc: "Multi-Channel user acquisition technology to get you unique users.",
+    desc: "Multi-Channel user acquisition technology to help you get  unique users.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-3.jpg",
 
@@ -33,7 +33,7 @@ const servicesDetails = [
   {
     title: "Transparency",
     class: "lqd-icn-ess icon-lqd-tools",
-    desc: "Proactive approach ensures compliant traffic and allows full-brand safety and transparency to the advertisers.",
+    desc: "Proactive approach with compliant traffic allows brand safety and transparency to advertisers.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-1.jpg",
     newBg: "#ecf0e7",
@@ -49,7 +49,7 @@ const servicesDetails = [
   {
     title: "Explicit Targeting",
     class: "lqd-icn-ess icon-lqd-target",
-    desc: "Customized targeting by zip codes, gender, device id and other parameters according to your campaign requirement.",
+    desc: "Customized targeting by zip, gender, id and other parameters according to your campaign requirement.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-3.jpg",
     newBg: "#ecf0e7",
@@ -199,7 +199,7 @@ const SolutionsHome = () => {
                 return (
                   <div className="w-90">
                     <div
-                      className="py-4 rounded-1 d-flex flex-column align-items-center snipcss0-11-79-80 snipcss-K7j5D"
+                      className="py-4 rounded-1 d-flex flex-column align-items-center services-home-con "
                       style={{ backgroundColor: `${ser.newBg}` }}
                     >
                       <div className="ld-fancy-heading position-relative snipcss0-12-80-81">
@@ -222,30 +222,29 @@ const SolutionsHome = () => {
                             />
                           </figure>
                         </div> */}
-                        <div>
-                          <i className={ser.class} />
+                        <div className="my-4">
+                          <i className={`${ser.class} icon-services`} />
                         </div>
-                        <p>{ser.desc}</p>
+                        <p className="mb-5">{ser.desc}</p>
                       </div>
                       <div className="divider w-full snipcss0-12-80-89">
                         <span className="w-full my-25 border-top border-black-20 snipcss0-13-89-90"></span>
                       </div>
+                      <hr
+                        className="w-100"
+                        style={{ marginTop: "1px solid #e0e0e0" }}
+                      />
                       <a
                         href="#contact-modal"
-                        className="z-10 btn btn-underlined border-thin btn-icon-right btn-hover-reveal text-black before:bg-black snipcss0-12-80-91"
+                        className="z-10 btn btn-underlined  btn-icon-right text-black before:bg-black snipcss0-12-80-91"
                         data-lity="#contact-modal"
                       >
                         <span
-                          data-text="Nos valeurs"
+                          data-text="Know More"
                           className="btn-txt snipcss0-13-91-92"
+                          x
                         >
                           Know More
-                        </span>
-                        <span className="btn-icon snipcss0-13-91-93">
-                          <i
-                            aria-hidden="true"
-                            className="lqd-icn-ess icon-ion-ios-arrow-forward snipcss0-14-93-94"
-                          ></i>
                         </span>
                       </a>
                       <a

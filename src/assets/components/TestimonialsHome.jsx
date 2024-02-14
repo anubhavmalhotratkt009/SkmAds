@@ -9,17 +9,17 @@ const testimonialsDetails = [
   {
     title: "Rey Johnson",
     desc: "Working with SKMADS has been a game changer for our business. Their targeted advertising solutions have helped us reach the right audiences and achieve better results",
-    class: "justify-content-start",
+    class: "bg-orange-100",
   },
   {
     title: "Dean Smith",
     desc: "SKMADS's team is knowledgeable, responsive, and transparent. Their data analysis services have provided us with valuable insights to optimize our advertising strategies and drive growth",
-    class: "justify-content-end",
+    class: "bg-lol",
   },
   {
     title: "Kristen Josheph",
     desc: "SKMADS advertising solutions have helped us improve our brand visibility and reach new audiences. Their in-app advertising dashboard is user-friendly and provides detailed metrics to track ad performance.",
-    class: "justify-content-start",
+    class: "bg-orange-100",
   },
 ];
 
@@ -54,8 +54,11 @@ const TestimonialsHome = () => {
               className="split-unit lqd-lines lqd-unit-animation-done style-5KMqK"
               id="style-5KMqK"
             >
-              <span className="split-inner fs-5" style={{}}>
-                Trusted by these amazing companies
+              <span
+                className="split-inner   fs-6 fw-bold text-decoration-underline"
+                style={{ color: "#c3c3c3" }}
+              >
+                Trusted by many amazing people{" "}
               </span>
             </div>
             <p></p>
@@ -131,7 +134,7 @@ const TestimonialsHome = () => {
               </div>
             </h2>
           </div>
-          <div
+          {/* <div
             className="d-flex py-3 px-4 align-items-center bg-gray-100 rounded-1 animation-element sm:w-100 lqd-unit-animation-done"
             style={{}}
           >
@@ -170,77 +173,47 @@ const TestimonialsHome = () => {
               <i className="star-full">★</i>
               <span className="sr-only">5/5</span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="d-flex justify-content-center">
-          <div className="mt-5 col-10">
+          <div className="mt-1 col-10">
             <Slider
               ref={(slider) => {
                 sliderRef = slider;
               }}
               {...settings}
             >
-              <div className="w-90 lqd-testi position-relative lqd-testi-style-1 flex flex-col-reverse rounded-3 py-4 px-4 bg-orange-100 module-content">
-                <div className=" d-flex flex-wrap justify-content-between mb-1">
-                  <div className="lqd-testi-details flex items-center py-2 px-4">
-                    <figure className="lqd-testi-avatar rounded-circle overflow-hidden mr-1/5em me-3">
-                      <img
-                        decoding="async"
-                        className="rounded-full"
-                        src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/testi-avatar-2.png"
-                        alt="ritamjahed"
-                      />
-                    </figure>
-                    <div className="pl-1/5">
-                      <h3 className="text-orange-600 text-18">ritamjahed</h3>
-                      <h4 className="font-weight-light text-orange-600 text-16">
-                        Envato CEO
-                      </h4>
+              {testimonialsDetails.map((test) => {
+                return (
+                  <div
+                    className={`${test.class} w-90 lqd-testi position-relative lqd-testi-style-1 d-flex flex-column rounded-3 py-4 px-4 module-content`}
+                  >
+                    <div className=" d-flex  justify-content-between mb-1">
+                      <div className="lqd-testi-details d-flex items-center py-2 px-4">
+                        <figure className="lqd-testi-avatar rounded-circle overflow-hidden mr-1/5em me-3">
+                          <img
+                            decoding="async"
+                            className="rounded-full"
+                            src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/testi-avatar-2.png"
+                            alt="ritamjahed"
+                          />
+                        </figure>
+                        <div className="pl-1/5">
+                          <h3 className="text-orange-600 text-18">
+                            {test.title}
+                          </h3>
+                          <h4 className="font-weight-light text-orange-600 text-16"></h4>
+                        </div>
+                      </div>
+                    </div>{" "}
+                    <div className="lqd-testi-quote text-orange-600">
+                      <blockquote>
+                        <p className="text-18">{test.desc}</p>
+                      </blockquote>
                     </div>
                   </div>
-                </div>{" "}
-                <div className="lqd-testi-quote text-orange-600">
-                  <blockquote>
-                    <p className="text-18">
-                      Incredible theme and fantastic support! Every time I had a
-                      question, they got back to you so quickly and fixed your
-                      problem! Im so impressed! Thank you guys again for your
-                      precious help! Your customer support is amazing!
-                    </p>
-                  </blockquote>
-                </div>
-              </div>
-
-              <div className="w-90 lqd-testi relative lqd-testi-style-1 flex flex-col-reverse lqd-testi-shadow-xs lqd-testi-details-lg lqd-testi-quote-18 lqd-testi-avatar-72 rounded-3 py-4 px-4 bg-orange-100 module-content snipcss-aShUp">
-                <div className="lqd-testi-info flex flex-wrap justify-between mb-1em">
-                  <div className="lqd-testi-details flex items-center">
-                    <figure className="lqd-testi-avatar rounded-full overflow-hidden mr-1/5em me-3">
-                      <img
-                        decoding="async"
-                        className="rounded-full"
-                        src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/testi-avatar-2.png"
-                        alt="ritamjahed"
-                      />
-                    </figure>
-                    <div className="pl-1/5">
-                      <h3 className="text-orange-600 text-18">ritamjahed</h3>
-                      <h4 className="font-weight-light text-orange-600 text-16">
-                        Envato CEO
-                      </h4>
-                    </div>
-                  </div>
-                </div>{" "}
-                <div className="lqd-testi-quote text-orange-600">
-                  <blockquote>
-                    <p className="text-18">
-                      Incredible theme and fantastic support! Every time I had a
-                      question, they got back to you so quickly and fixed your
-                      problem! Im so impressed! Thank you guys again for your
-                      precious help! Your customer support is amazing!
-                    </p>
-                  </blockquote>
-                </div>
-              </div>
+                );
+              })}
             </Slider>
           </div>
         </div>
