@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
 import "./HeroContainer.css";
 
 const HeroContainer = React.memo(() => {
@@ -97,21 +96,16 @@ const HeroContainer = React.memo(() => {
                   data-custom-animations="true"
                   data-ca-options='{"animationTarget": ".lqd-split-words .lqd-words .split-inner, .lqd-adv-txt-fig", "duration" : 1000 , "startDelay" : 200 , "delay" : 70 , "ease": "expo.out", "initValues": {"y": "120px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'
                 >
-                  <h1
-                    className="ld-fh-element position-relative lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-words mb-0/5em leading-1/1em is-in-view split-text-applied"
-                    data-inview="true"
-                    data-split-text="true"
-                    data-split-options='{"type": "words"}'
-                  >
+                  <h1 className="ld-fh-element position-relative lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-word is-in-view split-text-applied">
                     <span className="lqd-adv-txt-item inline-d-block">
                       <div
                         className="split-unit lqd-words style-bvGCG"
                         id="style-bvGCG"
                       >
-                        <span className="split-inner">Developing</span>
+                        <span className="split-inner3">Fostering</span>
                       </div>
                       <img
-                        className="lqd-adv-txt-fig position-relative d-inline-flex mx-5 vertical-align-middle rounded-circle"
+                        className="lqd-adv-txt-fig position-relative d-inline-flex ms-3 me-2 vertical-align-middle rounded-circle"
                         width={58}
                         height={58}
                         src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/banner.jpg"
@@ -123,25 +117,23 @@ const HeroContainer = React.memo(() => {
                         className="split-unit lqd-words style-FD6dt"
                         id="style-FD6dt"
                       >
-                        <span className="split-inner">eCommerce</span>
+                        <span className="split-inner3">Visionary</span>
                       </div>
-                      <div
-                        className="split-unit lqd-words style-HPyKm"
-                        id="style-HPyKm"
-                      >
-                        <span className="split-inner">websites,&nbsp; </span>
-                      </div>
+                      <br />
+
                       <div
                         className="split-unit lqd-words style-oCWyC"
                         id="style-oCWyC"
                       >
-                        <span className="split-inner">apps&nbsp;</span>
+                        <span className="split-inner3">
+                          &nbsp;&nbsp;&nbsp;creativity&nbsp;
+                        </span>
                       </div>
                       <div
                         className="split-unit lqd-words style-Oa1sH"
                         id="style-Oa1sH"
                       >
-                        <span className="split-inner">and&nbsp;</span>
+                        <span className="split-inner3">with&nbsp;</span>
                       </div>
                       <mark className="lqd-highlight">
                         <span className="lqd-highlight-txt">
@@ -149,9 +141,7 @@ const HeroContainer = React.memo(() => {
                             className="split-unit lqd-words style-7RJ1Q"
                             id="style-7RJ1Q"
                           >
-                            <span className="split-inner">
-                              tailor-made&nbsp;
-                            </span>
+                            <span className="split-inner3">SKMADS&nbsp;</span>
                           </div>
                         </span>
                         <span className="lqd-highlight-inner bg-purple-100 bottom-0/1em left-0"></span>
@@ -160,13 +150,9 @@ const HeroContainer = React.memo(() => {
                         className="split-unit lqd-words style-s3sbk"
                         id="style-s3sbk"
                       >
-                        <span className="split-inner">digital&nbsp;</span>
-                      </div>
-                      <div
-                        className="split-unit lqd-words style-8rBFC"
-                        id="style-8rBFC"
-                      >
-                        <span className="split-inner">solutions.</span>
+                        <span className="split-inner3">
+                          &nbsp;- crafting compelling ads that convert&nbsp;
+                        </span>
                       </div>
                     </span>
                   </h1>
@@ -192,15 +178,9 @@ const HeroContainer = React.memo(() => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={6}
-                        // style={{
-                        //   strokeDashoffset: "0",
-                        //   strokeDasharray: "none",
-                        // }}
                         initial={{ pathLength: 0 }}
-                        animate={{ pathLength: 1 }}
+                        whileInView={{ pathLength: 1 }}
                         transition={{
-                          repeat: Infinity,
-                          repeatType: "mirror",
                           duration: 2,
                         }}
                       />
@@ -246,8 +226,7 @@ const HeroContainer = React.memo(() => {
                       </div>
                     </div>
                     <h3 className="lqd-iconbox-heading text-17 mb-0/7em leading-20">
-                      Web Design. Build email lists, bigger, faster and more
-                      targeted.
+                      web and app advertising. we deliver results as needed.
                     </h3>
                   </div>
                 </div>
@@ -280,8 +259,7 @@ const HeroContainer = React.memo(() => {
                       </div>
                     </div>
                     <h3 className="lqd-iconbox-heading text-17 mb-0/7em leading-20">
-                      eCommerce. Friendly Hub helps you rank higher in Google
-                      and on
+                      we offer SKMADS mobile, convert and targeting
                     </h3>
                   </div>
                 </div>
@@ -321,8 +299,7 @@ const HeroContainer = React.memo(() => {
                       </div>
                     </div>
                     <h3 className="lqd-iconbox-heading text-17 mb-0/7em leading-20">
-                      Privacy. Add an Instagram Feed to your website or share
-                      your
+                      Privacy and security all the way through
                     </h3>
                   </div>
                 </div>
