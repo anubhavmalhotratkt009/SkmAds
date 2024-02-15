@@ -7,19 +7,15 @@ const ContactHome = () => {
       className="lqd-section contact-form bg-center bg-cover pt-70 pb-100 snipcss-FHrny style-iyHqK"
       id="contact"
     >
-      <div className="container">
+      <div className="px-5">
         <div className="row items-end">
-          <div
-            className="w-45percent sm:w-100 ca-initvalues-applied lqd-animations-done"
-            data-custom-animations="true"
-            data-ca-options='{"animationTarget": ".animation-element, figure, .lqd-split-lines .lqd-lines .split-inner", "duration" : 1000 , "delay" : 100 , "ease": "expo.out", "initValues": {"y": "95px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'
-          >
-            <div className="position-relative w-100 d-flex flex-column justify-end pb-40">
+          <div className="col-lg-6 sm:w-100 ca-initvalues-applied lqd-animations-done">
+            <div className="position-relative w-100 d-flex flex-column justify-content-start pb-40 ">
               <div
                 className="position-absolute -top-145percent ltr-left-0 module-shape-1 animation-element lqd-unit-animation-done"
                 style={{}}
               >
-                <div id="lqd-lottie-form-contact" className="lqd-lottie">
+                <div id="lqd-lottie-form-contact w-100" className="lqd-lottie">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 800 600"
@@ -215,6 +211,13 @@ const ContactHome = () => {
                     </span>
                   </div>
                 </h2>
+                <div className="text-start d-flex justify-content-center">
+                  <p className="text-muted fs-6 w-75" style={{}}>
+                    We are here to answer any question you may have. Feel free
+                    to reach via contact form or you can mail us to
+                    sales@skmads.com.
+                  </p>
+                </div>
               </div>
               <div className="ld-fancy-heading position-relative mask-text w-410 max-w-100 ms-4">
                 <p
@@ -224,15 +227,9 @@ const ContactHome = () => {
                   style={{}}
                 ></p>
                 <div
-                  className="split-unit lqd-lines lqd-unit-animation-done style-XqmiH text-start w-100 text-wrap "
+                  className="split-unit lqd-lines lqd-unit-animation-done col-lg-6 style-XqmiH text-start w-100 text-wrap "
                   id="style-XqmiH"
-                >
-                  <span className="text-muted fs-6 col-2" style={{}}>
-                    We are here to answer any question you may have. Feel free
-                    to reach via contact form or you can mail us to
-                    sales@skmads.com.
-                  </span>
-                </div>
+                ></div>
 
                 <p></p>
               </div>

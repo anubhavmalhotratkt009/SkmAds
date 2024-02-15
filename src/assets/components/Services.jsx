@@ -16,9 +16,8 @@ const servicesDetails = [
       "Uses technology to analyze user behavior and target audience with greater precision",
       "Offers transparency and control over ad campaigns",
       "Optimizes ad spend and adjusts bidding strategies for maximum impact and ROI",
-      "Leverages data and machine learning algorithms for better results in digital advertising",
     ],
-    img: "ss-1.png",
+    img: "ss-2.png",
     left: window.innerWidth > 1068 ? false : false,
   },
   {
@@ -31,7 +30,7 @@ const servicesDetails = [
       "Customized strategies to align with clients objectives and budget constraints",
       "Focus on maximizing impact and ROI for clients through effective media buying tactics.",
     ],
-    img: "ss-2.png",
+    img: "ss-1.png",
     left: window.innerWidth > 1068 ? true : false,
   },
   {
@@ -87,7 +86,7 @@ const servicesDetails = [
 const Services = () => {
   return (
     <>
-      <div class="titlebar-inner d-flex flex-column">
+      <div class="titlebar-inner d-flex flex-column ">
         <div className="d-flex flex-row position-relative">
           <div className="col-3 position-absolute">
             <img
@@ -136,7 +135,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-row mt-3 gap-5  sol-inner">
+      <div className="d-flex flex-row  gap-5 pb-5  sol-inner">
         <div className="col-lg-12 d-flex justify-content-center flex-column gap-5">
           {servicesDetails.map((ab, index) => {
             return (
@@ -223,7 +222,7 @@ const Services = () => {
                 ) : (
                   <>
                     <div className="d-flex flex-row">
-                      <div className="col-lg-6 py-5 px-5 align-items-center text-start">
+                      <div className="col-lg-6 py-5 px-5 align-items-center text-start ">
                         <div className="d-flex flex-wrap ca-initvalues-applied lqd-animations-done solutions-inner">
                           <div className="d-flex flex-wrap module-content px-3">
                             <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading position-relative animation-element lqd-unit-animation-done">

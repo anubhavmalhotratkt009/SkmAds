@@ -82,7 +82,7 @@ const AboutHome = ({ bg }) => {
                 style={{}}
               >
                 <h6 className="ld-fh-element position-relative text-12 py-2 px-3 rounded-4  bg-gray  uppercase tracking-1 text-slate-500 m-0">
-                  Our Solutions
+                  How we Advertise
                 </h6>
               </div>
               <div className="ld-fancy-heading position-relative mask-text">
@@ -100,9 +100,9 @@ const AboutHome = ({ bg }) => {
                     id="style-jwcoH"
                   >
                     <span className="split-inner">
-                      Ways
+                      Our&nbsp;
                       <mark className="lqd-highlight">
-                        <span className="lqd-highlight-txt">we Advertise</span>
+                        <span className="lqd-highlight-txt">Solutions</span>
                         <span
                           className="bottom-0 left-0 lqd-highlight-inner bg-purple-100 style-9pqpl"
                           id="style-9pqpl"
@@ -140,7 +140,7 @@ const AboutHome = ({ bg }) => {
                   className="split-unit lqd-lines lqd-unit-animation-done style-1sYgN"
                   id="style-1sYgN"
                 >
-                  <span className="text-muted text-18">
+                  <span className="text-muted text-18 text-wrap">
                     We unleash your business potential by maximising the
                     innovation.
                   </span>
@@ -275,7 +275,7 @@ const AboutHome = ({ bg }) => {
                 );
               })}
             </div>
-            <div className="col col-12 text-center mt-5">
+            <div className="col col-12 text-center mt-4">
               <div className="w-100 d-flex flex-wrap items-center justify-content-center transition-all">
                 <div className="module-text-border border-1 rounded-2 border-black-10 transition-all ld-fancy-heading position-relative hover:inner-text-black animation-element lqd-unit-animation-done">
                   <p className="ld-fh-element position-relative inner-text-black py-2 px-2 m-0 text-slate-300">
