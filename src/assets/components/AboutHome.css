@@ -53,7 +53,7 @@
 }
 
 .design-services .lqd-iconbox-scale:hover {
-  background-color: #ebf0e6;
+  background-color: #f2ebe9;
   transform: scale(1.1);
 }
 
@@ -109,6 +109,22 @@ h2 {
 
 .bottom-0 {
   bottom: 0;
+}
+
+.split-inner5 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.text-18 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.text-15 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.text-22 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 .left-0 {

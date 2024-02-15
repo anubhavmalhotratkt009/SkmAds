@@ -99,12 +99,18 @@ const AboutHome = ({ bg }) => {
                     className="split-unit lqd-lines lqd-unit-animation-done style-jwcoH"
                     id="style-jwcoH"
                   >
-                    <span className="split-inner">
+                    <span className="split-inner5">
                       Our&nbsp;
                       <mark className="lqd-highlight">
-                        <span className="lqd-highlight-txt">Solutions</span>
+                        <span
+                          className="lqd-highlight-txt"
+                          style={{ zIndex: "2" }}
+                        >
+                          Solutions
+                        </span>
                         <span
                           className="bottom-0 left-0 lqd-highlight-inner bg-purple-100 style-9pqpl"
+                          style={{ zIndex: "1" }}
                           id="style-9pqpl"
                         ></span>
                       </mark>

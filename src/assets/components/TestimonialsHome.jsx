@@ -94,7 +94,7 @@ const TestimonialsHome = () => {
                 className="split-unit lqd-lines lqd-unit-animation-done style-ZMBIF"
                 id="style-ZMBIF"
               >
-                <span className="split-inner" style={{}}>
+                <span className="split-inner5" style={{}}>
                   Testimonials
                 </span>
               </div>
@@ -111,7 +111,7 @@ const TestimonialsHome = () => {
                 className="split-unit lqd-lines lqd-unit-animation-done style-LDaWZ"
                 id="style-LDaWZ"
               >
-                <span className="split-inner" style={{}}>
+                <span className="split-inner5 " style={{}}>
                   <span className="lqd-adv-txt-item">People</span>
                   <span className="relative z-3 lqd-adv-txt-item">
                     <span className="relative d-inline-flex rounded-circle vertical-top -mr-30 ms-3">
@@ -149,13 +149,13 @@ const TestimonialsHome = () => {
                       />
                     </span>
                   </span>
-                  <span className="lqd-adv-txt-item">are talking.</span>
+                  <span className="lqd-adv-txt-item">&nbsp;are talking.</span>
                 </span>
               </div>
             </h2>
           </div>
         </div>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center mb-5">
           <div className="mt-1 col-10">
             <Slider
               ref={(slider) => {
@@ -209,13 +209,16 @@ const TestimonialsHome = () => {
               data-split-options='{"type": "lines"}'
             >
               <div
-                class="split-unit lqd-lines lqd-unit-animation-done style-jwcoH"
+                class="split-unit lqd-lines lqd-unit-animation-done mb-3 style-jwcoH"
                 id="style-jwcoH"
               >
-                <span class="split-inner mt-5 text-dark">
+                <span class="split-inner5 mt-5 text-dark">
                   Tracking
                   <mark class="lqd-highlight">
-                    <span class="lqd-highlight-txt"> Partners</span>
+                    <span class="lqd-highlight-txt" style={{ zIndex: "1" }}>
+                      {" "}
+                      Partners
+                    </span>
                     <span
                       class="bottom-0 left-0 lqd-highlight-inner bg-purple-100 style-9pqpl"
                       id="style-9pqpl"
@@ -243,7 +246,7 @@ const TestimonialsHome = () => {
               >
                 {imagesDetails.map((i, index) => {
                   return (
-                    <img key={index} src={`images/${i.img}`} width={140} />
+                    <img key={index} src={`images/${i.img}`} width={190} />
                   );
                 })}
               </div>

@@ -207,7 +207,7 @@ const ContactHome = () => {
                     id="style-MByDF"
                   >
                     <span className="split-inner2 " style={{}}>
-                      in mind?👋
+                      in mind?
                     </span>
                   </div>
                 </h2>
@@ -315,22 +315,7 @@ const ContactHome = () => {
                         </span>
                       </p>
                     </div>
-                    <div className="col col-12 col-md-6 px-15">
-                      <p>
-                        <span className="lqd-form-control-wrap text">
-                          <input
-                            className="border-black-20 text-black text-13"
-                            type="text"
-                            name="budget"
-                            defaultValue=""
-                            size={40}
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="What's your budget?"
-                          />
-                        </span>
-                      </p>
-                    </div>
+
                     <div className="col col-12 px-15">
                       <p>
                         <span className="lqd-form-control-wrap textarea">

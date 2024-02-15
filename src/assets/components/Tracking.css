@@ -1,5 +1,5 @@
 .snipcss-5mnKy {
-  height: 767px;
+  height: 667px;
 }
 
 .pb-200 {
@@ -130,10 +130,6 @@ mark {
 }
 
 .lqd-highlight {
-  background: transparent !important;
-}
-
-.lqd-highlight {
   display: inline-block;
   padding: 0 0.125em;
   position: relative;
@@ -192,7 +188,6 @@ mark {
 
 .lqd-highlight-txt {
   position: relative;
-  z-index: 1;
 }
 
 .lqd-highlight-inner {

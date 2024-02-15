@@ -11,7 +11,7 @@ const servicesDetails = [
     desc: "Proprietary performance distribution platform for programmatic buying for performance campaigns.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-1.jpg",
-    newBg: "#f1f0e8",
+    newBg: "#eaeff4",
   },
   {
     title: "Media Buying",
@@ -19,7 +19,7 @@ const servicesDetails = [
     desc: "We do plan for your brand to achieve results from all the channels including social media.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-2.jpg",
-    newBg: "#ecf0e7",
+    newBg: "#f2ebe9",
   },
   {
     title: "User Acquisition",
@@ -28,7 +28,7 @@ const servicesDetails = [
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-3.jpg",
 
-    newBg: "#f1f0e8",
+    newBg: "#eaeff4",
   },
   {
     title: "Transparency",
@@ -36,7 +36,7 @@ const servicesDetails = [
     desc: "Proactive approach with compliant traffic allows brand safety and transparency to advertisers.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-1.jpg",
-    newBg: "#ecf0e7",
+    newBg: "#f2ebe9",
   },
   {
     title: "Data Analysis",
@@ -44,7 +44,7 @@ const servicesDetails = [
     desc: "Analyzing massive amounts of data to quickly identify opportunities and take advantage of it.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-2.jpg",
-    newBg: "#f1f0e8",
+    newBg: "#eaeff4",
   },
   {
     title: "Explicit Targeting",
@@ -52,7 +52,7 @@ const servicesDetails = [
     desc: "Customized targeting by zip, gender, id and other parameters according to your campaign requirement.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-3.jpg",
-    newBg: "#ecf0e7",
+    newBg: "#f2ebe",
   },
 ];
 
@@ -135,7 +135,7 @@ const SolutionsHome = () => {
                           className="split-unit lqd-chars lqd-unit-animation-done style-PdZP4"
                           id="style-PdZP4"
                         >
-                          <span className="split-inner">
+                          <span className="split-inner5">
                             Advertising Services
                           </span>
                         </div>

@@ -30,16 +30,13 @@ const TrackingPartnersHome = () => {
     >
       <div className="col-lg-6">
         <div className="w-100">
-          <img
-            src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/over-vision-1.jpg"
-            style={{ position: "sticky" }}
-          />
+          <img src="images/h-1.png" style={{ position: "sticky" }} />
         </div>
         <div>
-          <img src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/over-vision-2.jpg" />
+          <img src="images/h-2.png" />
         </div>
         <div>
-          <img src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/over-vision-1.jpg" />
+          <img src="images/h-3.png" />
         </div>
       </div>
       <div className="col-lg-5 d-flex justify-content-center flex-column">
@@ -96,16 +93,16 @@ const TrackingPartnersHome = () => {
                       {ab.desc}
                     </p>
                   </div>
+                  <a href="#" className="text-dark">
+                    <span
+                      data-text="Learn More"
+                      className="btn-txt fw-bold  text-decoration-underline"
+                      style={{ textUnderlineOffset: "10px" }}
+                    >
+                      Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
                 </div>
-                <a href="#" className="text-dark">
-                  <span
-                    data-text="Learn More"
-                    className="btn-txt fw-bold  text-decoration-underline"
-                    style={{ textUnderlineOffset: "10px" }}
-                  >
-                    Learn More <i class="fa-solid fa-arrow-right"></i>
-                  </span>
-                </a>
               </div>
             );
           })}

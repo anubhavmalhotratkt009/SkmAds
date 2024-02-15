@@ -139,6 +139,7 @@ const HeroContainer = React.memo(() => {
                         <span class="split-inner3"> SKMADS</span>
                         <span
                           class="bottom-0 left-0 lqd-highlight-inner bg-purple-100 style-9pqpl"
+                          style={{ zIndex: "-1" }}
                           id="style-9pqpl"
                         ></span>
                       </mark>

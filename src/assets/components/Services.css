@@ -86,7 +86,16 @@ html {
 .titlebar-inner {
   color: #000;
   padding: 40px 10px;
-  background: linear-gradient(to bottom left, #f7e5f7, white, white, white);
+  background: linear-gradient(
+    to bottom left,
+    #b9d1e8,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white
+  );
   position: relative;
 }
 .sol-inner {
