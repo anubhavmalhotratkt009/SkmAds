@@ -115,10 +115,6 @@ h2 {
   left: 0;
 }
 
-.bg-purple-100 {
-  background-color: var(--lqd-color-purple-100);
-}
-
 .lqd-highlight-grow-bottom .lqd-highlight .lqd-highlight-inner {
   opacity: 1 !important;
 }

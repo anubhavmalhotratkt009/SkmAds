@@ -328,3 +328,16 @@ p {
     #fcfcfc 26px
   );
 }
+
+.text-26 {
+  font-size: 32px;
+}
+.text-17 {
+  font-size: 16px !important;
+  font-weight: normal;
+}
+
+.text-15 {
+  font-size: 14px !important;
+  text-align: justify;
+}

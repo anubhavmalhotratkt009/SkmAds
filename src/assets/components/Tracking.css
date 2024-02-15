@@ -209,9 +209,6 @@ mark {
     color 0.45s;
   transition-timing-function: cubic-bezier(0.3, 0.8, 0.35, 1);
 }
-.bg-purple-100 {
-  background-color: var(--lqd-color-purple-100);
-}
 
 .lqd-highlight-custom .lqd-highlight .lqd-highlight-inner {
   opacity: 1 !important;
