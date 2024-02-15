@@ -130,7 +130,7 @@ mark {
 }
 
 .lqd-highlight {
-  background: inherit;
+  background: white !important;
 }
 
 .lqd-highlight {
@@ -138,6 +138,7 @@ mark {
   padding: 0 0.125em;
   position: relative;
   color: inherit;
+  background: white !important;
 }
 
 .ld-fh-element > :last-child {

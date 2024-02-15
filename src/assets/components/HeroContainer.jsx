@@ -135,16 +135,12 @@ const HeroContainer = React.memo(() => {
                       >
                         <span className="split-inner3">with&nbsp;</span>
                       </div>
-                      <mark className="lqd-highlight">
-                        <span className="lqd-highlight-txt">
-                          <div
-                            className="split-unit lqd-words style-7RJ1Q"
-                            id="style-7RJ1Q"
-                          >
-                            <span className="split-inner3">SKMADS&nbsp;</span>
-                          </div>
-                        </span>
-                        <span className="lqd-highlight-inner bg-purple-100 bottom-0/1em left-0"></span>
+                      <mark class="lqd-highlight">
+                        <span class="split-inner3"> SKMADS</span>
+                        <span
+                          class="bottom-0 left-0 lqd-highlight-inner bg-purple-100 style-9pqpl"
+                          id="style-9pqpl"
+                        ></span>
                       </mark>
                       <div
                         className="split-unit lqd-words style-s3sbk"

@@ -1,47 +1,52 @@
 import React, { useState } from "react";
 import "./AboutHome.css";
 
-const AboutHome = () => {
+const AboutHome = ({ bg }) => {
   const [skmTypes, setSkmTypes] = useState([
     {
       id: 1,
       title: "SKMADS Mobile",
       desc: "At SKMADS, our Mobile Advertising solutions are designed to help app developers acquire high-quality, engaged users.",
       show: false,
-      class: "fa-solid fa-tag",
+      class: "fa-solid fa-mobile",
+      isHovered: false,
     },
     {
       id: 2,
       title: "SKMADS Convert",
       desc: `SKMADS'Performance-Based Advertising drives lead acquisition and customer conversion, fostering loyalty and expanding brands' reach.`,
       show: false,
-      class: "fa-solid fa-gear",
+      class: "fa-solid fa-rotate-right",
+      isHovered: false,
     },
     {
       id: 3,
       title: "SKMADS Targeting",
       desc: "SKMADS' programmatic ad solutions leverage Target's network of SSPs and DSPs for extensive web and mobile inventory access.",
       show: false,
-      class: "fa-solid fa-bell",
+      class: "fa-solid fa-bullseye",
+      isHovered: false,
     },
   ]);
+
   const showBtn = (id) => {
     setSkmTypes((prevSkmTypes) =>
       prevSkmTypes.map((skm) => {
         if (skm.id === id) {
-          return { ...skm, show: true };
+          return { ...skm, show: true, isHovered: true };
         } else {
           return skm;
         }
       })
     );
+    setIsHovered(true);
   };
 
   const notShowBtn = (id) => {
     setSkmTypes((prevSkmTypes) =>
       prevSkmTypes.map((skm) => {
         if (skm.id === id) {
-          return { ...skm, show: false };
+          return { ...skm, show: false, isHovered: false };
         } else {
           return skm;
         }
@@ -54,7 +59,7 @@ const AboutHome = () => {
       <section
         className="lqd-section design-services pt-5 pb-4 ca-initvalues-applied lqd-animations-done snipcss-2jZQn"
         id="services"
-        style={{ backgroundColor: "#f9f8f3" }}
+        style={{ background: bg ? bg : "#f9f8f3" }}
         data-custom-animations="true"
       >
         <div className="position-absolute top-0">
@@ -96,15 +101,20 @@ const AboutHome = () => {
                   style={{}}
                 >
                   <div
-                    className="split-unit lqd-lines lqd-unit-animation-done style-jwcoH"
+                    className="split-unit lqd-lines lqd-unit-animation-done "
                     id="style-jwcoH"
                   >
-                    <span className="split-inner" style={{}}>
+                    <span className="split-inner">
                       Ways
-                      <mark className="lqd-highlight">
+                      <mark
+                        className="lqd-highlight"
+                        style={{ backgroundColor: "transparent" }}
+                      >
                         <span className="lqd-highlight-txt">we Advertise</span>
                         <span
-                          className="bottom-0 left-0 lqd-highlight-inner bg-purple-100 style-9pqpl"
+                          className={`bottom-0 left-0 lqd-highlight-inner ${
+                            bg ? `bg-transparent` : "bg-purple-100"
+                          } style-9pqpl`}
                           id="style-9pqpl"
                         ></span>
                       </mark>
@@ -130,17 +140,12 @@ const AboutHome = () => {
                 </div>
               </div>
               <div className="ld-fancy-heading position-relative mask-text">
-                <p
-                  className="ld-fh-element position-relative lqd-split-lines text-17 leading-1/3em split-text-applied"
-                  data-split-text="true"
-                  data-split-options='{"type": "lines"}'
-                  style={{}}
-                ></p>
+                <p className="ld-fh-element position-relative lqd-split-lines text-17 leading-1/3em split-text-applied"></p>
                 <div
                   className="split-unit lqd-lines lqd-unit-animation-done style-1sYgN"
                   id="style-1sYgN"
                 >
-                  <span className="text-muted text-18" style={{}}>
+                  <span className="text-muted text-18 text-wrap">
                     We unleash your business potential by maximising the
                     innovation.
                   </span>
@@ -149,13 +154,13 @@ const AboutHome = () => {
                   className="split-unit lqd-lines lqd-unit-animation-done style-JJSQl"
                   id="style-JJSQl"
                 >
-                  <span className="text-muted text-18" style={{}}></span>
+                  <span className="text-muted text-18"></span>
                 </div>
                 <div
                   className="split-unit lqd-lines lqd-unit-animation-done style-B92Od"
                   id="style-B92Od"
                 >
-                  <span className="text-muted text-18" style={{}}></span>
+                  <span className="text-muted text-18"></span>
                 </div>
                 <p></p>
               </div>
@@ -170,12 +175,13 @@ const AboutHome = () => {
                     onMouseEnter={() => showBtn(skm.id)}
                     onMouseLeave={() => notShowBtn(skm.id)}
                   >
-                    <div className="m-0 py-5 pe-5 ps-4 rounded-2 text-start lqd-iconbox-scale transition-all">
-                      <div
-                        className="iconbox d-flex flex-grow-1 position-relative flex-column iconbox-default iconbox-contents-show-onhover hide-target"
-                        data-slideelement-onhover="true"
-                        data-slideelement-options='{ "visibleElement":  ".iconbox-icon-wrap, p, h3" ,  "hiddenElement":  ".btn" ,  "alignMid":  true, "triggerElement":  ".lqd-iconbox-scale" }'
-                      >
+                    <div
+                      className="m-0 py-5 pe-5 ps-4 rounded-2 text-start lqd-iconbox-scale transition-all"
+                      style={{
+                        backgroundColor: skm.isHovered && bg ? "white" : "",
+                      }}
+                    >
+                      <div className="iconbox d-flex flex-grow-1 position-relative flex-column iconbox-default iconbox-contents-show-onhover hide-target">
                         <div
                           className="ld-slideelement-visible style-lhFZy"
                           id="style-lhFZy"
@@ -225,7 +231,7 @@ const AboutHome = () => {
                               id="style-CfLgd"
                               style={{
                                 transform: skm.show
-                                  ? "translateY(-20%)"
+                                  ? "scale(1.02)"
                                   : "translateY(0%)",
                                 transition: "transform .5s ease-in-out",
                               }}

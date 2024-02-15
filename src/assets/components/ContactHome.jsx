@@ -199,10 +199,10 @@ const ContactHome = () => {
                   style={{}}
                 >
                   <div
-                    className="split-unit lqd-lines lqd-unit-animation-done style-QNTfz"
+                    className="split-unit lqd-lines lqd-unit-animation-done style-QNTfz text-start"
                     id="style-QNTfz"
                   >
-                    <span className="split-inner2" style={{}}>
+                    <span className="split-inner2  " style={{}}>
                       Have a project
                     </span>
                   </div>
@@ -216,7 +216,7 @@ const ContactHome = () => {
                   </div>
                 </h2>
               </div>
-              <div className="ld-fancy-heading position-relative mask-text w-410 max-w-100">
+              <div className="ld-fancy-heading position-relative mask-text w-410 max-w-100 ms-4">
                 <p
                   className="ld-fh-element inline-block position-relative lqd-split-lines mb-0/5em text-16 leading-20 split-text-applied"
                   data-split-text="true"
@@ -224,32 +224,16 @@ const ContactHome = () => {
                   style={{}}
                 ></p>
                 <div
-                  className="split-unit lqd-lines lqd-unit-animation-done style-XqmiH"
+                  className="split-unit lqd-lines lqd-unit-animation-done style-XqmiH text-start w-100 text-wrap "
                   id="style-XqmiH"
                 >
-                  <span className="text-muted fs-6" style={{}}>
-                    Looking for collaboration? Send an email to
+                  <span className="text-muted fs-6 col-2" style={{}}>
+                    We are here to answer any question you may have. Feel free
+                    to reach via contact form or you can mail us to
+                    sales@skmads.com.
                   </span>
                 </div>
-                <div
-                  className="split-unit lqd-lines lqd-unit-animation-done style-l2nxB"
-                  id="style-l2nxB"
-                >
-                  <span className="text-muted fs-6" style={{}}>
-                    <a href="#" className="text-dark">
-                      info@liquid-themes.com
-                    </a>
-                    to for vailable for enquires
-                  </span>
-                </div>
-                <div
-                  className="split-unit lqd-lines lqd-unit-animation-done style-W4ixd"
-                  id="style-W4ixd"
-                >
-                  <span className="text-muted fs-6" style={{}}>
-                    and collaborations,
-                  </span>
-                </div>
+
                 <p></p>
               </div>
             </div>

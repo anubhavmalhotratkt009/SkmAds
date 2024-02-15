@@ -99,9 +99,6 @@ button:not(:disabled) {
   fill: currentColor;
 }
 
-.bg-yellow-200 {
-  background-color: var(--lqd-color-yellow-200);
-}
 
 .bg-green-200 {
   background-color: var(--lqd-color-green-200);

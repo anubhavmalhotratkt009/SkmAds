@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import AboutHome from "./AboutHome.jsx";
+
+import "./Services.css";
+import "./HeroContainer.css";
+import "./AboutHome.css";
+import "./Testimonials.css";
 
 const servicesDetails = [
   {
@@ -92,185 +97,24 @@ const servicesDetails = [
 ];
 
 const Services = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
-  const handleMouseEnter = (index) => {
-    setHoveredIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredIndex(null);
-  };
-
   return (
     <>
-      <div className="services-con col justify-content-center ">
-        <div className="row justify-content-center">
-          <div className="d-flex flex-column text-center justify-content-center align-items-center col-11">
-            <h1 className="text-center fw-bold services-header">
-              Our&nbsp;
-              <span
-                className="services-header mt-5"
-                style={{
-                  display: "inline-table",
-                }}
-              >
-                Services
-                <motion.hr
-                  initial={{ width: "0%" }}
-                  whileInView={{ width: "100%" }}
-                  transition={{ type: "tween", duration: 1.5 }}
-                  style={{
-                    width: "100%",
-                    borderBottom: "15px solid #f74900",
-                    marginTop: "-20px",
-                    opacity: 0.6,
-                  }}
-                />
-              </span>
-            </h1>
-            <p className="text-secondary col-lg-5 col-10 services-inner-desc mt-3 ">
-              SKMADS provides targeted and transparent advertising solutions to
-              help businesses grow
-            </p>
-          </div>
-          <div className="d-flex justify-content-center services-inner-main-con col-lg-11 my-5">
-            <div className="d-flex gap-4 w-75 container services-inner-3">
-              {servicesDetails.map((ser, index) => {
-                return (
-                  <div
-                    key={index}
-                    className={`col-lg-2 col-12 col-md-12 py-3 px-1 rounded-3 ser-inner-con justify-content-center text-center mt-3 r`}
-                    style={{
-                      transition: "transform 0.3s ease", // Apply transition to transform property
-                      transform:
-                        hoveredIndex === index ? "scale(1.1)" : "scale(1)",
-                      backgroundColor: hoveredIndex === index ? ser.newBg : "",
-                      color: hoveredIndex === index ? ser.newColor : "",
-                    }}
-                    onMouseEnter={() => handleMouseEnter(index)}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    <i
-                      className={
-                        hoveredIndex === index
-                          ? `${ser.class}  icon-services2 `
-                          : `${ser.class} icon-services2`
-                      }
-                      style={{
-                        color: hoveredIndex === index ? ser.newColor : "",
-                      }}
-                    ></i>
-                    <h6
-                      className={
-                        hoveredIndex === index
-                          ? `${ser.newColor} fw-bold mt-3 icon-services-text`
-                          : "fw-bold mt-3 icon-services-text"
-                      }
-                    >
-                      {ser.title}
-                    </h6>
-                  </div>
-                );
-              })}
+      <div
+        class="titlebar-inner "
+        style={{ borderBottom: "1px solid #f0f0f0" }}
+      >
+        <div class="container titlebar-container">
+          <div class="row titlebar-container justify-center">
+            <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center">
+              <h1>Solutions</h1>
+              <p class="leading-20 text-gray-400">
+                We are here to answer any question you may have.​
+              </p>
             </div>
           </div>
         </div>
-
-        <div className="serv-inner">
-          {servicesDetails.map((service, index) => (
-            <React.Fragment key={index}>
-              {service.left ? (
-                <>
-                  <div className="row" style={{ backgroundColor: "#fafafa" }}>
-                    <div
-                      className="col-lg-6 serv-img-con"
-                      style={{
-                        backgroundImage: `url(images/${service.img})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center center",
-                      }}
-                    ></div>
-                    <div className="col-lg-6 services-inner-text-con">
-                      <h4 className="fw-bold">{service.title}</h4>
-                      <p className="mt-4 mb-5  ser-desc text-muted">
-                        {service.desc}
-                      </p>
-                      {service.highlights.map((ser, i) => {
-                        return (
-                          <>
-                            <p
-                              key={i}
-                              className="text-serv"
-                              style={{
-                                display: "inline-flex",
-                              }}
-                            >
-                              <i className="fa-solid fa-square-check text-success d-flex mb-3"></i>
-                              &nbsp; &nbsp;
-                              <span
-                                className="fw-light"
-                                style={{
-                                  fontSize: "14px",
-                                }}
-                              >
-                                {ser}
-                              </span>
-                            </p>
-                          </>
-                        );
-                      })}
-                    </div>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className="row" style={{ backgroundColor: "white" }}>
-                    <div className="col-lg-6 services-inner-text-con">
-                      <h4 className="fw-bold">{service.title}</h4>
-                      <p className="mt-4 mb-5  ser-desc text-muted">
-                        {service.desc}
-                      </p>
-                      {service.highlights.map((ser, i) => {
-                        return (
-                          <>
-                            <p
-                              key={i}
-                              className="text-serv"
-                              style={{
-                                display: "inline-flex",
-                              }}
-                            >
-                              <i className="fa-solid fa-square-check text-success d-flex mb-3"></i>
-                              &nbsp; &nbsp;
-                              <span
-                                className="fw-light"
-                                style={{
-                                  fontSize: "14px",
-                                }}
-                              >
-                                {ser}
-                              </span>
-                            </p>
-                          </>
-                        );
-                      })}
-                    </div>
-                    <div
-                      className="col-lg-6 p-0 serv-img-con"
-                      style={{
-                        backgroundImage: `url(images/${service.img})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center center",
-                      }}
-                    ></div>
-                  </div>
-                </>
-              )}
-            </React.Fragment>
-          ))}
-        </div>
       </div>
+      <AboutHome bg="white" />
     </>
   );
 };

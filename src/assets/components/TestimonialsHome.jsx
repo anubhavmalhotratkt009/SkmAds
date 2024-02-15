@@ -22,6 +22,26 @@ const testimonialsDetails = [
     class: "bg-orange-100",
   },
 ];
+const imagesDetails = [
+  {
+    img: "t-1.webp",
+  },
+  {
+    img: "t-2.webp",
+  },
+  {
+    img: "t-3.webp",
+  },
+  {
+    img: "t-4.webp",
+  },
+  {
+    img: "t-5.webp",
+  },
+  {
+    img: "t-6.webp",
+  },
+];
 
 const TestimonialsHome = () => {
   let sliderRef = useRef(null);
@@ -43,7 +63,7 @@ const TestimonialsHome = () => {
         className="pb-5 d-flex flex-column justify-content-center"
         style={{ backgroundColor: "#f9f8f3" }}
       >
-        <div className="d-flex flex-column align-items-center px-5 snipcss-VioC9">
+        <div className="d-flex flex-column align-align-items-center px-5 snipcss-VioC9">
           <div className="ld-fancy-heading relative mask-text">
             <p
               className="ld-fh-element relative lqd-split-lines text-18 mb-1/5em text-slate-400 split-text-applied"
@@ -55,10 +75,10 @@ const TestimonialsHome = () => {
               id="style-5KMqK"
             >
               <span
-                className="split-inner   fs-6 fw-bold text-decoration-underline"
+                className="split-inner  fs-6 fw-bold text-decoration-underline"
                 style={{ color: "#c3c3c3" }}
               >
-                Trusted by many amazing people{" "}
+                {/* Trusted by many amazing people{" "} */}
               </span>
             </div>
             <p></p>
@@ -134,46 +154,6 @@ const TestimonialsHome = () => {
               </div>
             </h2>
           </div>
-          {/* <div
-            className="d-flex py-3 px-4 align-items-center bg-gray-100 rounded-1 animation-element sm:w-100 lqd-unit-animation-done"
-            style={{}}
-          >
-            <div className="max-w-100 w-30 lqd-imggrp-single d-block position-relative">
-              <div className="lqd-imggrp-img-container d-inline-flex position-relative align-items-center justify-center">
-                <figure
-                  className="w-100 relative lqd-unit-animation-done"
-                  style={{}}
-                >
-                  <img
-                    width={30}
-                    height={30}
-                    src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/g2.png"
-                    alt="g2 shape"
-                  />
-                </figure>
-              </div>
-            </div>
-            <div
-              className="ml-10 ld-fancy-heading position-relative animation-element lqd-unit-animation-done"
-              style={{}}
-            >
-              <p className="ld-fh-element position-relative text-14 fw-normal m-0 text-slate-600">
-                Trustpilot reviews
-              </p>
-            </div>
-            <div
-              className="star-rating pl-10 text-slate-600 animation-element lqd-unit-animation-done"
-              title="5/5"
-              style={{}}
-            >
-              <i className="star-full">★</i>
-              <i className="star-full">★</i>
-              <i className="star-full">★</i>
-              <i className="star-full">★</i>
-              <i className="star-full">★</i>
-              <span className="sr-only">5/5</span>
-            </div>
-          </div> */}
         </div>
         <div className="d-flex justify-content-center">
           <div className="mt-1 col-10">
@@ -186,10 +166,10 @@ const TestimonialsHome = () => {
               {testimonialsDetails.map((test) => {
                 return (
                   <div
-                    className={`${test.class} w-90 lqd-testi position-relative lqd-testi-style-1 d-flex flex-column rounded-3 py-4 px-4 module-content`}
+                    className={`${test.class} w-90 lqd-testi position-relative lqd-testi-style-1 d-flex flex-column rounded-3 mb-3 py-4 px-4 module-content`}
                   >
                     <div className=" d-flex  justify-content-between mb-1">
-                      <div className="lqd-testi-details d-flex items-center py-2 px-4">
+                      <div className="lqd-testi-details d-flex align-items-center py-2 px-4">
                         <figure className="lqd-testi-avatar rounded-circle overflow-hidden mr-1/5em me-3">
                           <img
                             decoding="async"
@@ -220,14 +200,33 @@ const TestimonialsHome = () => {
 
         <div className="d-flex flex-column mt-5">
           <div>
-            <span className="split-inner snipcss-WxzCR fs-4 fw-bold mt-5">
-              Trusted by global brands.&nbsp;
-              <span className="text-slate-400 fs-4 fw-bold">
-                Join Millions of customers around the globe.
-              </span>
-            </span>
+            <h3
+              class="ld-fh-element position-relative lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-lines mb-1 mt-1 split-text-applied is-in-view"
+              data-inview="true"
+              data-transition-delay="true"
+              data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'
+              data-split-text="true"
+              data-split-options='{"type": "lines"}'
+            >
+              <div
+                class="split-unit lqd-lines lqd-unit-animation-done style-jwcoH"
+                id="style-jwcoH"
+              >
+                <span class="split-inner mt-5 text-dark">
+                  Tracking
+                  <mark class="lqd-highlight">
+                    <span class="lqd-highlight-txt"> Partners</span>
+                    <span
+                      class="bottom-0 left-0 lqd-highlight-inner bg-purple-100 style-9pqpl"
+                      id="style-9pqpl"
+                    ></span>
+                  </mark>
+                </span>
+              </div>
+            </h3>
+            <span className="split-inner snipcss-WxzCR fs-2 fw-bold mt-5 text-dark"></span>
           </div>
-          <div className="py-5">
+          <div className="pb-5">
             <Marquee
               speed={50} // Speed of the marquee (Optional)
               loop={0}
@@ -237,19 +236,16 @@ const TestimonialsHome = () => {
               }}
             >
               <div
-                className="d-flex mt-2 "
+                className="d-flex  "
                 style={{
                   gap: "250px",
                 }}
               >
-                <img src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/client-amazon.svg" />
-                <img src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/client-amd-logo.svg" />
-                <img src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/client-dropcam.svg" />
-                <img src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/client-marvel.svg" />
-                <img
-                  src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/client-nike.svg"
-                  style={{ marginRight: "150px" }}
-                />
+                {imagesDetails.map((i, index) => {
+                  return (
+                    <img key={index} src={`images/${i.img}`} width={140} />
+                  );
+                })}
               </div>
             </Marquee>
           </div>

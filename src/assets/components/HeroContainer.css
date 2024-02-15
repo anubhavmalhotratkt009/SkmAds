@@ -34,7 +34,7 @@
 }
 body {
   margin: 0;
-  font-family: var(--lqd-body-font-family) !important;
+  font-family: "Space Grotesk", sans-serif;
   font-size: var(--lqd-body-font-size);
   font-weight: var(--lqd-body-font-weight);
   letter-spacing: var(--lqd-body-letter-spacing);
@@ -65,22 +65,6 @@ body {
 
 .top-170 {
   top: 170px;
-}
-
-h1 {
-  font-family: var(
-    --lqd-h1-font-family,
-    var(--lqd-heading-font-family)
-  ) !important;
-  font-size: var(--lqd-h1-font-size, var(--lqd-heading-font-size));
-  line-height: var(--lqd-h1-line-height, var(--lqd-heading-line-height));
-  font-weight: var(--lqd-h1-font-weight, var(--lqd-heading-font-weight));
-  letter-spacing: var(
-    --lqd-h1-letter-spacing,
-    var(--lqd-heading-letter-spacing)
-  );
-  color: var(--lqd-h1-color, var(--lqd-heading-color));
-  margin-bottom: 0.5rem;
 }
 
 h3 {
