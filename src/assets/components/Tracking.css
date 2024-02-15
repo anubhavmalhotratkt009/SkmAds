@@ -89,6 +89,7 @@
 }
 .text-13 {
   font-size: 15px !important;
+  text-align: justify;
 }
 
 .iconbox p {
@@ -130,7 +131,7 @@ mark {
 }
 
 .lqd-highlight {
-  background: white !important;
+  background: transparent !important;
 }
 
 .lqd-highlight {
@@ -138,7 +139,7 @@ mark {
   padding: 0 0.125em;
   position: relative;
   color: inherit;
-  background: white !important;
+  background: transparent !important;
 }
 
 .ld-fh-element > :last-child {

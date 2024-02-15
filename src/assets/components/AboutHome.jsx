@@ -9,7 +9,6 @@ const AboutHome = ({ bg }) => {
       desc: "At SKMADS, our Mobile Advertising solutions are designed to help app developers acquire high-quality, engaged users.",
       show: false,
       class: "fa-solid fa-mobile",
-      isHovered: false,
     },
     {
       id: 2,
@@ -17,7 +16,6 @@ const AboutHome = ({ bg }) => {
       desc: `SKMADS'Performance-Based Advertising drives lead acquisition and customer conversion, fostering loyalty and expanding brands' reach.`,
       show: false,
       class: "fa-solid fa-rotate-right",
-      isHovered: false,
     },
     {
       id: 3,
@@ -25,28 +23,25 @@ const AboutHome = ({ bg }) => {
       desc: "SKMADS' programmatic ad solutions leverage Target's network of SSPs and DSPs for extensive web and mobile inventory access.",
       show: false,
       class: "fa-solid fa-bullseye",
-      isHovered: false,
     },
   ]);
-
   const showBtn = (id) => {
     setSkmTypes((prevSkmTypes) =>
       prevSkmTypes.map((skm) => {
         if (skm.id === id) {
-          return { ...skm, show: true, isHovered: true };
+          return { ...skm, show: true };
         } else {
           return skm;
         }
       })
     );
-    setIsHovered(true);
   };
 
   const notShowBtn = (id) => {
     setSkmTypes((prevSkmTypes) =>
       prevSkmTypes.map((skm) => {
         if (skm.id === id) {
-          return { ...skm, show: false, isHovered: false };
+          return { ...skm, show: false };
         } else {
           return skm;
         }
@@ -101,20 +96,15 @@ const AboutHome = ({ bg }) => {
                   style={{}}
                 >
                   <div
-                    className="split-unit lqd-lines lqd-unit-animation-done "
+                    className="split-unit lqd-lines lqd-unit-animation-done style-jwcoH"
                     id="style-jwcoH"
                   >
                     <span className="split-inner">
                       Ways
-                      <mark
-                        className="lqd-highlight"
-                        style={{ backgroundColor: "transparent" }}
-                      >
+                      <mark className="lqd-highlight">
                         <span className="lqd-highlight-txt">we Advertise</span>
                         <span
-                          className={`bottom-0 left-0 lqd-highlight-inner ${
-                            bg ? `bg-transparent` : "bg-purple-100"
-                          } style-9pqpl`}
+                          className="bottom-0 left-0 lqd-highlight-inner bg-purple-100 style-9pqpl"
                           id="style-9pqpl"
                         ></span>
                       </mark>
@@ -140,12 +130,17 @@ const AboutHome = ({ bg }) => {
                 </div>
               </div>
               <div className="ld-fancy-heading position-relative mask-text">
-                <p className="ld-fh-element position-relative lqd-split-lines text-17 leading-1/3em split-text-applied"></p>
+                <p
+                  className="ld-fh-element position-relative lqd-split-lines text-17 leading-1/3em split-text-applied"
+                  data-split-text="true"
+                  data-split-options='{"type": "lines"}'
+                  style={{}}
+                ></p>
                 <div
                   className="split-unit lqd-lines lqd-unit-animation-done style-1sYgN"
                   id="style-1sYgN"
                 >
-                  <span className="text-muted text-18 text-wrap">
+                  <span className="text-muted text-18">
                     We unleash your business potential by maximising the
                     innovation.
                   </span>
@@ -175,12 +170,7 @@ const AboutHome = ({ bg }) => {
                     onMouseEnter={() => showBtn(skm.id)}
                     onMouseLeave={() => notShowBtn(skm.id)}
                   >
-                    <div
-                      className="m-0 py-5 pe-5 ps-4 rounded-2 text-start lqd-iconbox-scale transition-all"
-                      style={{
-                        backgroundColor: skm.isHovered && bg ? "white" : "",
-                      }}
-                    >
+                    <div className="m-0 py-5 pe-5 ps-4 rounded-2 text-start lqd-iconbox-scale transition-all">
                       <div className="iconbox d-flex flex-grow-1 position-relative flex-column iconbox-default iconbox-contents-show-onhover hide-target">
                         <div
                           className="ld-slideelement-visible style-lhFZy"

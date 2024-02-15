@@ -99,22 +99,55 @@ const servicesDetails = [
 const Services = () => {
   return (
     <>
-      <div
-        class="titlebar-inner "
-        style={{ borderBottom: "1px solid #f0f0f0" }}
-      >
+      <div class="titlebar-inner d-flex flex-column">
+        <div className="d-flex flex-row position-relative">
+          <div className="col-3 position-absolute">
+            <img
+              width={369}
+              height={135}
+              src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path.svg"
+              alt="shape"
+            />
+          </div>
+
+          <div className="col-3">
+            <img
+              width={57}
+              height={54}
+              src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141907.svg"
+              alt="shape"
+            />
+          </div>
+          <div className="col-3">
+            <img
+              width={49}
+              height={14}
+              src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141908.svg"
+              alt="shape"
+            />
+          </div>
+          <div className="col-3">
+            <img
+              width={21}
+              height={68}
+              src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141909.svg"
+              alt="shape"
+            />
+          </div>
+        </div>
         <div class="container titlebar-container">
           <div class="row titlebar-container justify-center">
             <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center">
-              <h1>Solutions</h1>
+              <h1>Services</h1>
+              {/* <div class="wave w-100"></div> */}
               <p class="leading-20 text-gray-400">
-                We are here to answer any question you may have.​
+                SKMADS provides targeted and transparent advertising solutions
+                to help businesses grow
               </p>
             </div>
           </div>
         </div>
       </div>
-      <AboutHome bg="white" />
     </>
   );
 };
