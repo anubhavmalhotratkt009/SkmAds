@@ -206,7 +206,7 @@ const About = () => {
             </h2>
             <span className="text-start mt-3 d-flex flex-row gap-4">
               <li
-                className="split-inner18  px-4 py-5 w-90 "
+                className="split-inner18  px-4 py-5 w-90 ab-con "
                 style={{ backgroundColor: "#eaeff4" }}
               >
                 {" "}
@@ -224,7 +224,7 @@ const About = () => {
                 </span>
               </li>
               <li
-                className="split-inner18 px-4 py-5 w-90 "
+                className="split-inner18 px-4 py-5 w-90 ab-con "
                 style={{ backgroundColor: "#f2ebe9" }}
               >
                 {" "}
@@ -242,7 +242,7 @@ const About = () => {
                 </span>
               </li>
               <li
-                className="split-inner18 px-4 py-5 w-90 "
+                className="split-inner18 px-4 py-5 w-90 ab-con"
                 style={{ backgroundColor: "#eaeff4" }}
               >
                 <div className="d-flex justify-content-end">
@@ -259,7 +259,7 @@ const About = () => {
                 </span>
               </li>
               <li
-                className="split-inner18 px-4 py-5 w-90 "
+                className="split-inner18 px-4 py-5 w-90 ab-con"
                 style={{ backgroundColor: "#f2ebe9" }}
               >
                 <div className="d-flex justify-content-end">

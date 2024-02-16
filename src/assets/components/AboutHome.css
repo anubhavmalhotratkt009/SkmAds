@@ -53,7 +53,13 @@
 }
 
 .design-services .lqd-iconbox-scale:hover {
-  background-color: #f2ebe9;
+  background: linear-gradient(
+    to bottom right,
+    whitesmoke 0%,
+    whitesmoke 20%,
+    #cdddee 70%,
+    #ffd2b4 100%
+  );
   transform: scale(1.1);
 }
 
