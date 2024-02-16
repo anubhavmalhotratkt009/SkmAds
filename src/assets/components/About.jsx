@@ -277,6 +277,79 @@ const About = () => {
             </span>
           </div>
         </div>
+        <div id="banner2" className="py-5 main-bg">
+          {" "}
+          <div class="d-flex flex-column align-items-center">
+            {/* <div className="d-flex flex-row position-relative">
+              <div className="col-3 position-absolute">
+                <img
+                  width={369}
+                  height={135}
+                  src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path.svg"
+                  alt="shape"
+                />
+              </div>
+
+              <div className="col-3">
+                <img
+                  width={57}
+                  height={54}
+                  src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141907.svg"
+                  alt="shape"
+                />
+              </div>
+              <div className="col-3">
+                <img
+                  width={49}
+                  height={14}
+                  src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141908.svg"
+                  alt="shape"
+                />
+              </div>
+              <div className="col-3">
+                <img
+                  width={21}
+                  height={68}
+                  src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141909.svg"
+                  alt="shape"
+                />
+              </div>
+            </div> */}
+            <div class="container titlebar-container">
+              <div class="titlebar-container d-flex flex-column align-items-center">
+                <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center">
+                  <h1>Meet the Team</h1>
+                  {/* <div class="wave w-100"></div> */}
+                </div>
+                <div className="d-flex col-lg-10 gap-4 mt-4">
+                  <div className="col-lg-6 z-1 d-flex flex-column">
+                    <img
+                      src="images/ceo.webp"
+                      className="img-fluid rounded-2"
+                    />
+                    <h2 className="split-inner19 mt-3">Sanjay Kumar Meena</h2>
+                    <p
+                      className=" fw-bold text-dark text-center"
+                      style={{ fontSize: "14px" }}
+                    >
+                      FOUNDER & CEO
+                    </p>
+                  </div>
+                  <div className="col-lg-6">
+                    <img src="images/cmo.png" className="img-fluid rounded-2" />
+                    <h2 className="split-inner19 mt-3">Chandrabhan Meena</h2>
+                    <p
+                      className=" fw-bold text-dark text-center"
+                      style={{ fontSize: "14px" }}
+                    >
+                      Chief Marketing Officer
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

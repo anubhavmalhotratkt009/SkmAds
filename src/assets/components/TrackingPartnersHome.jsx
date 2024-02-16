@@ -86,7 +86,10 @@ const TrackingPartnersHome = () => {
                                 &nbsp;🔔
                               </h2>
                             </div>
-                            <div className="mb-30 iconbox d-flex flex-grow-1 position-relative iconbox-circle iconbox-icon-ripple lqd-unit-animation-done">
+                            <div
+                              className="mb-30 iconbox d-flex flex-grow-1 position-relative iconbox-circle iconbox-icon-ripple lqd-unit-animation-done"
+                              style={{ marginLeft: "-30px" }}
+                            >
                               <div className="iconbox-icon-wrap me-2">
                                 <div className="iconbox-icon-container inline-flex position-relative z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md">
                                   <i
@@ -146,7 +149,10 @@ const TrackingPartnersHome = () => {
                                 &nbsp;🔔
                               </h2>
                             </div>
-                            <div className="mb-30 iconbox d-flex flex-grow-1 position-relative iconbox-circle iconbox-icon-ripple lqd-unit-animation-done">
+                            <div
+                              className="mb-30 iconbox d-flex flex-grow-1 position-relative iconbox-circle iconbox-icon-ripple lqd-unit-animation-done"
+                              style={{ marginLeft: "-30px" }}
+                            >
                               <div className="iconbox-icon-wrap me-2">
                                 <div className="iconbox-icon-container inline-flex position-relative z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md">
                                   <i

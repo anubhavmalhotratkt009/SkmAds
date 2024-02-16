@@ -46,7 +46,7 @@ const imagesDetails = [
 const TestimonialsHome = () => {
   let sliderRef = useRef(null);
   const settings = {
-    // dots: true,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 2,

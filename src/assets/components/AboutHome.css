@@ -57,10 +57,11 @@
     to bottom right,
     whitesmoke 0%,
     whitesmoke 20%,
-    #cdddee 70%,
-    #ffd2b4 100%
+    #e4edf6 70%,
+    #fbe5d8 100%
   );
   transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
 }
 
 .border-1 {
