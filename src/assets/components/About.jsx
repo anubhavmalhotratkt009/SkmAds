@@ -9,7 +9,7 @@ const betterDetails = [
   {
     title: "Brand safety",
     desc: "Your brand's safety is our top priority for building healthy relationship",
-    class: "fa-solid fa-unlock",
+    class: "fa-solid fa-lock",
     newBg: "#eaeff4",
   },
   {
@@ -211,9 +211,11 @@ const About = () => {
               >
                 {" "}
                 <div className="d-flex justify-content-end">
-                  <i class="fa-solid fa-arrow-right-long fs-1"></i>
+                  <i class="fa-solid fa-arrow-right-arrow-left fs-1"></i>
                 </div>
                 1. Consultation: &nbsp;
+                <br />
+                <br />
                 <span className="text00">
                   &nbsp; SKMADS team conducts an initial consultation with the
                   client to understand their business objectives and advertising
@@ -227,9 +229,11 @@ const About = () => {
               >
                 {" "}
                 <div className="d-flex justify-content-end">
-                  <i class="fa-solid fa-arrow-right-long fs-1"></i>
+                  <i class="fa-solid fa-arrow-right-arrow-left fs-1"></i>
                 </div>
                 2. Proposal Development:&nbsp;
+                <br />
+                <br />
                 <span className="text00">
                   &nbsp; &nbsp; Based on the consultation, SKMADS develops a
                   detailed proposal outlining the advertising solutions that
@@ -242,9 +246,11 @@ const About = () => {
                 style={{ backgroundColor: "#eaeff4" }}
               >
                 <div className="d-flex justify-content-end">
-                  <i class="fa-solid fa-arrow-right-long fs-1"></i>
+                  <i class="fa-solid fa-arrow-right-arrow-left fs-1"></i>
                 </div>
                 3. Review and Approval:&nbsp;
+                <br />
+                <br />
                 <span className="text00">
                   &nbsp; &nbsp;The proposal is reviewed and discussed with the
                   client to ensure that it meets their expectations and
@@ -260,6 +266,8 @@ const About = () => {
                   <i class="fa-solid fa-hourglass-end fs-1"></i>
                 </div>
                 4. Implementation and Monitoring: &nbsp;
+                <br />
+                <br />
                 <span className="text00">
                   &nbsp;&nbsp; Once the proposal is approved, we implement the
                   advertising campaign and monitor its performance closely.
