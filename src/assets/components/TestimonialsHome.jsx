@@ -215,7 +215,7 @@ const TestimonialsHome = () => {
                 class="split-unit lqd-lines lqd-unit-animation-done mb-5 style-jwcoH"
                 id="style-jwcoH"
               >
-                <span class="split-inner5 mt-5 text-dark">
+                <span class="split-inner5 mt-2 text-dark">
                   Tracking
                   <mark class="lqd-highlight">
                     <span class="lqd-highlight-txt" style={{ zIndex: "1" }}>

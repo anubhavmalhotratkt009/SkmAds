@@ -104,7 +104,11 @@ h3 {
 }
 
 .bg-purple-100 {
-  background-color: #eed3c3;
+  background: linear-gradient(to left, #87c0f6, #df9e78);
+}
+
+.bg-purple-101 {
+  background: linear-gradient(to left, #87c0f6, #df9e78);
 }
 
 .lqd-highlight-grow-bottom .lqd-highlight .lqd-highlight-inner {

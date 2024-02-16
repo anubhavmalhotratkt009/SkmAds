@@ -229,7 +229,8 @@ img {
 
 /* Styling for the active dot */
 .slick-dots li.slick-active {
-  background-color: #fff;
+  background-color: #fff !important;
+  opacity: 0.5;
   transform: scale(2);
 }
 
