@@ -11,7 +11,8 @@ const servicesDetails = [
     desc: "Proprietary performance distribution platform for programmatic buying for performance campaigns.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-1.jpg",
-    newBg: "#eaeff4",
+
+    newBg: "#f2ebe9",
   },
   {
     title: "Media Buying",
@@ -19,7 +20,7 @@ const servicesDetails = [
     desc: "We do plan for your brand to achieve results from all the channels including social media.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-2.jpg",
-    newBg: "#f2ebe9",
+    newBg: "#eaeff4",
   },
   {
     title: "User Acquisition",
@@ -28,7 +29,7 @@ const servicesDetails = [
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-3.jpg",
 
-    newBg: "#eaeff4",
+    newBg: "#f2ebe9",
   },
   {
     title: "Transparency",
@@ -36,7 +37,7 @@ const servicesDetails = [
     desc: "Proactive approach with compliant traffic allows brand safety and transparency to advertisers.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-1.jpg",
-    newBg: "#f2ebe9",
+    newBg: "#eaeff4",
   },
   {
     title: "Data Analysis",
@@ -44,7 +45,7 @@ const servicesDetails = [
     desc: "Analyzing massive amounts of data to quickly identify opportunities and take advantage of it.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-2.jpg",
-    newBg: "#eaeff4",
+    newBg: "#f2ebe9",
   },
   {
     title: "Explicit Targeting",
@@ -52,7 +53,8 @@ const servicesDetails = [
     desc: "Customized targeting by zip, gender, id and other parameters according to your campaign requirement.",
 
     img: "https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/service-3.jpg",
-    newBg: "#f2ebe",
+
+    newBg: "#eaeff4",
   },
 ];
 
@@ -81,7 +83,7 @@ const SolutionsHome = () => {
       <section
         className="lqd-section services pt-5 pb-4 snipcss-Octoh"
         id="features"
-        style={{ backgroundColor: "#f9f8f3" }}
+        style={{ backgroundColor: "#fff" }}
       >
         <div className="absolute mb-0 top-0 z-0 max-w-full module-shape">
           <figure

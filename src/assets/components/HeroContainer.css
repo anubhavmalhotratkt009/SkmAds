@@ -104,7 +104,7 @@ h3 {
 }
 
 .bg-purple-100 {
-  background-color: #b9d1e8;
+  background-color: #eed3c3;
 }
 
 .lqd-highlight-grow-bottom .lqd-highlight .lqd-highlight-inner {
@@ -131,8 +131,15 @@ h3 {
 }
 
 #banner {
-  background-image: url("../../../public/images/banner-bg.jpg");
-  filter: hue-rotate(685deg);
+  background: linear-gradient(
+    to bottom right,
+    whitesmoke 0%,
+    whitesmoke 20%,
+    #cdddee 40%,
+    #ffd2b4 100%
+  );
+  height: 740px !important;
+  /* filter: hue-rotate(685deg); */
 }
 
 .logo {
@@ -169,7 +176,24 @@ h3 {
   width: 100%;
   height: 100%;
   background-image: url("https://media.istockphoto.com/id/1221845543/vector/distressed-black-texture.jpg?s=612x612&w=0&k=20&c=LVfg5dSA5OVrqkCDkOoayTj9XVN-soNPIzeSBIqOMZc=");
-  opacity: 0.14; /* Adjust the opacity to control the intensity of the grain effect */
+  opacity: 0.1; /* Adjust the opacity to control the intensity of the grain effect */
+  pointer-events: none; /* Ensures the pseudo-element doesn't interfere with mouse events */
+  z-index: 999 !important; /* Ensure the grain effect stays behind other content */
+}
+
+.main-bg2 {
+  position: relative;
+  z-index: 999 !important;
+}
+.main-bg2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://media.istockphoto.com/id/1221845543/vector/distressed-black-texture.jpg?s=612x612&w=0&k=20&c=LVfg5dSA5OVrqkCDkOoayTj9XVN-soNPIzeSBIqOMZc=");
+  opacity: 0.1; /* Adjust the opacity to control the intensity of the grain effect */
   pointer-events: none; /* Ensures the pseudo-element doesn't interfere with mouse events */
   z-index: 999 !important; /* Ensure the grain effect stays behind other content */
 }

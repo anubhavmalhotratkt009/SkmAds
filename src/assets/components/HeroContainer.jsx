@@ -5,7 +5,7 @@ import "./HeroContainer.css";
 const HeroContainer = React.memo(() => {
   return (
     <section
-      className="lqd-section banner z-2 snipcss-OPQ2U d-flex justify-content-center position-relative"
+      className="lqd-section banner z-2 snipcss-OPQ2U d-flex justify-content-center position-relative main-bg2"
       id="banner"
     >
       <div

@@ -54,7 +54,7 @@ const AboutHome = ({ bg }) => {
       <section
         className="lqd-section design-services pt-5 pb-4 ca-initvalues-applied lqd-animations-done snipcss-2jZQn"
         id="services"
-        style={{ background: bg ? bg : "#f9f8f3" }}
+        style={{ background: bg ? bg : "#fff" }}
         data-custom-animations="true"
       >
         <div className="position-absolute top-0">
@@ -167,7 +167,8 @@ const AboutHome = ({ bg }) => {
               </div>
             </div>
 
-            <div className="d-flex col-12 flex-row d-flex gap-3 sm:flex-wrap  module-iconbo mt-1">
+            
+            <div className="d-flex col-12 flex-row d-flex gap-3 sm:flex-wrap  module-iconbo mt-1 mb-4">
               {skmTypes.map((skm) => {
                 return (
                   <div
@@ -281,6 +282,8 @@ const AboutHome = ({ bg }) => {
                 );
               })}
             </div>
+
+            
             <div className="col col-12 text-center mt-4">
               <div className="w-100 d-flex flex-wrap items-center justify-content-center transition-all">
                 <div className="module-text-border border-1 rounded-2 border-black-10 transition-all ld-fancy-heading position-relative hover:inner-text-black animation-element lqd-unit-animation-done">

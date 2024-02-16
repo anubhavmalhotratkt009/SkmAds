@@ -99,7 +99,6 @@ button:not(:disabled) {
   fill: currentColor;
 }
 
-
 .bg-green-200 {
   background-color: var(--lqd-color-green-200);
 }
@@ -217,7 +216,8 @@ h4 {
   content: "";
 }
 .icon-services {
-  background-color: whitesmoke;
+  background-color: white;
+  border: 1px solid #d3d3d3;
   color: black;
   padding: 20px;
   font-size: 80px !important;

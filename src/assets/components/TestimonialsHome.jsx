@@ -61,7 +61,7 @@ const TestimonialsHome = () => {
     <>
       <div
         className="pb-5 d-flex flex-column justify-content-center"
-        style={{ backgroundColor: "#f9f8f3" }}
+        style={{ backgroundColor: "#fff" }}
       >
         <div className="d-flex flex-column align-align-items-center px-5 snipcss-VioC9">
           <div className="ld-fancy-heading relative mask-text">
@@ -122,6 +122,7 @@ const TestimonialsHome = () => {
                         height={58}
                         src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/Shape-avatar-1.jpg"
                         alt="testimonials avatar"
+                        style={{ opacity: ".9" }}
                       />
                     </span>
                   </span>
@@ -134,6 +135,7 @@ const TestimonialsHome = () => {
                         height={58}
                         src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/Shape-avatar-2.jpg"
                         alt="testimonials avatar"
+                        style={{ opacity: ".9" }}
                       />
                     </span>
                   </span>
@@ -146,6 +148,7 @@ const TestimonialsHome = () => {
                         height={58}
                         src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/Shape-avatar-1.jpg"
                         alt="testimonials avatar"
+                        style={{ opacity: ".9" }}
                       />
                     </span>
                   </span>
@@ -209,7 +212,7 @@ const TestimonialsHome = () => {
               data-split-options='{"type": "lines"}'
             >
               <div
-                class="split-unit lqd-lines lqd-unit-animation-done mb-3 style-jwcoH"
+                class="split-unit lqd-lines lqd-unit-animation-done mb-5 style-jwcoH"
                 id="style-jwcoH"
               >
                 <span class="split-inner5 mt-5 text-dark">
