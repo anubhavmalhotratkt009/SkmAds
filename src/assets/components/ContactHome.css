@@ -399,5 +399,11 @@ label {
 
 /* These were inline style tags. Uses id+class to override almost everything */
 #contact.style-iyHqK {
-  background-image: url("https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/contact-form-bg.jpg");
+  background: linear-gradient(
+    to bottom right,
+    whitesmoke 0%,
+    whitesmoke 20%,
+    #cdddee 40%,
+    #ffd2b4 100%
+  );
 }

@@ -1,26 +1,34 @@
 import React from "react";
-import { motion } from "framer-motion";
+import "./Services.css";
+import "./HeroContainer.css";
+import "./AboutHome.css";
+import "./Testimonials.css";
+import TrackingPartnersHome from "./TrackingPartnersHome";
 
 const betterDetails = [
   {
     title: "Brand safety",
     desc: "Your brand's safety is our top priority for building healthy relationship",
     class: "fa-solid fa-unlock",
+    newBg: "#eaeff4",
   },
   {
     title: "Our Priority",
     desc: "Our main goal is user retention & engagement for all the campaigns we run to get more ROI",
     class: "fa-regular fa-user",
+    newBg: "#f2ebe9",
   },
   {
     title: "Anti-Fraud Mechanism",
     desc: "Our in-house anti-fraud technology works in background to fight fraud.",
     class: "fa-solid fa-shield-halved",
+    newBg: "#eaeff4",
   },
   {
     title: "Auto Optimization",
     desc: "Our in-house auto optimization tool taking care of CVR and EVR.",
     class: "fa-solid fa-chart-line",
+    newBg: "#f2ebe9",
   },
 ];
 
@@ -54,153 +62,215 @@ const teamDetails = [
 
 const About = () => {
   return (
-    <div className="services-con col justify-content-center pt-2 pb-0 mt-4">
-      <div className="row justify-content-center p-0 abt-conn">
-        <div className="d-flex flex-column text-center justify-content-center align-items-center">
-          <h1 className="text-center fw-bold services-header">
-            About&nbsp;
-            <span
-              className="services-header mt-5"
-              style={{
-                display: "inline-table",
-              }}
-            >
-              SKMADS
-              <motion.hr
-                initial={{ width: "0%" }}
-                whileInView={{ width: "100%" }}
-                transition={{ type: "tween", duration: 1.5 }}
-                style={{
-                  width: "100%",
-                  borderBottom: "15px solid #f74900",
-                  marginTop: "-20px",
-                  opacity: 0.6,
-                }}
+    <>
+      <div className="main-bg">
+        <div class="titlebar-inner d-flex flex-column">
+          <div className="d-flex flex-row position-relative">
+            <div className="col-3 position-absolute">
+              <img
+                width={369}
+                height={135}
+                src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path.svg"
+                alt="shape"
               />
-            </span>
-          </h1>
-          <p className="text-secondary col-lg-5 col-10 services-inner-desc mt-3 mb-5">
-            SKMADS provides targeted and transparent advertising solutions to
-            help businesses grow
-          </p>
-
-          <div className="d-flex mt-5 about-inner-cont">
-            <div className="col-lg-6 col-12">
-              <img src="images/a-1.jpeg" className="img-fluid" />
             </div>
-            <div className="col-lg-6 col-12 about-desc  text-start">
-              <span className="text-dark fs-6 fw-light desc-size">
-                SKMADS is a leading advertising company that specializes in
-                providing in-app and web advertising services through our
-                powerful dashboards. Our team of skilled professionals is
-                committed to delivering exceptional results, and we pride
-                ourselves on offering innovative and tailored solutions to meet
-                our clients' unique needs.​
-                <br />
-                <br />
-                With years of experience in the industry, SKMADS has established
-                itself as a trusted partner for businesses looking to enhance
-                their online presence and reach their target audience. Our
-                in-house team of experts possesses extensive knowledge in
-                creating and managing effective advertising campaigns that drive
-                results.​
-                <br />
-                <br />
-                At SKMADS, we believe in the power of collaboration, and we work
-                closely with our clients to understand their goals and
-                objectives, ensuring that every campaign is designed to deliver
-                maximum impact. Our focus on quality and attention to detail has
-                earned us a reputation for excellence in the industry, and we
-                are committed to maintaining that reputation through every
-                project we undertake.
-              </span>
-              <div className="d-flex justify-content-start mt-4">
-                <a href="/contact">
-                  <button className="hero-btn mt-3 rounded-1 p-3">
-                    Start your campaign
-                  </button>
-                </a>
-              </div>
+
+            <div className="col-3">
+              <img
+                width={57}
+                height={54}
+                src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141907.svg"
+                alt="shape"
+              />
+            </div>
+            <div className="col-3">
+              <img
+                width={49}
+                height={14}
+                src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141908.svg"
+                alt="shape"
+              />
+            </div>
+            <div className="col-3">
+              <img
+                width={21}
+                height={68}
+                src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141909.svg"
+                alt="shape"
+              />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div
-        className="col text-center better-con"
-        style={{ backgroundColor: "#f0f0f0" }}
-      >
-        <h1 className="fw-bold">Why We’re Better.</h1>
-        <div className="d-flex justify-content-center mt-5">
-          <div className="col-lg-8 row">
-            {betterDetails.map((det, index) => {
-              return (
-                <>
-                  <div key={index} className="col col-12 col-lg-3 mt-3">
-                    <i className={`${det.class} details-icon`}></i>
-
-                    <div className="mt-3 col text-center details-inner-des">
-                      <h6>{det.title}</h6>
-                      <p className="text-muted details-desc">{det.desc}</p>
-                    </div>
-                  </div>
-                </>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      <div className="row justify-content-center process-con">
-        <div className="col-lg-10 row justify-content-center">
-          <div className="col-lg-3 text-start">
-            <h2>The Process</h2>
-          </div>
-          {processDetails.map((pro, index) => {
-            const a = pro.title.split("/");
-            return (
-              <div key={index} className="col col-lg-2 text-start">
-                <h2>
-                  {a[0]} <span style={{ fontSize: "11px" }}>/{a[1]}</span>
-                </h2>
-                <p style={{ fontSize: "11px" }} className="text-muted w-75">
-                  {pro.desc}
+          <div class="container titlebar-container">
+            <div class="row titlebar-container justify-center">
+              <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center">
+                <h1>About Us</h1>
+                {/* <div class="wave w-100"></div> */}
+                <p class="leading-20 text-gray-400">
+                  SKMADS provides targeted and transparent advertising solutions
+                  to help businesses grow
                 </p>
               </div>
-            );
-          })}
+            </div>
+          </div>
         </div>
-      </div>
+        <div className="d-flex flex-row col-11">
+          <div className="col-lg-6 d-flex justify-content-center flex-column ps-5 ms-5">
+            {" "}
+            <h2 className="ld-fh-element position-relative lqd-highlight-custom lqd-highlight-custom-2 mt-0/25em mb-0/75em text-27 is-in-view lqd-unit-animation-done text-start">
+              Who we are &nbsp;🏢
+            </h2>
+            <p className="text-17 mt-2 leading-16 m-0 lqd-iconbox-heading w-100  text-start">
+              SKMADS is a leading advertising company that specializes in
+              providing in-app and web advertising services through our powerful
+              dashboards. Our team of skilled professionals is committed to
+              delivering exceptional results, and we pride ourselves on offering
+              innovative and tailored solutions to meet our clients' unique
+              needs.​ With years of experience in the industry, SKMADS has
+              established itself as a trusted partner for businesses looking to
+              enhance their online presence and reach their target audience. Our
+              in-house team of experts possesses extensive knowledge in creating
+              and managing effective advertising campaigns that drive results.
+              At SKMADS, we believe in the power of collaboration, and we work
+              closely with our clients to understand their goals and objectives,
+              ensuring that every campaign is designed to deliver maximum
+              impact. Our focus on quality and attention to detail has earned us
+              a reputation for excellence in the industry, and we are committed
+              to maintaining that reputation through every project we undertake.
+            </p>
+          </div>
+          <div className="col-lg-6">
+            <img src="images/about-us.png" className="img-fluid" />
+          </div>
+        </div>
+        <TrackingPartnersHome />
 
-      <div
-        className="row justify-content-start py-5"
-        style={{ backgroundColor: "#f0f0f0" }}
-      >
-        <div className="col-lg-12  col justify-content-center">
-          <h1 className="fw-bold text-center ms-5">Meet the Team</h1>
-          <div className="row justify-content-center mt-5">
-            {teamDetails.map((t, i) => {
-              return (
-                <div className="col-lg-3 col-8" key={i}>
-                  <div className="w-100">
-                    <img
-                      src={`images/${t.img}`}
-                      className="img-fluid team-img"
-                    />
-                    <div className="p-2">
-                      <h6 className="mt-4">{t.name}</h6>
-                      <p className="mt-4 team-desc text-muted">
-                        {t.designation}
-                      </p>
+        <div className="d-flex flex-column justify-content-center align-items-center mt-5">
+          <div className="col-lg-10 d-flex flex-column">
+            <h2 className="ld-fh-element position-relative lqd-highlight-custom lqd-highlight-custom-2 mt-0/25em mb-0/75em text-27 is-in-view lqd-unit-animation-done text-start">
+              Why We're Better &nbsp;💡
+            </h2>
+            <div className="d-flex flex-row justify-content-center mt-3">
+              <div className="col-12 d-flex flex-row gap-4">
+                {betterDetails.map((better, index) => {
+                  return (
+                    <div className="w-90" key={index}>
+                      <div
+                        className="py-4  h-100 rounded-1 d-flex flex-column align-items-center services-home-con ab-con"
+                        style={{ backgroundColor: `${better.newBg}` }}
+                      >
+                        <div className="ld-fancy-heading position-relative snipcss0-12-80-81">
+                          <h4 className="ld-fh-element position-relative text-20 mb-0/25em snipcss0-13-81-82"></h4>
+                        </div>
+                        <div className="ld-fancy-heading position-relative snipcss0-12-80-83">
+                          <p className="ld-fh-element position-relative text-15 mb-1em snipcss0-13-83-84 fw-bold">
+                            {better.title}
+                          </p>
+                        </div>
+                        <div className="w-230 lqd-imggrp-single block position-relative snipcss0-12-80-85">
+                          {/* <div className="lqd-imggrp-img-container d-inline-flex position-relative align-items-center justify-content-center snipcss0-13-85-86">
+                      <figure className="w-full position-relative rounded-circle snipcss0-14-86-87">
+                        <img
+                          className="rounded-circle snipcss0-15-87-88"
+                          width={458}
+                          height={602}
+                          src={ser.img}
+                          alt="services"
+                        />
+                      </figure>
+                    </div> */}
+                          <div className="my-4">
+                            <i
+                              className={`${better.class} icon-services fs-1`}
+                            />
+                          </div>
+                          <p className="mb-5 px-4" style={{ fontSize: "12px" }}>
+                            {better.desc}
+                          </p>
+                        </div>
+                        <div className="divider w-full snipcss0-12-80-89">
+                          <span className="w-full my-25 border-top border-black-20 snipcss0-13-89-90"></span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="d-flex flex-column justify-content-center align-items-center mt-5 pb-5">
+          <div className="col-lg-10 d-flex flex-column">
+            <h2 className="ld-fh-element position-relative lqd-highlight-custom lqd-highlight-custom-2 mt-0/25em mb-0/75em text-27 is-in-view lqd-unit-animation-done text-start">
+              The Process &nbsp;⚙️
+            </h2>
+            <span className="text-start mt-3 d-flex flex-row gap-4">
+              <li
+                className="split-inner18  px-4 py-5 w-90 "
+                style={{ backgroundColor: "#eaeff4" }}
+              >
+                {" "}
+                <div className="d-flex justify-content-end">
+                  <i class="fa-solid fa-arrow-right-long fs-1"></i>
                 </div>
-              );
-            })}
+                1. Consultation: &nbsp;
+                <span className="text00">
+                  &nbsp; SKMADS team conducts an initial consultation with the
+                  client to understand their business objectives and advertising
+                  needs. This includes identifying the target audience, budget,
+                  ad formats, and other relevant factors.
+                </span>
+              </li>
+              <li
+                className="split-inner18 px-4 py-5 w-90 "
+                style={{ backgroundColor: "#f2ebe9" }}
+              >
+                {" "}
+                <div className="d-flex justify-content-end">
+                  <i class="fa-solid fa-arrow-right-long fs-1"></i>
+                </div>
+                2. Proposal Development:&nbsp;
+                <span className="text00">
+                  &nbsp; &nbsp; Based on the consultation, SKMADS develops a
+                  detailed proposal outlining the advertising solutions that
+                  best fit the client's needs. This includes the advertising
+                  strategy, targeting options, ad formats, and budget.
+                </span>
+              </li>
+              <li
+                className="split-inner18 px-4 py-5 w-90 "
+                style={{ backgroundColor: "#eaeff4" }}
+              >
+                <div className="d-flex justify-content-end">
+                  <i class="fa-solid fa-arrow-right-long fs-1"></i>
+                </div>
+                3. Review and Approval:&nbsp;
+                <span className="text00">
+                  &nbsp; &nbsp;The proposal is reviewed and discussed with the
+                  client to ensure that it meets their expectations and
+                  requirements. Any adjustments or modifications are made to the
+                  proposal as needed until it is approved.
+                </span>
+              </li>
+              <li
+                className="split-inner18 px-4 py-5 w-90 "
+                style={{ backgroundColor: "#f2ebe9" }}
+              >
+                <div className="d-flex justify-content-end">
+                  <i class="fa-solid fa-hourglass-end fs-1"></i>
+                </div>
+                4. Implementation and Monitoring: &nbsp;
+                <span className="text00">
+                  &nbsp;&nbsp; Once the proposal is approved, we implement the
+                  advertising campaign and monitor its performance closely.
+                  Regular reports are provided to the client .
+                </span>
+              </li>
+            </span>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

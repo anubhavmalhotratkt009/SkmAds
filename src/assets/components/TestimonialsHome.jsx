@@ -46,11 +46,12 @@ const imagesDetails = [
 const TestimonialsHome = () => {
   let sliderRef = useRef(null);
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+
     style: {
       display: "flex",
       justifyContent: "center",
@@ -112,7 +113,7 @@ const TestimonialsHome = () => {
                 id="style-LDaWZ"
               >
                 <span className="split-inner5 " style={{}}>
-                  <span className="lqd-adv-txt-item">People</span>
+                  <span className="lqd-adv-txt-item1">People have</span>
                   <span className="relative z-3 lqd-adv-txt-item">
                     <span className="relative d-inline-flex rounded-circle vertical-top -mr-30 ms-3">
                       <img
@@ -120,9 +121,9 @@ const TestimonialsHome = () => {
                         decoding="async"
                         width={58}
                         height={58}
-                        src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/Shape-avatar-1.jpg"
+                        src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/Shape-avatar-2.jpg"
                         alt="testimonials avatar"
-                        style={{ opacity: ".9" }}
+                        style={{ opacity: ".8", filter: "hue-rotate(665deg)" }}
                       />
                     </span>
                   </span>
@@ -135,7 +136,7 @@ const TestimonialsHome = () => {
                         height={58}
                         src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/Shape-avatar-2.jpg"
                         alt="testimonials avatar"
-                        style={{ opacity: ".9" }}
+                        style={{ opacity: ".8", filter: "hue-rotate(665deg)" }}
                       />
                     </span>
                   </span>
@@ -146,13 +147,13 @@ const TestimonialsHome = () => {
                         decoding="async"
                         width={58}
                         height={58}
-                        src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/Shape-avatar-1.jpg"
+                        src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/Shape-avatar-2.jpg"
                         alt="testimonials avatar"
-                        style={{ opacity: ".9" }}
+                        style={{ opacity: ".8", filter: "hue-rotate(665deg)" }}
                       />
                     </span>
                   </span>
-                  <span className="lqd-adv-txt-item">&nbsp;are talking.</span>
+                  <span className="lqd-adv-txt-item1">&nbsp;been talking.</span>
                 </span>
               </div>
             </h2>
@@ -177,7 +178,7 @@ const TestimonialsHome = () => {
                           <img
                             decoding="async"
                             className="rounded-full"
-                            src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/testi-avatar-2.png"
+                            src="images/bq.jpeg"
                             alt="ritamjahed"
                           />
                         </figure>
@@ -201,7 +202,7 @@ const TestimonialsHome = () => {
           </div>
         </div>
 
-        <div className="d-flex flex-column mt-5">
+        <div className="d-flex flex-column mt-2">
           <div>
             <h3
               class="ld-fh-element position-relative lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-lines mb-1 mt-1 split-text-applied is-in-view"

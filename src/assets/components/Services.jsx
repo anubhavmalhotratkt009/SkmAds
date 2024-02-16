@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from "react";
-import AboutHome from "./AboutHome.jsx";
 
 import "./Services.css";
 import "./HeroContainer.css";

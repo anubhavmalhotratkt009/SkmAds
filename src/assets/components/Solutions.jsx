@@ -68,6 +68,7 @@ const servicesDetails = [
     left: window.innerWidth > 1068 ? false : true,
     newColor: "#05518c",
     newBg: "#fff1ed",
+    
   },
   {
     title: "User Acquisition",
