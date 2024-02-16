@@ -250,7 +250,12 @@ const TestimonialsHome = () => {
               >
                 {imagesDetails.map((i, index) => {
                   return (
-                    <img key={index} src={`images/${i.img}`} width={190} />
+                    <img
+                      key={index}
+                      src={`images/${i.img}`}
+                      width={190}
+                      className="ok"
+                    />
                   );
                 })}
               </div>

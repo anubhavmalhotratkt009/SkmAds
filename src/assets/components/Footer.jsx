@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const form = useRef();
@@ -70,10 +71,10 @@ const Footer = () => {
               <nav class="link-white-80 lqd-fancy-menu lqd-custom-menu relative lqd-menu-td-none  d-flex justify-content-center">
                 <ul class="reset-ul">
                   <li class="mb-15">
-                    <a href="#">Privacy Policy</a>
+                    <Link to="/privacy-and-policy">Privacy Policy</Link>
                   </li>
                   <li class="mb-15">
-                    <a href="#">Jobs</a>
+                    <Link to="/terms-and-conditions">Terms and Conditions</Link>
                   </li>
                   <li class="mb-15">
                     <a href="#">Linkedin</a>

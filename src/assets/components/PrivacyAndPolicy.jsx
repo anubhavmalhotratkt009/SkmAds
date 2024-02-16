@@ -1,4 +1,9 @@
 import React from "react";
+import "./Services.css";
+import "./HeroContainer.css";
+import "./AboutHome.css";
+import "./Testimonials.css";
+import "./Tracking.css";
 
 const details = [
   {
@@ -77,30 +82,67 @@ const details = [
 const PrivacyAndPolicy = () => {
   return (
     <>
-      <div className="d-flex flex-column p-5  justify-content-center align-items-center">
-        <div className="d-flex flex-column col-11">
-          <h1 className="fw-bold text-center">Privacy and Policy</h1>
-          <p className="mb-5 mt-2">
-            SKMADS, (“SKMADS”, “we”, or “our”) values the privacy of our users,
-            members, and others who visit and use www.skmads.com (the “SKMADS
-            Site”) (collectively or individually “Users” or “you”). The SKMADS
-            Site may contain information regarding a variety of services offered
-            by SKMADS (collectively the “Service”). This statement (“Privacy
-            Policy”) governs information you provide to us or that we learn from
-            your use of the SKMADS Site and tells you how we may collect, use,
-            and in some instances share this information.
-            <br />
-            This policy is incorporated into, and subject to, SKMADS’s Terms of
-            Service.
-          </p>
+      <div className="main-bg">
+        <div class="titlebar-inner d-flex flex-column">
+          <div className="d-flex flex-row position-relative">
+            <div className="col-3 position-absolute">
+              <img
+                width={369}
+                height={135}
+                src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path.svg"
+                alt="shape"
+              />
+            </div>
+
+            <div className="col-3">
+              <img
+                width={57}
+                height={54}
+                src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141907.svg"
+                alt="shape"
+              />
+            </div>
+            <div className="col-3">
+              <img
+                width={49}
+                height={14}
+                src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141908.svg"
+                alt="shape"
+              />
+            </div>
+            <div className="col-3">
+              <img
+                width={21}
+                height={68}
+                src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141909.svg"
+                alt="shape"
+              />
+            </div>
+          </div>
+          <div class="container titlebar-container">
+            <div class="row titlebar-container justify-center">
+              <div class="col titlebar-col col-xl-12 col-lg-8 col-12 text-center">
+                <h1 className="w-100">Privacy and Policy</h1>
+                {/* <div class="wave w-100"></div> */}
+                {/* <p class="leading-20 text-gray-400">
+                SKMADS provides targeted and transparent advertising solutions
+                to help businesses grow
+              </p> */}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="d-flex flex-column justify-content-center align-items-center pb-5">
           {details.map((detail, index) => {
             const temp = detail.desc.split("  ");
             return (
-              <div key={index}>
-                <h3 className="text-dark fw-bold">{detail.title}</h3>
+              <div key={index} className="col-lg-10">
+                <h4 className="split-inner19 fw-bold mt-4 text-start text-dark">
+                  {detail.title}
+                </h4>
                 {temp.map((a, i) => {
                   return (
-                    <p key={i} className="mt-2 text-dark">
+                    <p key={i} className="text-15 text-start">
                       {a}
                     </p>
                   );

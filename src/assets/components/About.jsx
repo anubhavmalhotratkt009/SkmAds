@@ -279,7 +279,7 @@ const About = () => {
         </div>
         <div id="banner2" className="py-5 main-bg">
           {" "}
-          <div class="d-flex flex-column align-items-center">
+          <div class="d-flex flex-column align-items-center pt-5">
             {/* <div className="d-flex flex-row position-relative">
               <div className="col-3 position-absolute">
                 <img

@@ -1,8 +1,6 @@
 import { useScroll } from "framer-motion";
 import React, { lazy, useRef } from "react";
 import ContactHome from "../components/ContactHome";
-import "../components/HeroContainer.css";
-import "../components/Tracking.css";
 
 const HeroContainer = lazy(() => import("../components/HeroContainer"));
 const AboutHome = lazy(() => import("../components/AboutHome"));
