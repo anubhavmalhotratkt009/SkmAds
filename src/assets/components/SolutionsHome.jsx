@@ -77,6 +77,32 @@ const SolutionsHome = () => {
       display: "flex",
       justifyContent: "center",
     },
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
@@ -137,9 +163,7 @@ const SolutionsHome = () => {
                           className="split-unit lqd-chars lqd-unit-animation-done style-PdZP4"
                           id="style-PdZP4"
                         >
-                          <span className="split-inner5">
-                            Advertising Services
-                          </span>
+                          <span className="split-inner5">Our Services</span>
                         </div>
                       </span>
                     </div>
@@ -199,9 +223,9 @@ const SolutionsHome = () => {
             >
               {servicesDetails.map((ser) => {
                 return (
-                  <div className="w-90">
+                  <div className="w-90 ">
                     <div
-                      className="py-4 rounded-1 d-flex flex-column align-items-center services-home-con "
+                      className="py-4 rounded-1 d-flex flex-column align-items-center services-home-con col-12"
                       style={{ backgroundColor: `${ser.newBg}` }}
                     >
                       <div className="ld-fancy-heading position-relative snipcss0-12-80-81">
@@ -227,7 +251,7 @@ const SolutionsHome = () => {
                         <div className="my-4">
                           <i className={`${ser.class} icon-services`} />
                         </div>
-                        <p className="mb-5">{ser.desc}</p>
+                        <p className="mb-5 slider-desc">{ser.desc}</p>
                       </div>
                       <div className="divider w-full snipcss0-12-80-89">
                         <span className="w-full my-25 border-top border-black-20 snipcss0-13-89-90"></span>

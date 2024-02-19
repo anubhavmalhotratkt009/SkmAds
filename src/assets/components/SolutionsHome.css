@@ -226,3 +226,12 @@ h4 {
 .services-home-con:hover {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 480px) {
+  #style-xPbM9 {
+    margin-left: 20px;
+  }
+  .carousel-nav {
+    margin-right: 20px !important;
+  }
+}

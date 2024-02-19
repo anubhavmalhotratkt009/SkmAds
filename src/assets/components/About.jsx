@@ -1,5 +1,5 @@
 import React from "react";
-import "./Services.css";
+import "./Common.css";
 import "./HeroContainer.css";
 import "./AboutHome.css";
 import "./Testimonials.css";
@@ -113,8 +113,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="d-flex flex-row col-11 ">
-          <div className="col-lg-6 d-flex justify-content-center flex-column ps-5 ms-5 mt-5">
+        <div className="d-flex col-12  flex-row  about-main-con justify-content-center">
+          <div className="col-lg-6 col-12 d-flex justify-content-center flex-column ps-5 ms-5 mt-5 inner-ab">
             {" "}
             <h2 className="ld-fh-element position-relative lqd-highlight-custom lqd-highlight-custom-2 mt-0/25em mb-0/75em text-27 is-in-view lqd-unit-animation-done text-start">
               Who we are &nbsp;🏢
@@ -138,19 +138,19 @@ const About = () => {
               to maintaining that reputation through every project we undertake.
             </p>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-12 d-flex justify-content-center align-items-center inner-ab2">
             <img src="images/about-us.png" className="img-fluid" />
           </div>
         </div>
         <TrackingPartnersHome />
 
-        <div className="d-flex flex-column justify-content-center align-items-center mt-5">
-          <div className="col-lg-10 d-flex flex-column">
+        <div className="d-flex flex-column justify-content-center align-items-center mt-5 mar-l">
+          <div className="col-lg-10 col-11 d-flex flex-column">
             <h2 className="ld-fh-element position-relative lqd-highlight-custom lqd-highlight-custom-2 mt-0/25em mb-0/75em text-27 is-in-view lqd-unit-animation-done text-start">
               Why We're Better &nbsp;💡
             </h2>
             <div className="d-flex flex-row justify-content-center mt-3">
-              <div className="col-12 d-flex flex-row gap-4">
+              <div className="col-12 d-flex flex-row gap-4  process-con">
                 {betterDetails.map((better, index) => {
                   return (
                     <div className="w-90" key={index}>
@@ -199,12 +199,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="d-flex flex-column justify-content-center align-items-center mt-5 pb-5">
-          <div className="col-lg-10 d-flex flex-column">
+        <div className="d-flex flex-column justify-content-center align-items-center mt-5 pb-5 mar-ls">
+          <div className="col-lg-10 col-11 d-flex flex-column">
             <h2 className="ld-fh-element position-relative lqd-highlight-custom lqd-highlight-custom-2 mt-0/25em mb-0/75em text-27 is-in-view lqd-unit-animation-done text-start">
               The Process &nbsp;⚙️
             </h2>
-            <span className="text-start mt-3 d-flex flex-row gap-4">
+            <span className="text-start mt-3 d-flex flex-row gap-4 process-con">
               <li
                 className="split-inner18  px-4 py-5 w-90 ab-con "
                 style={{ backgroundColor: "#eaeff4" }}
@@ -280,52 +280,17 @@ const About = () => {
         <div id="banner2" className="py-5 main-bg">
           {" "}
           <div class="d-flex flex-column align-items-center pt-5">
-            {/* <div className="d-flex flex-row position-relative">
-              <div className="col-3 position-absolute">
-                <img
-                  width={369}
-                  height={135}
-                  src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path.svg"
-                  alt="shape"
-                />
-              </div>
-
-              <div className="col-3">
-                <img
-                  width={57}
-                  height={54}
-                  src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141907.svg"
-                  alt="shape"
-                />
-              </div>
-              <div className="col-3">
-                <img
-                  width={49}
-                  height={14}
-                  src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141908.svg"
-                  alt="shape"
-                />
-              </div>
-              <div className="col-3">
-                <img
-                  width={21}
-                  height={68}
-                  src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/shape-Path-141909.svg"
-                  alt="shape"
-                />
-              </div>
-            </div> */}
             <div class="container titlebar-container">
-              <div class="titlebar-container d-flex flex-column align-items-center">
+              <div class="titlebar-container d-flex flex-column justify-content-center align-items-center">
                 <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center">
-                  <h1>Meet the Team</h1>
+                  <h1 className="team-header">Meet the Team</h1>
                   {/* <div class="wave w-100"></div> */}
                 </div>
-                <div className="d-flex col-lg-10 gap-4 mt-4">
+                <div className="d-flex col-lg-10 abt-main gap-4 mt-4">
                   <div className="col-lg-6 z-1 d-flex flex-column">
                     <img
                       src="images/ceo.webp"
-                      className="img-fluid rounded-2"
+                      className="img-fluid rounded-2 abt-image"
                     />
                     <h2 className="split-inner19 mt-3">Sanjay Kumar Meena</h2>
                     <p
@@ -335,8 +300,11 @@ const About = () => {
                       FOUNDER & CEO
                     </p>
                   </div>
-                  <div className="col-lg-6">
-                    <img src="images/cmo.png" className="img-fluid rounded-2" />
+                  <div className="col-lg-6 d-flex flex-column justify-content-center ">
+                    <img
+                      src="images/cmo.png"
+                      className="img-fluid rounded-2 abt-image"
+                    />
                     <h2 className="split-inner19 mt-3">Chandrabhan Meena</h2>
                     <p
                       className=" fw-bold text-dark text-center"

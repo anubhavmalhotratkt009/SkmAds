@@ -194,6 +194,9 @@ h2 {
 .w-35 {
   width: 35px;
 }
+.module-iconbo {
+  flex-wrap: nowrap !important;
+}
 
 .text-36 {
   font-size: 36px;
@@ -217,4 +220,50 @@ h2 {
 .border-thin {
   font-family: var(--lqd-accent-font-family), Sans-serif;
   font-style: var(--lqd-accent-font-style);
+}
+
+@media only screen and (max-width: 480px) {
+  .split-inner5 {
+    font-size: 35px;
+  }
+  .text-18 {
+    font-size: 10px !important;
+  }
+  .ld {
+    margin-top: 10px;
+    padding: 0px 30px !important;
+  }
+  .design-services .module-shape {
+    left: 30px;
+  }
+  .module-iconbo {
+    flex-wrap: wrap !important;
+  }
+}
+
+@media only screen and (min-width: 1124px) and (max-width: 1224px) {
+  .design-services .module-shape {
+    left: 20px;
+  }
+  .module-iconbo {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 760px) {
+  .design-services .module-shape {
+    left: 20px;
+  }
+  .module-iconbo {
+    flex-wrap: wrap !important;
+  }
+}
+@media only screen and (min-width: 761px) and (max-width: 1023px) {
+  .design-services .module-shape {
+    left: 20px;
+  }
+  .module-iconbo {
+    flex-wrap: wrap !important;
+  }
+
 }

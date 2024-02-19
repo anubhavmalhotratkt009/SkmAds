@@ -1,5 +1,5 @@
 import React from "react";
-import "./Services.css";
+import "./Common.css";
 import "./HeroContainer.css";
 import "./AboutHome.css";
 import "./Testimonials.css";

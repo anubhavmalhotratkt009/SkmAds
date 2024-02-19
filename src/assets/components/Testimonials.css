@@ -308,3 +308,47 @@ blockquote {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif !important;
 }
+
+@media only screen and (max-width: 480px) {
+  .lqd-adv-txt-item1 {
+    font-size: 12px !important;
+  }
+
+  .-top-145percent {
+    display: none;
+  }
+  .-top-55percent {
+    top: 5%;
+  }
+  .-top-30percent {
+    top: 5%;
+  }
+
+  .ok {
+    width: 120px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 850px) {
+  .-top-145percent {
+    top: -25%;
+  }
+  .-top-55percent {
+    top: 5%;
+  }
+  .-top-30percent {
+    top: 5%;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1023px) {
+  .-top-145percent {
+    top: -75%;
+  }
+  .-top-55percent {
+    top: 5%;
+  }
+  .-top-30percent {
+    top: 5%;
+  }
+}

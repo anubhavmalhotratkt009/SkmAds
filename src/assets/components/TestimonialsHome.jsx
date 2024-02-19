@@ -57,6 +57,32 @@ const TestimonialsHome = () => {
       justifyContent: "center",
       gap: "20px",
     },
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
@@ -89,7 +115,6 @@ const TestimonialsHome = () => {
               className="mb-0 ld-fh-element relative lqd-split-lines split-text-applied"
               data-split-text="true"
               data-split-options='{"type": "lines"}'
-              style={{}}
             >
               <div
                 className="split-unit lqd-lines lqd-unit-animation-done style-ZMBIF"
@@ -106,13 +131,12 @@ const TestimonialsHome = () => {
               className="ld-fh-element relative lqd-highlight-classic lqd-highlight-grow-left lqd-split-lines h2 mb-0/75em split-text-applied"
               data-split-text="true"
               data-split-options='{"type": "lines"}'
-              style={{}}
             >
               <div
                 className="split-unit lqd-lines lqd-unit-animation-done style-LDaWZ"
                 id="style-LDaWZ"
               >
-                <span className="split-inner5 " style={{}}>
+                <span className="split-inner5 ">
                   <span className="lqd-adv-txt-item1">People have</span>
                   <span className="relative z-3 lqd-adv-txt-item">
                     <span className="relative d-inline-flex rounded-circle vertical-top -mr-30 ms-3">
@@ -170,7 +194,7 @@ const TestimonialsHome = () => {
               {testimonialsDetails.map((test) => {
                 return (
                   <div
-                    className={`${test.class} w-90 lqd-testi position-relative lqd-testi-style-1 d-flex flex-column rounded-3 mb-3 py-4 px-4 module-content`}
+                    className={`${test.class} w-90 lqd-testi  lqd-testi-style-1 d-flex flex-column rounded-3 mb-3 py-4 px-4 module-content`}
                   >
                     <div className=" d-flex  justify-content-between mb-1">
                       <div className="lqd-testi-details d-flex align-items-center py-2 px-4">
@@ -205,7 +229,7 @@ const TestimonialsHome = () => {
         <div className="d-flex flex-column mt-2">
           <div>
             <h3
-              class="ld-fh-element position-relative lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-lines mb-1 mt-1 split-text-applied is-in-view"
+              class="ld-fh-element  lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-lines mb-1 mt-1 split-text-applied is-in-view"
               data-inview="true"
               data-transition-delay="true"
               data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'

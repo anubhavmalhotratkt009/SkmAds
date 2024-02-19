@@ -1,6 +1,6 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 
-import "./Services.css";
+import "./Common.css";
 import "./HeroContainer.css";
 import "./AboutHome.css";
 import "./Testimonials.css";
@@ -142,8 +142,8 @@ const Services = () => {
                 <Fragment key={index}>
                   {ab.left ? (
                     <>
-                      <div className="d-flex flex-row">
-                        <div className="col-lg-6">
+                      <div className="d-flex flex-row sol-main-con">
+                        <div className="col-lg-6 sol-main-inn2">
                           <div className="w-100">
                             <img
                               src={`./images/${ab.img}`}
@@ -152,7 +152,7 @@ const Services = () => {
                             />
                           </div>
                         </div>
-                        <div className="col-lg-6 py-5 px-5 align-items-center text-start">
+                        <div className="col-lg-6 py-5 px-5 align-items-center text-start sol-main-inn">
                           <div className="d-flex flex-wrap ca-initvalues-applied lqd-animations-done solutions-inner">
                             <div className="d-flex flex-wrap module-content px-3">
                               <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading position-relative animation-element lqd-unit-animation-done">
@@ -221,8 +221,8 @@ const Services = () => {
                     </>
                   ) : (
                     <>
-                      <div className="d-flex flex-row">
-                        <div className="col-lg-6 py-5 px-5 align-items-center text-start ">
+                      <div className="d-flex flex-row sol-main-con">
+                        <div className="col-lg-6 py-5 px-5 align-items-center text-start sol-main-inn">
                           <div className="d-flex flex-wrap ca-initvalues-applied lqd-animations-done solutions-inner">
                             <div className="d-flex flex-wrap module-content px-3">
                               <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading position-relative animation-element lqd-unit-animation-done">
@@ -287,7 +287,7 @@ const Services = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 sol-main-inn2">
                           <div className="w-100">
                             <img
                               src={`./images/${ab.img}`}

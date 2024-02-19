@@ -38,8 +38,8 @@ const TrackingPartnersHome = () => {
               <Fragment key={index}>
                 {ab.left ? (
                   <>
-                    <div className="d-flex flex-row gap-5">
-                      <div className="col-lg-6">
+                    <div className="d-flex flex-row flex-nowrap gap-5 justify-content-center ab-inner">
+                      <div className="col-lg-6 col-10 ab-4">
                         <div className="w-100">
                           <img
                             src={`./images/${ab.img}`}
@@ -48,7 +48,7 @@ const TrackingPartnersHome = () => {
                           />
                         </div>
                       </div>
-                      <div className="col-lg-6 py-5 align-items-center text-start d-flex align-items-center  px-5">
+                      <div className="col-lg-6 col-11 col-md-10 py-5 align-items-center text-start d-flex align-items-center ab-3  px-5">
                         <div className="d-flex flex-wrap ca-initvalues-applied lqd-animations-done solutions-inner">
                           <div className="d-flex flex-wrap module-content ">
                             <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading position-relative animation-element lqd-unit-animation-done">
@@ -110,8 +110,8 @@ const TrackingPartnersHome = () => {
                   </>
                 ) : (
                   <>
-                    <div className="d-flex flex-row ">
-                      <div className="col-lg-6 py-5 align-items-center text-start d-flex align-items-center  px-5">
+                    <div className="d-flex flex-row flex-nowrap about-inner1 gap-5 justify-content-center ab-inner">
+                      <div className="col-lg-6 col-11 col-md-10 py-5 align-items-center text-start d-flex align-items-center  px-5 ab-1">
                         <div className="d-flex flex-wrap ca-initvalues-applied lqd-animations-done solutions-inner">
                           <div className="d-flex flex-wrap module-content">
                             <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading position-relative animation-element lqd-unit-animation-done">
@@ -169,7 +169,7 @@ const TrackingPartnersHome = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-lg-6 col-10 ab-2">
                         <div className="w-100">
                           <img
                             src={`./images/${ab.img}`}

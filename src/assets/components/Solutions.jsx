@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import AboutHome from "./AboutHome.jsx";
 
-import "./Services.css";
+import "./Common.css";
 import "./HeroContainer.css";
 import "./AboutHome.css";
 import "./Testimonials.css";
@@ -34,96 +34,6 @@ const aboutTypes = [
     desc: `SKMADS programmatic advertising, powered by our Target unit, offers comprehensive solutions with access to a vast network of SSPs and DSPs for web and mobile ad inventory. Our data-driven approach enables precise audience targeting, real-time optimization, and ongoing performance analysis, ensuring maximum campaign success across millions of users. Whether you aim to drive brand awareness, increase website traffic, or boost sales, SKMADS delivers unparalleled efficiency and accuracy, empowering you to achieve your advertising goals effectively.`,
     img: "j-1.png",
     left: false,
-  },
-];
-
-const servicesDetails = [
-  {
-    title: "Programmatic Buying",
-    class: "lqd-icn-ess icon-lqd-presentation",
-    desc: "Programmatic buying is an automated process of buying and selling advertising inventory in real-time through an online advertising exchange. It allows advertisers to more effectively target their desired audience, optimize their ad spend, and gain transparency and control over their ad campaigns.",
-    highlights: [
-      "Automated process of buying and selling advertising inventory in real-time",
-      "Uses technology to analyze user behavior and target audience with greater precision",
-      "Offers transparency and control over ad campaigns",
-      "Optimizes ad spend and adjusts bidding strategies for maximum impact and ROI",
-      "Leverages data and machine learning algorithms for better results in digital advertising",
-    ],
-    img: "s-1.jpg",
-    left: window.innerWidth > 1068 ? true : true,
-    newColor: "#05518c",
-    newBg: "#fff1ed",
-  },
-  {
-    title: "Media Buying",
-    class: "lqd-icn-ess icon-lqd-mobile",
-    desc: "SKMADS provides expert media buying services to help businesses reach their target audience effectively. Our team has a deep understanding of the media landscape and can help clients navigate the complexities of media buying to achieve maximum impact. We work closely with clients to develop customized strategies that align with their objectives and budget constraints.",
-    highlights: [
-      "Expert media buying services to help businesses reach their target audience effectively",
-      "Deep understanding of the media landscape to navigate the complexities of media buying",
-      "Customized strategies to align with clients objectives and budget constraints",
-      "Focus on maximizing impact and ROI for clients through effective media buying tactics.",
-    ],
-    img: "s-2.jpg",
-    left: window.innerWidth > 1068 ? false : true,
-    newColor: "#05518c",
-    newBg: "#fff1ed",
-  },
-  {
-    title: "User Acquisition",
-    class: "lqd-icn-ess icon-lqd-user",
-    desc: "SKMADS offers user acquisition services to help businesses acquire high-quality users for their mobile apps or websites. Our team utilizes the latest techniques and tools to drive user acquisition, including targeted advertising campaigns, app store optimization, and social media marketing. We work closely with clients to understand their unique needs and goals, and develop customized user acquisition strategies to help them achieve success.",
-    highlights: [
-      "User acquisition services to help businesses acquire high-quality users for their mobile apps or websites",
-      "Utilizes targeted advertising campaigns, app store optimization, and social media marketing techniques to drive user acquisition",
-      "Customized strategies developed in close collaboration with clients to meet their unique needs and goals.",
-    ],
-    img: "s-3.jpg",
-    left: window.innerWidth > 1068 ? true : true,
-    newColor: "#05518c",
-    newBg: "#fff1ed",
-  },
-  {
-    title: "Transparency",
-    class: "lqd-icn-ess icon-lqd-tools",
-    desc: "At SKMADS, we value transparency in our advertising solutions. We believe that transparency is essential to building trust with our clients and achieving the best results. Thats why we provide our clients with detailed reporting and insights into their advertising campaigns, including ad performance, audience engagement, and other key metrics.",
-    highlights: [
-      " Detailed reporting and insights provided to clients, including ad performance and audience engagement metrics",
-      "Open communication and collaboration with clients to ensure they understand every aspect of their advertising campaigns",
-      "Detailed reporting and insights provided to clients, including ad performance and audience engagement metrics",
-    ],
-    img: "s-4.jpg",
-    left: window.innerWidth > 1068 ? false : true,
-    newColor: "#05518c",
-    newBg: "#fff1ed",
-  },
-  {
-    title: "Data Analysis",
-    class: "fa-solid fa-database",
-    desc: "SKMADS offers expert data analysis services to help businesses gain insights into the performance of their advertising campaigns. Our team utilizes the latest data analytics tools and techniques to extract valuable insights from advertising data, including audience behavior, ad performance, and other key metrics. We work closely with clients to provide actionable recommendations for optimizing their advertising strategies and achieving better results.",
-    highlights: [
-      "Expert data analysis services to gain insights into advertising campaign performance",
-      "Utilizes latest data analytics tools and techniques to extract valuable insights from advertising data",
-      "Provides actionable recommendations for optimizing advertising strategies and achieving better results",
-    ],
-    img: "s-5.jpg",
-    left: window.innerWidth > 1068 ? true : true,
-    newColor: "#05518c",
-    newBg: "#fff1ed",
-  },
-  {
-    title: "Explicit Targeting",
-    class: "lqd-icn-ess icon-lqd-target",
-    desc: "Explicit targeting is a key feature of SKMADS advertising solutions. With explicit targeting, we enable businesses to target their advertising to specific audiences based on demographics, interests, behaviors, and other relevant factors. This allows businesses to reach the right people with the right message, increasing the effectiveness and impact of their advertising campaigns.",
-    highlights: [
-      "Explicit targeting is a key feature of SKM Ads advertising solutions",
-      "Allows businesses to target their advertising to specific audiences based on demographics, interests, behaviors, and other relevant factors",
-      "Helps increase the effectiveness and impact of advertising campaigns",
-    ],
-    img: "s-6.jpg",
-    left: window.innerWidth > 1068 ? false : true,
-    newColor: "#05518c",
-    newBg: "#fff1ed",
   },
 ];
 
@@ -181,37 +91,6 @@ const Solutions = () => {
           </div>
         </div>
 
-        {/* <AboutHome bg="white" />
-      <div className="container">
-        <div className="row">
-          <div className="w-450 d-flex flex-column position-relative items-center max-w-100 text-center mx-auto">
-            <div className="ld-fancy-heading position-relative w-auto  animation-element lqd-unit-animation-done"></div>
-            <div className="ld-fancy-heading position-relative mask-text">
-              <h2 className="ld-fh-element position-relative lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-lines mb-1 mt-1 split-text-applied is-in-view">
-                <div
-                  className="split-unit lqd-lines lqd-unit-animation-done "
-                  id="style-jwcoH"
-                >
-                  <span className="split-inner">
-                    <mark
-                      className="lqd-highlight"
-                      style={{ backgroundColor: "transparent" }}
-                    >
-                      <span className="lqd-highlight-txt">Dive Deeper</span>
-                      <span
-                        className={`bottom-0 left-0 lqd-highlight-inner 
-                       bg-purple-100                        style-9pqpl`}
-                        id="style-9pqpl"
-                      ></span>
-                    </mark>
-                  </span>
-                </div>
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
         <div className="d-flex flex-row mt-3 gap-5  sol-inner">
           <div className="col-lg-12 d-flex justify-content-center flex-column gap-5">
             {aboutTypes.map((ab, index) => {
@@ -219,8 +98,8 @@ const Solutions = () => {
                 <Fragment key={index}>
                   {ab.left ? (
                     <>
-                      <div className="d-flex flex-row">
-                        <div className="col-lg-6">
+                      <div className="d-flex flex-row sol-main-con sol-main-inn2 justify-content-center">
+                        <div className="col-lg-6 col-11">
                           <div className="w-100">
                             <img
                               src={`./images/${ab.img}`}
@@ -229,7 +108,7 @@ const Solutions = () => {
                             />
                           </div>
                         </div>
-                        <div className="col-lg-6 py-5 px-5 align-items-center text-start">
+                        <div className="col-lg-6 col-11 py-5 px-5 align-items-center text-start sol-main-inn">
                           <div className="d-flex flex-wrap ca-initvalues-applied lqd-animations-done solutions-inner">
                             <div className="d-flex flex-wrap module-content px-3">
                               <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading position-relative animation-element lqd-unit-animation-done">
@@ -267,9 +146,9 @@ const Solutions = () => {
                                   &nbsp;🔔
                                 </h2>
                               </div>
-                              <div className="mb-30 iconbox d-flex flex-grow-1 position-relative iconbox-circle iconbox-icon-ripple lqd-unit-animation-done">
+                              <div className="mb-30 iconbox d-flex flex-grow-1  iconbox-circle iconbox-icon-ripple lqd-unit-animation-done">
                                 <div className="iconbox-icon-wrap me-2">
-                                  <div className="iconbox-icon-container inline-flex position-relative z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md">
+                                  <div className="iconbox-icon-container inline-flex  z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md">
                                     <i
                                       aria-hidden="true"
                                       className="fa fa-circle text-success fs-6"
@@ -287,16 +166,16 @@ const Solutions = () => {
                     </>
                   ) : (
                     <>
-                      <div className="d-flex flex-row">
-                        <div className="col-lg-6 py-5 px-5 align-items-center text-start">
+                      <div className="d-flex flex-row sol-main-con">
+                        <div className="col-lg-6 py-5 px-5 align-items-center text-start sol-main-inn">
                           <div className="d-flex flex-wrap ca-initvalues-applied lqd-animations-done solutions-inner">
                             <div className="d-flex flex-wrap px-3 module-content">
-                              <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading position-relative animation-element lqd-unit-animation-done">
-                                <h6 className=" ld-fh-element d-inline-block position-relative bg-gray py-2 px-3 rounded-5 text-12 -tracking-0/5 text-slate-500 text-uppercase">
+                              <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading  animation-element lqd-unit-animation-done">
+                                <h6 className=" ld-fh-element d-inline-block  bg-gray py-2 px-3 rounded-5 text-12 -tracking-0/5 text-slate-500 text-uppercase">
                                   {ab.header}
                                 </h6>
                               </div>
-                              <div className="ld-fancy-heading position-relative mb-3">
+                              <div className="ld-fancy-heading position-relative mb-3 ks">
                                 <h2 className="ld-fh-element position-relative lqd-highlight-custom lqd-highlight-custom-2 mt-0/25em mb-0/75em text-24 is-in-view lqd-unit-animation-done text-center">
                                   <mark className="lqd-highlight">
                                     <span className="lqd-highlight-txt">
@@ -342,7 +221,7 @@ const Solutions = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 sol-main-inn2 justify-content-center">
                           <div className="w-100">
                             <img
                               src={`./images/${ab.img}`}

@@ -57,7 +57,7 @@ const AboutHome = ({ bg }) => {
         style={{ background: bg ? bg : "#fff" }}
         data-custom-animations="true"
       >
-        <div className="position-absolute top-0">
+        <div className="position-relative top-0">
           <div className="ld-particles-container position-relative w-100">
             <div
               className="ld-particles-inner lqd-overlay d-flex pointer-events-auto"
@@ -135,7 +135,7 @@ const AboutHome = ({ bg }) => {
                   </div>
                 </div>
               </div>
-              <div className="ld-fancy-heading position-relative mask-text">
+              <div className="ld-fancy-heading position-relative mask-text ld">
                 <p
                   className="ld-fh-element position-relative lqd-split-lines text-17 leading-1/3em split-text-applied"
                   data-split-text="true"
@@ -167,12 +167,11 @@ const AboutHome = ({ bg }) => {
               </div>
             </div>
 
-            
-            <div className="d-flex col-12 flex-row d-flex gap-3 sm:flex-wrap  module-iconbo mt-1 mb-4">
+            <div className="d-flex col-12 flex-row d-flex gap-3 flex-wrap  module-iconbo mt-1 mb-4 justify-content-center">
               {skmTypes.map((skm) => {
                 return (
                   <div
-                    className="max-w-100 col-lg-4 animation-element lqd-unit-animation-done"
+                    className="max-w-100 col-lg-4  col-10 animation-element lqd-unit-animation-done"
                     key={skm.id}
                     onMouseEnter={() => showBtn(skm.id)}
                     onMouseLeave={() => notShowBtn(skm.id)}
@@ -283,7 +282,6 @@ const AboutHome = ({ bg }) => {
               })}
             </div>
 
-            
             <div className="col col-12 text-center mt-4">
               <div className="w-100 d-flex flex-wrap items-center justify-content-center transition-all">
                 <div className="module-text-border border-1 rounded-2 border-black-10 transition-all ld-fancy-heading position-relative hover:inner-text-black animation-element lqd-unit-animation-done">

@@ -7,9 +7,9 @@ const ContactHome = () => {
       className="lqd-section contact-form bg-center bg-cover pt-70 pb-100 snipcss-FHrny style-iyHqK"
       id="contact"
     >
-      <div className="px-5">
-        <div className="row items-end">
-          <div className="col-lg-6 sm:w-100 ca-initvalues-applied lqd-animations-done">
+      <div className="px-5 con-con">
+        <div className="d-flex align-items-end flex-row contact-con ">
+          <div className="col-lg-6 col-md-12 col-11   ca-initvalues-applied lqd-animations-done">
             <div className="position-relative w-100 d-flex flex-column justify-content-start pb-40 ">
               <div
                 className="position-absolute -top-145percent ltr-left-0 module-shape-1 animation-element lqd-unit-animation-done"
@@ -198,21 +198,17 @@ const ContactHome = () => {
                     className="split-unit lqd-lines lqd-unit-animation-done style-QNTfz text-start"
                     id="style-QNTfz"
                   >
-                    <span className="split-inner2  " style={{}}>
-                      Have a project
-                    </span>
+                    <span className="split-inner2  ">Have a project</span>
                   </div>
                   <div
                     className="split-unit lqd-lines lqd-unit-animation-done style-MByDF mt-2"
                     id="style-MByDF"
                   >
-                    <span className="split-inner2 " style={{}}>
-                      in mind?
-                    </span>
+                    <span className="split-inner2 ">in mind?</span>
                   </div>
                 </h2>
                 <div className="text-start d-flex justify-content-center">
-                  <p className="text-muted fs-6 w-75" style={{}}>
+                  <p className="text-muted fs-6 w-75 contact-desc">
                     We are here to answer any question you may have. Feel free
                     to reach via contact form or you can mail us to
                     sales@skmads.com.
@@ -235,11 +231,7 @@ const ContactHome = () => {
               </div>
             </div>
           </div>
-          <div
-            className="w-50percent lg:w-55percent sm:w-100 ca-initvalues-applied lqd-animations-done"
-            data-custom-animations="true"
-            data-ca-options='{"animationTarget": "h2, .animation-element", "duration" : 1000 , "startDelay" : 500 , "delay" : 100 , "ease": "expo.out", "initValues": {"y": "60px", "scaleX" : 0.8 , "scaleY" : 0.8 , "opacity" : 0} , "animations": {"y": "0px", "scaleX" : 1 , "scaleY" : 1 , "opacity" : 1}}'
-          >
+          <div className="col-lg-6  col-md-12 col-11 ca-initvalues-applied lqd-animations-done koko">
             <div className="ld-fancy-heading position-relative">
               <h2
                 className="ld-fh-element position-relative mb-1em text-32 lqd-unit-animation-done"
@@ -305,12 +297,12 @@ const ContactHome = () => {
                           <input
                             className="border-black-20 text-black text-13"
                             type="text"
-                            name="topic"
+                            name="phone"
                             defaultValue=""
-                            size={40}
+                            size={10}
                             aria-required="true"
                             aria-invalid="false"
-                            placeholder="Select a Discussion Topic"
+                            placeholder="Add Phone Number"
                           />
                         </span>
                       </p>
@@ -332,26 +324,7 @@ const ContactHome = () => {
                         </span>
                       </p>
                     </div>
-                    <div className="col col-12 px-15">
-                      <span className="lqd-form-control-wrap acceptance">
-                        <span className="lqd-cf-form-control lqd-cf-acceptance">
-                          <span className="lqd-cf-list-item">
-                            <label>
-                              <input
-                                type="checkbox"
-                                name="acceptance"
-                                defaultValue={1}
-                                aria-invalid="false"
-                              />
-                              <span className="lqd-cf-list-item-label">
-                                I am bound by the terms of the Service I accept
-                                Privacy Policy
-                              </span>
-                            </label>
-                          </span>
-                        </span>
-                      </span>
-                    </div>
+
                     <div className="col col-12 px-15">
                       <input
                         type="submit"

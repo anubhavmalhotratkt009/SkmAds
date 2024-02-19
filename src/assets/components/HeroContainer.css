@@ -153,7 +153,7 @@ h3 {
     #cdddee 40%,
     #ffd2b4 100%
   );
-  height: 80vh !important;
+  height: 95vh !important;
   /* filter: hue-rotate(685deg); */
 }
 
@@ -211,4 +211,92 @@ h3 {
   opacity: 0.1; /* Adjust the opacity to control the intensity of the grain effect */
   pointer-events: none; /* Ensures the pseudo-element doesn't interfere with mouse events */
   z-index: 999 !important; /* Ensure the grain effect stays behind other content */
+}
+
+@media only screen and (max-width: 379px) {
+  .-right-10percent {
+    right: 0% !important;
+  }
+  .split-inner3 {
+    font-size: 30px !important;
+
+    line-height: 50px !important;
+    z-index: 9999 !important;
+  }
+  .ll {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+
+    text-align: center;
+  }
+  .text-17 {
+    font-size: 8px;
+    line-height: 10px;
+    margin-top: -25px;
+    width: 98%;
+    display: flex;
+    padding: 0px 2px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+  .-right-10percent {
+    right: 0% !important;
+  }
+  .split-inner3 {
+    font-size: 33px !important;
+
+    line-height: 50px !important;
+    z-index: 9999 !important;
+  }
+  .text-17 {
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: -25px;
+    width: 98%;
+    display: flex;
+    padding: 0px 2px;
+    justify-content: center;
+  }
+
+  .ll {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 760px) {
+  .-right-10percent {
+    right: 0% !important;
+  }
+  .split-inner3 {
+    font-size: 43px !important;
+
+    line-height: 50px !important;
+    z-index: 9999 !important;
+  }
+
+  .text-17 {
+    font-size: 12px;
+    line-height: 10px;
+    margin-top: 5px;
+    width: 98%;
+    display: flex;
+    padding: 0px 0px;
+    justify-content: center;
+  }
+  .banner {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1024px) {
+  .-right-10percent {
+    right: 0% !important;
+  }
 }

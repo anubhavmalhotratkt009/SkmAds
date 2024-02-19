@@ -9,23 +9,23 @@ const HeroContainer = React.memo(() => {
       id="banner"
     >
       <div
-        className="module-section col-lg-8 d-flex align-items-center justify-content-center rounded-3 bg-bottom-left bg-no-repeat bg-cover py-5 style-fNtSU"
+        className="module-section col-lg-8 col-md-12 col-11 d-flex align-items-center justify-content-center rounded-3 bg-bottom-left bg-no-repeat bg-cover py-5 style-fNtSU"
         id="style-fNtSU"
       >
         <div className="container h-100">
           <div className="row h-100 content-between justify-center">
-            <div className="col col-12"></div>
-            <div className="col col-12 col-xl-10 align-self-center text-center">
+            <div className="col col-lg-12 col-md-12 col-12"></div>
+            <div className="col col-12 col-md-12 col-xl-10 align-self-center text-center">
               <div
                 className="position-relative w-100 d-flex flex-wrap ca-initvalues-applied lqd-animations-done"
                 data-custom-animations="true"
                 data-ca-options='{"animationTarget": "figure", "duration" : 1000 , "delay" : 100 , "ease": "expo.out", "initValues": {"y": "80px", "scaleX" : 0.8 , "scaleY" : 0.8 , "opacity" : 0} , "animations": {"y": "0px", "scaleX" : 1 , "scaleY" : 1 , "opacity" : 1}}'
               >
-                <div className="absolute z-1 me-0 module-shape-1">
-                  <div className="lqd-imggrp-single d-block position-relative">
-                    <div className="lqd-imggrp-img-container d-inline-flex position-relative align-items-center justify-center">
+                <div className="position-absolute z-1 me-0 module-shape-1">
+                  <div className="lqd-imggrp-single d-block">
+                    <div className="lqd-imggrp-img-container d-inline-flex  align-items-center justify-center">
                       <figure
-                        className="w-100 position-relative lqd-unit-animation-done"
+                        className="w-100 lqd-unit-animation-done"
                         style={{}}
                       >
                         <img
@@ -39,10 +39,10 @@ const HeroContainer = React.memo(() => {
                   </div>
                 </div>
                 <div className="position-absolute z-1 mt-4 module-shape-2">
-                  <div className="lqd-imggrp-single d-block position-relative">
-                    <div className="lqd-imggrp-img-container d-inline-flex position-relative align-items-center justify-center">
+                  <div className="lqd-imggrp-single d-block">
+                    <div className="lqd-imggrp-img-container d-inline-flex  align-items-center justify-center">
                       <figure
-                        className="w-100 position-relative lqd-unit-animation-done"
+                        className="w-100  lqd-unit-animation-done"
                         style={{}}
                       >
                         <img
@@ -55,11 +55,11 @@ const HeroContainer = React.memo(() => {
                     </div>
                   </div>
                 </div>
-                <div className="absolute z-1 mt-4 -right-10percent module-shape-3">
-                  <div className="lqd-imggrp-single d-block position-relative">
-                    <div className="lqd-imggrp-img-container d-inline-flex position-relative align-items-center justify-center">
+                <div className="position-absolute z-3 mt-4 -right-10percent module-shape-3 ">
+                  <div className="lqd-imggrp-single d-block ">
+                    <div className="lqd-imggrp-img-container d-inline-flex align-items-center justify-center">
                       <figure
-                        className="w-100 position-relative lqd-unit-animation-done"
+                        className="w-100  lqd-unit-animation-done"
                         style={{}}
                       >
                         <img
@@ -72,11 +72,11 @@ const HeroContainer = React.memo(() => {
                     </div>
                   </div>
                 </div>
-                <div className="absolute z-1 top-170 -right-10percent module-shape-4">
-                  <div className="lqd-imggrp-single d-block position-relative">
-                    <div className="lqd-imggrp-img-container d-inline-flex position-relative align-items-center justify-center">
+                <div className="position-absolute z-3 top-170 -right-10percent module-shape-4 ">
+                  <div className="lqd-imggrp-single d-block ">
+                    <div className="lqd-imggrp-img-container d-inline-flex  align-items-center justify-center">
                       <figure
-                        className="w-100 position-relative lqd-unit-animation-done"
+                        className="w-100  lqd-unit-animation-done sl"
                         style={{}}
                       >
                         <img
@@ -154,7 +154,10 @@ const HeroContainer = React.memo(() => {
                     </span>
                   </h1>
                 </div>
-                <div className="absolute bottom-0 mr-4">
+                <div
+                  className="position-absolute bottom-0 mr-4"
+                  style={{ zIndex: "-1 " }}
+                >
                   <figure
                     id="lqd-draw-shape-banner"
                     className="lqd-draw-shape"
@@ -187,17 +190,17 @@ const HeroContainer = React.memo(() => {
               </div>
             </div>
             <div
-              className="col col-12 d-flex flex-row gap-3 justify-content-between align-items-end sm:flex-wrap ca-initvalues-applied lqd-animations-done"
+              className="col col-12 d-flex flex-row gap-3 justify-content-between align-items-end sm:flex-wrap ca-initvalues-applied lqd-animations-done ok1"
               data-custom-animations="true"
               data-ca-options='{"animationTarget": ".animation-element", "duration" : 1000 , "startDelay" : 1300 , "delay" : 100 , "ease": "expo.out", "initValues": {"scaleX" : 0.7 , "scaleY" : 0.7 , "rotationY" : 10 , "opacity" : 0} , "animations": {"scaleX" : 1 , "scaleY" : 1 , "rotationY" : 0 , "opacity" : 1}}'
             >
-              <div className="w-350 max-w-100 sm:w-100">
+              <div className="w-350 max-w-100 w-100 kk">
                 <div className="transition-all hover:scale-1/1 animation-element lqd-unit-animation-done">
-                  <div className="iconbox d-flex flex-grow-1 position-relative mb-3 text-start items-start">
+                  <div className="iconbox d-flex flex-grow-1 position-relative mb-3 text-start items-start ll">
                     <div className="iconbox-icon-wrap mr-2">
-                      <div className="iconbox-icon-container d-inline-flex w-40 text-40 text-primary">
+                      <div className="iconbox-icon-container d-inline-flex w-40 text-40 text-primary ">
                         <svg
-                          className="w-1em h-auto"
+                          className="w-1em h-auto hero-inner-img"
                           xmlns="http://www.w3.org/2000/svg"
                           width="40.472"
                           height="40.472"
@@ -223,18 +226,19 @@ const HeroContainer = React.memo(() => {
                       </div>
                     </div>
                     <h3 className="lqd-iconbox-heading text-17 mb-0/7em leading-20">
-                      web and app advertising. we deliver results as needed.
+                      web and app ads on the go. we deliver results!
                     </h3>
                   </div>
                 </div>
               </div>
-              <div className="w-350 max-w-100 sm:w-100">
+
+              <div className="w-350 max-w-100 w-100 kk">
                 <div className="transition-all hover:scale-1/1 animation-element lqd-unit-animation-done">
-                  <div className="iconbox d-flex flex-grow-1 position-relative mb-3 text-start items-start">
+                  <div className="iconbox d-flex flex-grow-1 position-relative mb-3 text-start items-start ll">
                     <div className="iconbox-icon-wrap mr-2">
-                      <div className="iconbox-icon-container d-inline-flex w-40 text-40 text-primary">
+                      <div className="iconbox-icon-container d-inline-flex w-40 text-40 text-primary ">
                         <svg
-                          className="w-1em h-auto"
+                          className="w-1em h-auto hero-inner-img"
                           xmlns="http://www.w3.org/2000/svg"
                           width="34.36"
                           height="34.36"
@@ -255,19 +259,19 @@ const HeroContainer = React.memo(() => {
                         </svg>
                       </div>
                     </div>
-                    <h3 className="lqd-iconbox-heading text-17 mb-0/7em leading-20">
-                      we offer SKMADS mobile, convert and targeting
+                    <h3 className="lqd-iconbox-heading text-17 mb-0/7em leading-20 ms-1">
+                      we offer three services that will get you the results
                     </h3>
                   </div>
                 </div>
               </div>
-              <div className="w-350 max-w-100 sm:w-100">
+              <div className="w-350 max-w-100 w-100">
                 <div className="transition-all hover:scale-1/1 animation-element lqd-unit-animation-done">
-                  <div className="iconbox d-flex flex-grow-1 position-relative mb-3 text-start items-start">
+                  <div className="iconbox d-flex flex-grow-1 position-relative mb-3 text-start items-start ll">
                     <div className="iconbox-icon-wrap mr-20">
                       <div className="iconbox-icon-container d-inline-flex w-40 text-40 text-primary">
                         <svg
-                          className="w-1em h-auto"
+                          className="w-1em h-auto hero-inner-img"
                           xmlns="http://www.w3.org/2000/svg"
                           width="39.638"
                           height="39.638"
@@ -296,7 +300,7 @@ const HeroContainer = React.memo(() => {
                       </div>
                     </div>
                     <h3 className="lqd-iconbox-heading text-17 mb-0/7em leading-20">
-                      Privacy and security all the way through
+                      privacy and security all the way through the process
                     </h3>
                   </div>
                 </div>

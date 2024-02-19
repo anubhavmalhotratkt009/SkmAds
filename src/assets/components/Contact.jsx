@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactHome.css";
-import "./Services.css";
 import "./HeroContainer.css";
 import "./AboutHome.css";
 import "./Testimonials.css";
@@ -35,9 +34,9 @@ const Contact = () => {
 
   return (
     <>
-      <div className="main-bg2">
+      <div className="main-bg2 ">
         <section
-          className="lqd-section contact-form bg-center bg-cover pt-4 pb-100 snipcss-FHrny style-iyHqK "
+          className="lqd-section contact-form bg-center bg-cover pt-4  snipcss-FHrny style-iyHqK "
           id="contact"
         >
           <ContactHome />
