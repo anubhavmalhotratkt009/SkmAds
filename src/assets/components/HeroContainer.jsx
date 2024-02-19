@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 import "./HeroContainer.css";
 
 const HeroContainer = React.memo(() => {
@@ -38,7 +38,7 @@ const HeroContainer = React.memo(() => {
                     </div>
                   </div>
                 </div>
-                <div className="position-absolute z-1 mt-4 module-shape-2">
+                <div className="position-absolute z-1 mt-4 module-shape-2 lo">
                   <div className="lqd-imggrp-single d-block">
                     <div className="lqd-imggrp-img-container d-inline-flex  align-items-center justify-center">
                       <figure
@@ -55,7 +55,7 @@ const HeroContainer = React.memo(() => {
                     </div>
                   </div>
                 </div>
-                <div className="position-absolute z-3 mt-4 -right-10percent module-shape-3 ">
+                <div className="position-absolute z-3 mt-4 -right-10percent module-shape-3 lo">
                   <div className="lqd-imggrp-single d-block ">
                     <div className="lqd-imggrp-img-container d-inline-flex align-items-center justify-center">
                       <figure
@@ -72,7 +72,7 @@ const HeroContainer = React.memo(() => {
                     </div>
                   </div>
                 </div>
-                <div className="position-absolute z-3 top-170 -right-10percent module-shape-4 ">
+                <div className="position-absolute z-3 top-170 -right-10percent module-shape-4 lo ">
                   <div className="lqd-imggrp-single d-block ">
                     <div className="lqd-imggrp-img-container d-inline-flex  align-items-center justify-center">
                       <figure
@@ -90,14 +90,14 @@ const HeroContainer = React.memo(() => {
                   </div>
                 </div>
               </div>
-              <div className="position-relative">
+              <div className="position-relative lolo">
                 <div
                   className="ld-fancy-heading position-relative mask-text ca-initvalues-applied lqd-animations-done"
                   data-custom-animations="true"
                   data-ca-options='{"animationTarget": ".lqd-split-words .lqd-words .split-inner, .lqd-adv-txt-fig", "duration" : 1000 , "startDelay" : 200 , "delay" : 70 , "ease": "expo.out", "initValues": {"y": "120px", "opacity" : 0} , "animations": {"y": "0px", "opacity" : 1}}'
                 >
                   <h1 className="ld-fh-element position-relative lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-word is-in-view split-text-applied">
-                    <span className="lqd-adv-txt-item inline-d-block">
+                    <span className="lqd-adv-txt-item d-inline-block">
                       <div
                         className="split-unit lqd-words style-bvGCG"
                         id="style-bvGCG"
@@ -114,7 +114,7 @@ const HeroContainer = React.memo(() => {
                     </span>
                     <span className="lqd-adv-txt-item">
                       <div
-                        className="split-unit lqd-words style-FD6dt"
+                        className="split-unit lqd-words style-FD6dt d-inline-block"
                         id="style-FD6dt"
                       >
                         <span className="split-inner3">Visionary</span>
@@ -155,7 +155,7 @@ const HeroContainer = React.memo(() => {
                   </h1>
                 </div>
                 <div
-                  className="position-absolute bottom-0 mr-4"
+                  className="position-absolute bottom-0 mr-4 kolo"
                   style={{ zIndex: "-1 " }}
                 >
                   <figure
@@ -164,13 +164,13 @@ const HeroContainer = React.memo(() => {
                     data-lqd-draw-shape="true"
                     data-draw-shape-options='{"drawSVG": "0% 0%", "stagger" : 0 , "start": "top center", "end": "center 35%", "scrub" : 1 , "ease": "linear"}'
                   >
-                    <motion.svg
+                    <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="154.927"
                       height="26.983"
                       viewBox="0 0 154.927 26.983"
                     >
-                      <motion.path
+                      <path
                         d="M703.5,516.869c.808,1.5,1.533,2.858,2.276,4.21s1.5,2.686,2.562,4.593c.991-1.553,1.734-2.516,2.264-3.585,1.844-3.72,3.561-7.5,5.439-11.2a18.688,18.688,0,0,1,2.626-3.911c2.571-2.9,6.385-2.963,8.474.349,2.866,4.544,5.085,9.494,7.614,14.253.645,1.214,1.413,2.362,2.527,4.207,1.642-3.08,3-5.506,4.243-7.992,1.26-2.529,2.164-5.27,3.671-7.633a13.794,13.794,0,0,1,4.717-4.865c2.622-1.371,5.6.438,7.54,4.1,2.175,4.11,4.138,8.333,6.221,12.492.544,1.088,1.192,2.123,2.1,3.72,1.01-1.569,1.81-2.6,2.381-3.741,1.669-3.34,3.188-6.756,4.885-10.081a26.579,26.579,0,0,1,2.914-4.622c2.426-3.006,6.209-3.163,8.506-.07a64.655,64.655,0,0,1,4.92,8.622c1.16,2.2,2.093,4.524,3.216,6.747a30.7,30.7,0,0,0,2.068,3.031c1.041-1.726,1.925-2.994,2.607-4.362,1.889-3.792,3.546-7.707,5.583-11.414,1.3-2.365,2.811-4.8,6.157-4.732,3.406.067,4.939,2.547,6.27,5.02,2.007,3.726,3.7,7.62,5.573,11.419.615,1.246,1.378,2.419,2.378,4.152a40.1,40.1,0,0,0,2.37-3.627c1.742-3.489,3.378-7.031,5.08-10.541a22.719,22.719,0,0,1,1.558-2.841c3.274-4.836,7.43-4.954,10.736-.169,1.541,2.23,5.976,12.3,7.3,14.677"
                         transform="translate(-699.438 -501.797)"
                         fill="none"
@@ -184,16 +184,12 @@ const HeroContainer = React.memo(() => {
                           duration: 2,
                         }}
                       />
-                    </motion.svg>
+                    </svg>
                   </figure>
                 </div>
               </div>
             </div>
-            <div
-              className="col col-12 d-flex flex-row gap-3 justify-content-between align-items-end sm:flex-wrap ca-initvalues-applied lqd-animations-done ok1"
-              data-custom-animations="true"
-              data-ca-options='{"animationTarget": ".animation-element", "duration" : 1000 , "startDelay" : 1300 , "delay" : 100 , "ease": "expo.out", "initValues": {"scaleX" : 0.7 , "scaleY" : 0.7 , "rotationY" : 10 , "opacity" : 0} , "animations": {"scaleX" : 1 , "scaleY" : 1 , "rotationY" : 0 , "opacity" : 1}}'
-            >
+            <div className="col col-12 d-flex flex-row gap-3 justify-content-between align-items-end sm:flex-wrap ca-initvalues-applied lqd-animations-done ok1">
               <div className="w-350 max-w-100 w-100 kk">
                 <div className="transition-all hover:scale-1/1 animation-element lqd-unit-animation-done">
                   <div className="iconbox d-flex flex-grow-1 position-relative mb-3 text-start items-start ll">

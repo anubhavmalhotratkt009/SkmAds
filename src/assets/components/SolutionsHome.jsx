@@ -214,7 +214,7 @@ const SolutionsHome = () => {
           </div>
         </div>
         <div className="d-flex justify-content-center">
-          <div className="w-75">
+          <div className="col-lg-10 col-11">
             <Slider
               ref={(slider) => {
                 sliderRef = slider;

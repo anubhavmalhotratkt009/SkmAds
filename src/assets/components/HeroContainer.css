@@ -142,7 +142,7 @@ h3 {
     #cdddee 40%,
     #ffd2b4 100%
   );
-  height: 100vh !important;
+  height: 100% !important;
   /* filter: hue-rotate(685deg); */
 }
 #banner2 {
@@ -213,12 +213,14 @@ h3 {
   z-index: 999 !important; /* Ensure the grain effect stays behind other content */
 }
 
-@media only screen and (max-width: 379px) {
+@media only screen and (max-width: 376px) {
   .-right-10percent {
     right: 0% !important;
   }
   .split-inner3 {
-    font-size: 30px !important;
+    font-size: 38px !important;
+    letter-spacing: -3px !important;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 
     line-height: 50px !important;
     z-index: 9999 !important;
@@ -239,20 +241,51 @@ h3 {
     padding: 0px 2px;
     justify-content: center;
   }
+  .ok1 {
+    margin-bottom: 10px;
+  }
+  .lqd-adv-txt-fig {
+    width: 30px;
+    margin: 0px 5px !important;
+  }
+
+  .kolo {
+    margin-bottom: -40px;
+  }
+  /* .lo {
+    display: none;
+    visibility: hidden;
+  } */
+  .module-shape-2 {
+    margin-top: -80px !important;
+  }
+  .module-shape-4 {
+    margin-top: -100px !important;
+  }
 }
 
-@media only screen and (min-width: 380px) and (max-width: 480px) {
+@media only screen and (min-width: 377px) and (max-width: 480px) {
   .-right-10percent {
     right: 0% !important;
   }
   .split-inner3 {
-    font-size: 33px !important;
+    font-size: 35px !important;
+    letter-spacing: -2px !important;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 
     line-height: 50px !important;
     z-index: 9999 !important;
   }
+  .lqd-adv-txt-fig {
+    width: 30px;
+    margin: 0px 5px !important;
+  }
+  .lolo {
+    width: 105% !important;
+    margin-left: -10px;
+  }
   .text-17 {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 10px;
     margin-top: -25px;
     width: 98%;
@@ -260,13 +293,34 @@ h3 {
     padding: 0px 2px;
     justify-content: center;
   }
-
   .ll {
     display: flex !important;
     flex-direction: column !important;
     align-items: center;
-
+    margin-bottom: -100px !important;
     text-align: center;
+  }
+
+  .ok1 {
+    margin-bottom: 50px;
+    padding: 0px 30px;
+  }
+
+  .kolo {
+    visibility: hidden;
+  }
+  /* .lo {
+    display: none;
+    visibility: hidden;
+  } */
+  .module-shape-2 {
+    margin-top: -40px !important;
+  }
+  .module-shape-4 {
+    margin-top: -100px !important;
+  }
+  .module-shape-1 {
+    margin-bottom: -30px !important;
   }
 }
 

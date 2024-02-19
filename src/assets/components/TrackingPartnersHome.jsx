@@ -39,7 +39,7 @@ const TrackingPartnersHome = () => {
                 {ab.left ? (
                   <>
                     <div className="d-flex flex-row flex-nowrap gap-5 justify-content-center ab-inner">
-                      <div className="col-lg-6 col-10 ab-4">
+                      <div className="col-lg-6 col-12 ab-4">
                         <div className="w-100">
                           <img
                             src={`./images/${ab.img}`}
@@ -169,7 +169,7 @@ const TrackingPartnersHome = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-6 col-10 ab-2">
+                      <div className="col-lg-6 col-12 ab-2">
                         <div className="w-100">
                           <img
                             src={`./images/${ab.img}`}

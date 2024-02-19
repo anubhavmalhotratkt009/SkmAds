@@ -183,8 +183,8 @@ const TestimonialsHome = () => {
             </h2>
           </div>
         </div>
-        <div className="d-flex justify-content-center mb-5">
-          <div className="mt-1 col-10">
+        <div className="d-flex justify-content-center align-items-center mb-5">
+          <div className="mt-1 col-lg-10 col-11">
             <Slider
               ref={(slider) => {
                 sliderRef = slider;
