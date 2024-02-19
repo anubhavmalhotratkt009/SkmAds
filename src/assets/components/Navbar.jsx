@@ -33,74 +33,98 @@ const AppNavbar = () => {
         <i class="fas fa-bars fs-1"></i>
       </Navbar.Toggle>
       <Navbar.Collapse id="navbarNav">
-        <Nav className=" " style={{ marginLeft: "40px", gap: "12px" }}>
-          <Nav.Item>
-            <Nav.Link
-              href="/SkmAds/"
-              className="nav-link"
-              style={getItemStyle("Home")}
-              onMouseEnter={() => handleMouseEnter("Home")}
-              onMouseOut={handleMouseOut}
-            >
-              Home
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link
-              href="/SkmAds/about"
-              className="nav-link"
-              style={getItemStyle("About")}
-              onMouseEnter={() => handleMouseEnter("About")}
-              onMouseOut={handleMouseOut}
-            >
-              About
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link
-              href="/SkmAds/solutions"
-              className="nav-link"
-              style={getItemStyle("Solutions")}
-              onMouseEnter={() => handleMouseEnter("Solutions")}
-              onMouseOut={handleMouseOut}
-            >
-              Solutions
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link
-              href="/SkmAds/services"
-              className="nav-link"
-              style={getItemStyle("Services")}
-              onMouseEnter={() => handleMouseEnter("Services")}
-              onMouseOut={handleMouseOut}
-            >
-              Services
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link
-              href="/SkmAds/contact"
-              className="nav-link"
-              style={getItemStyle("Contact")}
-              onMouseEnter={() => handleMouseEnter("Contact")}
-              onMouseOut={handleMouseOut}
-            >
-              Contact
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link
-              href="https://skmdsp.com/"
-              className="nav-link"
-              style={getItemStyle("SKMDSP")}
-              onMouseEnter={() => handleMouseEnter("SKMDSP")}
-              onMouseOut={handleMouseOut}
-            >
-              SKMDSP
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
+        <div className="d-flex justify-content-between w-100">
+          <Nav className=" " style={{ marginLeft: "40px", gap: "12px" }}>
+            <Nav.Item>
+              <Nav.Link
+                href="/SkmAds/"
+                className="nav-link"
+                style={getItemStyle("Home")}
+                onMouseEnter={() => handleMouseEnter("Home")}
+                onMouseOut={handleMouseOut}
+              >
+                Home
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                href="/SkmAds/about"
+                className="nav-link"
+                style={getItemStyle("About")}
+                onMouseEnter={() => handleMouseEnter("About")}
+                onMouseOut={handleMouseOut}
+              >
+                About
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                href="/SkmAds/solutions"
+                className="nav-link"
+                style={getItemStyle("Solutions")}
+                onMouseEnter={() => handleMouseEnter("Solutions")}
+                onMouseOut={handleMouseOut}
+              >
+                Solutions
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                href="/SkmAds/services"
+                className="nav-link"
+                style={getItemStyle("Services")}
+                onMouseEnter={() => handleMouseEnter("Services")}
+                onMouseOut={handleMouseOut}
+              >
+                Services
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                href="/SkmAds/contact"
+                className="nav-link"
+                style={getItemStyle("Contact")}
+                onMouseEnter={() => handleMouseEnter("Contact")}
+                onMouseOut={handleMouseOut}
+              >
+                Contact
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                href="https://skmdsp.com/"
+                className="nav-link"
+                style={getItemStyle("SKMDSP")}
+                onMouseEnter={() => handleMouseEnter("SKMDSP")}
+                onMouseOut={handleMouseOut}
+              >
+                SKMDSP
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+          <Nav>
+            {" "}
+            <Nav.Item>
+              <Nav.Link
+                href="https://sg.linkedin.com/company/skmads"
+                className="nav-link"
+              >
+                <i
+                  class="fa-brands fa-linkedin fs-5"
+                  style={{ color: "#0d62bc" }}
+                ></i>
+              </Nav.Link>{" "}
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="mailto:sales@skmads.com" className="nav-link">
+                <i
+                  class="fa-solid fa-envelope-open-text fs-5"
+                  style={{ color: "#f95d2b" }}
+                ></i>
+              </Nav.Link>{" "}
+            </Nav.Item>
+          </Nav>
+        </div>
       </Navbar.Collapse>
     </Navbar>
   );

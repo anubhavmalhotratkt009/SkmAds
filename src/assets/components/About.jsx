@@ -64,7 +64,7 @@ const About = () => {
   return (
     <>
       <div className="main-bg">
-        <div class="titlebar-inner d-flex flex-column">
+        <div class="titlebar-inner d-flex flex-column mb-5">
           <div className="d-flex flex-row position-relative">
             <div className="col-3 position-absolute">
               <img
@@ -113,8 +113,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="d-flex flex-row col-11">
-          <div className="col-lg-6 d-flex justify-content-center flex-column ps-5 ms-5">
+        <div className="d-flex flex-row col-11 ">
+          <div className="col-lg-6 d-flex justify-content-center flex-column ps-5 ms-5 mt-5">
             {" "}
             <h2 className="ld-fh-element position-relative lqd-highlight-custom lqd-highlight-custom-2 mt-0/25em mb-0/75em text-27 is-in-view lqd-unit-animation-done text-start">
               Who we are &nbsp;🏢
