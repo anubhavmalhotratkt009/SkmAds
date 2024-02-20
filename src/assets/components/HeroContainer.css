@@ -218,7 +218,7 @@ h3 {
     right: 0% !important;
   }
   .split-inner3 {
-    font-size: 38px !important;
+    font-size: 30px !important;
     letter-spacing: -3px !important;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 
@@ -260,7 +260,11 @@ h3 {
     margin-top: -80px !important;
   }
   .module-shape-4 {
-    margin-top: -100px !important;
+    margin-top: -140px !important;
+    margin-right: -20px;
+  }
+  .module-shape-3 {
+    margin-top: -40px !important;
   }
 }
 
@@ -278,6 +282,12 @@ h3 {
 
     line-height: 50px !important;
     z-index: 9999 !important;
+  }
+  .nav-link {
+    margin-left: -30px !important;
+    font-size: 10px !important;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+    text-align: start;
   }
   .lqd-adv-txt-fig {
     width: 40px;
@@ -318,13 +328,14 @@ h3 {
     visibility: hidden;
   } */
   .module-shape-2 {
-    margin-top: -40px !important;
+    margin-top: -80px !important;
   }
   .module-shape-4 {
-    margin-top: 30px !important;
+    margin-top: -140px !important;
+    margin-right: -20px;
   }
-  .module-shape-1 {
-    margin-bottom: -30px !important;
+  .module-shape-3 {
+    margin-top: -40px !important;
   }
 }
 

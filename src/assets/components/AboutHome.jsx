@@ -238,7 +238,7 @@ const AboutHome = ({ bg }) => {
                                 id="style-kYhvt"
                                 style={{ marginLeft: "-10px" }}
                               >
-                                <Link to="/Skmads/solutions" className="btn">
+                                <a href="/SkmAds/solutions" className="btn">
                                   <span
                                     className="btn-txt mt-4 fw-bold"
                                     style={{ fontSize: "14px" }}
@@ -249,7 +249,7 @@ const AboutHome = ({ bg }) => {
                                   <span className="btn-icon ms-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                   </span>
-                                </Link>
+                                </a>
                               </div>
                             </div>
                           ) : (
@@ -261,7 +261,7 @@ const AboutHome = ({ bg }) => {
                                 className="ld-slideelement-hidden-inner style-kYhvt mt-3"
                                 id="style-kYhvt"
                               >
-                                <Link to="/Skmads/solutions" className="btn" a>
+                                <a href="SkmAds/solutions" className="btn" a>
                                   <span
                                     className="btn-txt mt-4 fw-bold"
                                     style={{ fontSize: "14px" }}
@@ -272,7 +272,7 @@ const AboutHome = ({ bg }) => {
                                   <span className="btn-icon ms-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                   </span>
-                                </Link>
+                                </a>
                               </div>
                             </div>
                           )}
@@ -290,14 +290,18 @@ const AboutHome = ({ bg }) => {
                   <p className="ld-fh-element position-relative inner-text-black py-2 px-2 m-0 text-slate-300">
                     Still have a question?
                     <a
-                      href="#"
+                      href="tel:+6531581448"
+                      style={{ textDecoration: "none" }}
                       className="text-slate-300 inner-text-black"
                       target="_blank"
                     >
                       <u>&nbsp;call us</u>
                     </a>
                     &nbsp;or
-                    <Link to="/Contact">
+                    <Link
+                      to="/Contact"
+                      className="text-slate-300 inner-text-black"
+                    >
                       <u>&nbsp;submit a form.</u>
                     </Link>
                   </p>

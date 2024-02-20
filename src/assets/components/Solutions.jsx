@@ -40,7 +40,7 @@ const aboutTypes = [
 const Solutions = () => {
   return (
     <>
-      <div className="main-bg">
+      <div className="main-bg pb-5">
         <div class="titlebar-inner d-flex flex-column ">
           <div className="d-flex flex-row position-relative">
             <div className="col-3 position-absolute">

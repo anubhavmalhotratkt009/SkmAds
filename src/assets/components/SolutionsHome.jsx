@@ -262,7 +262,7 @@ const SolutionsHome = () => {
                         style={{ marginTop: "1px solid #e0e0e0" }}
                       />
                       <a
-                        href="#contact-modal"
+                        href="/SkmAds/services"
                         className="z-10 btn btn-underlined  btn-icon-right text-black before:bg-black snipcss0-12-80-91"
                         data-lity="#contact-modal"
                       >

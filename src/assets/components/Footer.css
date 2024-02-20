@@ -35,6 +35,14 @@
     flex-direction: column;
   }
 
+  .col-lg-4 h5 {
+    visibility: hidden;
+  }
+
+  .add-foot {
+    font-size: 12px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  }
   .credits {
     font-size: 8px;
   }

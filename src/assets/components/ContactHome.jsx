@@ -282,6 +282,7 @@ const ContactHome = () => {
                               aria-required="true"
                               aria-invalid="false"
                               placeholder="What's your name?"
+                              required
                             />
                           </span>
                         </p>
@@ -298,6 +299,7 @@ const ContactHome = () => {
                               aria-required="true"
                               aria-invalid="false"
                               placeholder="Email Address"
+                              required
                             />
                           </span>
                         </p>
@@ -314,6 +316,7 @@ const ContactHome = () => {
                               aria-required="true"
                               aria-invalid="false"
                               placeholder="Subject"
+                              required
                             />
                           </span>
                         </p>
@@ -330,6 +333,7 @@ const ContactHome = () => {
                               aria-required="true"
                               aria-invalid="false"
                               placeholder="Add a Message"
+                              required
                             ></textarea>
                           </span>
                         </p>
