@@ -1,7 +1,5 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import "./Footer.css";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   const form = useRef();
@@ -30,83 +28,111 @@ const Footer = () => {
   };
   return (
     <>
-      <footer
-        id="site-footer"
-        class="main-footer bg-transparent py-70 snipcss-IQHcK style-xK3EL"
-      >
-        <div class="container">
-          <div class="d-flex flex-wrap">
-            <div class="w-20percent mb-30 w-50percent">
-              <div class="ld-fancy-heading relative">
-                <h6 class="ld-fh-element relative mb-3em text-10 font-bold tracking-1 text-white-40 uppercase">
-                  COMPANY
-                </h6>
-              </div>
-              <nav class="link-white-80 lqd-fancy-menu lqd-custom-menu relative lqd-menu-td-none d-flex justify-content-center">
-                <ul class="reset-ul">
-                  <li class="mb-15">
-                    <a href="#">Contact Us</a>
-                  </li>
+      <div className="footer-con  d-flex justify-content-center">
+        <div className="col-lg-10 d-flex footer-inner-con">
+          <div className="col-lg-4 col ">
+            <h5 className="text-white mb-5 fw-bold">SKMTEK PTE. LTD.</h5>
+            <h6 className="text-white fw-light add-foot">68 CIRCULAR ROAD</h6>
+            <h6 className="text-white fw-light add-foot">#02-01D</h6>
+            <h6 className="text-white fw-light add-foot">SINGAPORE - 049422</h6>
 
-                  <li class="mb-15">
-                    <a href="#">Careers</a>
-                  </li>
-                  <li>
-                    <a href="#">About</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="w-20percent mb-30 w-50">
-              <div class="ld-fancy-heading relative">
-                <h6 class="ld-fh-element relative mb-3em text-10 font-bold tracking-1 text-white-40 uppercase">
-                  SUPPORT
-                </h6>
-              </div>
-              <nav class="link-white-80 lqd-fancy-menu lqd-custom-menu relative lqd-menu-td-none  d-flex justify-content-center">
-                <ul class="reset-ul">
-                  <li class="mb-15">
-                    <Link to="/privacy-and-policy">Privacy Policy</Link>
-                  </li>
-                  <li class="mb-15">
-                    <Link to="/terms-and-conditions">Terms and Conditions</Link>
-                  </li>
-                  <li class="mb-15">
-                    <a href="#">Linkedin</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="w-20percent mb-30 sm:w-full">
-              <div class="ld-fancy-heading relative">
-                <h6 class="ld-fh-element relative mb-3em text-10 font-bold tracking-1 text-white-40 uppercase">
-                  NEED HELP?
-                </h6>
-              </div>
-              <div class="ld-fancy-heading relative">
-                <h6 class="ld-fh-element inline-block relative mb-0/5em text-9 uppercase tracking-1 text-white-30">
-                  CALL US DIRECTLY
-                </h6>
-              </div>
-              <div class="ld-fancy-heading relative">
-                <p class="ld-fh-element relative mb-1/65em text-18 font-medium text-white">
-                  (123) 567 8901
+            <a
+              href="mailto:sales@skmads.com"
+              style={{ textDecoration: "none" }}
+            >
+              <p className="mt-3 text-white fw-bold">
+                <i className="fa-regular fa-envelope"></i>&nbsp;
+                sales@skmads.com
+              </p>
+            </a>
+            <a href="tel:+6531581448" style={{ textDecoration: "none" }}>
+              <p className="mt-4 text-white fw-bold">
+                <i className="fa-solid fa-phone"></i> &nbsp;+65 3158 1448
+              </p>
+            </a>
+          </div>
+
+          <div className="col-lg-4 col">
+            <h5 className="text-white mb-5 fw-bold">Useful Links</h5>
+
+            <a
+              href="/SkmAds/privacy-and-policy"
+              style={{ textDecoration: "none" }}
+            >
+              <h6 className="text-white add-foot2">Privacy and Policy</h6>
+            </a>
+            <a
+              href="/SkmAds/terms-and-conditions"
+              style={{ textDecoration: "none" }}
+            >
+              <h6 className="text-white add-foot2">Terms and Conditions</h6>
+            </a>
+            <a href="/SkmAds/careers" style={{ textDecoration: "none" }}>
+              <h6 className="text-white add-foot2">Careers</h6>
+            </a>
+          </div>
+
+          <div className="col-lg-4 col">
+            {show ? (
+              <form ref={form} onSubmit={sendEmail}>
+                <h5 className="text-white mb-5 fw-bold">Get a Quote</h5>
+                <input
+                  className="form-control rounded-0 p-2"
+                  placeholder="      Name"
+                  name="name"
+                  r
+                  required
+                />
+                <input
+                  className="form-control mt-3 rounded-0 p-2"
+                  placeholder="      E-mail"
+                  name="email"
+                  required
+                />
+                <select
+                  className="form-select mt-3  rounded-0 p-2"
+                  aria-label="Default select example"
+                  name="option"
+                  required
+                >
+                  <option style={{ color: "#d3d3d3" }}>
+                    &nbsp;&nbsp;&nbsp;&nbsp;-Please choose an option-
+                  </option>
+                  <option value="I want to advertise my application/website">
+                    I want to advertise my application/website
+                  </option>
+                  <option value="I want to monetise my traffic">
+                    I want to monetise my traffic
+                  </option>
+                </select>
+
+                <button className="footer-btn p-2 text-white mt-4 border-0 rounded-1 px-5 fs-6">
+                  Send Email
+                </button>
+              </form>
+            ) : (
+              <div
+                className="d-flex flex-column justify-content-center align-items-center text-center"
+                style={{ height: "30vh" }}
+              >
+                <i
+                  className="fa-solid fa-circle-check text-light mb-3"
+                  style={{ fontSize: "80px" }}
+                ></i>
+                <p className="text-light">
+                  Your Message has been successfully sent!
                 </p>
               </div>
-              <div class="ld-fancy-heading relative">
-                <h6 class="ld-fh-element inline-block relative mb-0/5em text-9 uppercase tracking-1 text-white-30">
-                  CALL US DIRECTLY
-                </h6>
-              </div>
-              <div class="ld-fancy-heading relative">
-                <p class="ld-fh-element relative mb-1/65em text-18 font-medium text-white">
-                  info@liquid.com
-                </p>
-              </div>
-            </div>
+            )}
           </div>
         </div>
-      </footer>
+      </div>
+      <div className="text-center bg-black text-white pt-2 py-3">
+        <small className="credits">
+          © 2024 SKMADS all rights reserved. Owned and Operated By SKMTEK PTE.
+          LTD.
+        </small>
+      </div>
     </>
   );
 };
