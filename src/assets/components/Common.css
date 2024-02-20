@@ -427,7 +427,7 @@ p {
     justify-content: center;
   }
   #banner2 {
-    height: 100vh !important;
+    height: 100% !important;
   }
   .abt-image {
     width: 350px;
@@ -453,6 +453,11 @@ p {
   .text-26 {
     font-size: 25px;
     margin-top: 30px;
+  }
+  .titlebar-container .titlebar-col h1 {
+    font-size: 35px !important;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0px;
   }
 }
 

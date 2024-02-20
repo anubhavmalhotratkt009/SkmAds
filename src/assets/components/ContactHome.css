@@ -410,8 +410,16 @@ label {
 
 @media only screen and (max-width: 480px) {
   .split-inner2 {
-    font-size: 45px;
+    font-size: 35px;
     width: 100% !important;
+    line-height: 2px;
+    text-align: center !important;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .text-32 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px !important;
   }
 
   #style-MByDF {
@@ -433,12 +441,13 @@ label {
     width: 20px !important;
   }
   .contact-desc {
-    font-size: 12px !important;
+    font-size: 8px !important;
     margin-top: -20px;
+    visibility: hidden;
   }
 
   .koko {
-    margin-top: -50px;
+    margin-top: -100px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 850px) {

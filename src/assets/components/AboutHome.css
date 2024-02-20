@@ -224,7 +224,7 @@ h2 {
 
 @media only screen and (max-width: 480px) {
   .split-inner5 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .text-18 {
     font-size: 10px !important;
@@ -265,5 +265,4 @@ h2 {
   .module-iconbo {
     flex-wrap: wrap !important;
   }
-
 }

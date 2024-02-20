@@ -302,7 +302,7 @@ const ContactHome = () => {
                             size={10}
                             aria-required="true"
                             aria-invalid="false"
-                            placeholder="Add Phone Number"
+                            placeholder="Phone Number"
                           />
                         </span>
                       </p>
@@ -314,13 +314,12 @@ const ContactHome = () => {
                           <textarea
                             className="border-black-20 text-black text-13"
                             name="message"
-                            cols={10}
-                            rows={6}
+                            cols={5}
+                            rows={2}
                             aria-required="true"
                             aria-invalid="false"
-                            placeholder="A brief description about your project/request/consultation"
-                            defaultValue={"                      "}
-                          />
+                            placeholder="Add a Message"
+                          ></textarea>
                         </span>
                       </p>
                     </div>

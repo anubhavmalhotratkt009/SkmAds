@@ -257,7 +257,7 @@ const TestimonialsHome = () => {
             </h3>
             <span className="split-inner snipcss-WxzCR fs-2 fw-bold mt-5 text-dark"></span>
           </div>
-          <div className="pb-5">
+          <div className="pb-5 kilk">
             <Marquee
               speed={50} // Speed of the marquee (Optional)
               loop={0}

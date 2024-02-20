@@ -36,7 +36,7 @@ const Footer = () => {
       >
         <div class="container">
           <div class="d-flex flex-wrap">
-            <div class="w-20percent mb-30 sm:w-50percent">
+            <div class="w-20percent mb-30 w-50percent">
               <div class="ld-fancy-heading relative">
                 <h6 class="ld-fh-element relative mb-3em text-10 font-bold tracking-1 text-white-40 uppercase">
                   COMPANY
@@ -47,22 +47,17 @@ const Footer = () => {
                   <li class="mb-15">
                     <a href="#">Contact Us</a>
                   </li>
-                  <li class="mb-15">
-                    <a href="#">FAQ</a>
-                  </li>
-                  <li class="mb-15">
-                    <a href="#">Report A Bug</a>
-                  </li>
+
                   <li class="mb-15">
                     <a href="#">Careers</a>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <a href="#">About</a>
                   </li>
                 </ul>
               </nav>
             </div>
-            <div class="w-20percent mb-30 sm:w-50percent">
+            <div class="w-20percent mb-30 w-50">
               <div class="ld-fancy-heading relative">
                 <h6 class="ld-fh-element relative mb-3em text-10 font-bold tracking-1 text-white-40 uppercase">
                   SUPPORT
@@ -78,9 +73,6 @@ const Footer = () => {
                   </li>
                   <li class="mb-15">
                     <a href="#">Linkedin</a>
-                  </li>
-                  <li>
-                    <a href="#">Community</a>
                   </li>
                 </ul>
               </nav>
