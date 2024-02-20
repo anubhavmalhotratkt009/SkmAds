@@ -136,7 +136,7 @@ const PrivacyAndPolicy = () => {
           {details.map((detail, index) => {
             const temp = detail.desc.split("  ");
             return (
-              <div key={index} className="col-lg-10">
+              <div key={index} className="col-lg-10 col-10">
                 <h4 className="split-inner19 fw-bold mt-4 text-start text-dark">
                   {detail.title}
                 </h4>

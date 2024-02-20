@@ -102,15 +102,17 @@ const HeroContainer = React.memo(() => {
                         className="split-unit lqd-words style-bvGCG"
                         id="style-bvGCG"
                       >
-                        <span className="split-inner3">Fostering</span>
+                        <span className="split-inner3">
+                          Fostering{" "}
+                          <img
+                            className="lqd-adv-txt-fig position-relative d-inline-flex ms-2 me-2 vertical-align-middle rounded-circle"
+                            width={58}
+                            height={58}
+                            src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/banner.jpg"
+                            alt="title shape"
+                          />
+                        </span>
                       </div>
-                      <img
-                        className="lqd-adv-txt-fig position-relative d-inline-flex ms-3 me-2 vertical-align-middle rounded-circle"
-                        width={58}
-                        height={58}
-                        src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/banner.jpg"
-                        alt="title shape"
-                      />
                     </span>
                     <span className="lqd-adv-txt-item">
                       <div
@@ -126,23 +128,22 @@ const HeroContainer = React.memo(() => {
                         id="style-oCWyC"
                       >
                         <span className="split-inner3">
-                          &nbsp;&nbsp;&nbsp;creativity&nbsp;
+                          &nbsp;&nbsp;&nbsp;creativity with&nbsp;
+                          <mark class="lqd-highlight">
+                            <span class="split-inner3"> SKMADS</span>
+                            <span
+                              class="bottom-0 left-0 lqd-highlight-inner bg-purple-101 style-9pqpl"
+                              style={{ zIndex: "-1" }}
+                              id="style-9pqpl"
+                            ></span>
+                          </mark>
                         </span>
                       </div>
                       <div
                         className="split-unit lqd-words style-Oa1sH"
                         id="style-Oa1sH"
-                      >
-                        <span className="split-inner3">with&nbsp;</span>
-                      </div>
-                      <mark class="lqd-highlight">
-                        <span class="split-inner3"> SKMADS</span>
-                        <span
-                          class="bottom-0 left-0 lqd-highlight-inner bg-purple-101 style-9pqpl"
-                          style={{ zIndex: "-1" }}
-                          id="style-9pqpl"
-                        ></span>
-                      </mark>
+                      ></div>
+
                       <div
                         className="split-unit lqd-words style-s3sbk"
                         id="style-s3sbk"

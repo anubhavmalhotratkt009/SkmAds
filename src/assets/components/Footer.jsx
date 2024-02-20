@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import "./Footer.css";
 
 const Footer = () => {
   const form = useRef();
@@ -28,7 +29,7 @@ const Footer = () => {
   };
   return (
     <>
-      <div className="footer-con  d-flex justify-content-center">
+      <div className="footer-con  d-flex justify-content-center main-bg">
         <div className="col-lg-10 d-flex footer-inner-con">
           <div className="col-lg-4 col ">
             <h5 className="text-white mb-5 fw-bold">SKMTEK PTE. LTD.</h5>
@@ -80,7 +81,6 @@ const Footer = () => {
                   className="form-control rounded-0 p-2"
                   placeholder="      Name"
                   name="name"
-                  r
                   required
                 />
                 <input

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./AboutHome.css";
+import { Link } from "react-router-dom";
 
 const AboutHome = ({ bg }) => {
   const [skmTypes, setSkmTypes] = useState([
@@ -237,7 +238,7 @@ const AboutHome = ({ bg }) => {
                                 id="style-kYhvt"
                                 style={{ marginLeft: "-10px" }}
                               >
-                                <a href="#contact-modal" className="btn">
+                                <Link to="/Skmads/solutions" className="btn">
                                   <span
                                     className="btn-txt mt-4 fw-bold"
                                     style={{ fontSize: "14px" }}
@@ -248,7 +249,7 @@ const AboutHome = ({ bg }) => {
                                   <span className="btn-icon ms-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                   </span>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           ) : (
@@ -260,17 +261,18 @@ const AboutHome = ({ bg }) => {
                                 className="ld-slideelement-hidden-inner style-kYhvt mt-3"
                                 id="style-kYhvt"
                               >
-                                <a
-                                  href="#contact-modal"
-                                  className="btn"
-                                  data-lity="#contact-modal"
-                                >
+                                <Link to="/Skmads/solutions" className="btn" a>
                                   <span
-                                    className="btn-txt mt-4"
+                                    className="btn-txt mt-4 fw-bold"
+                                    style={{ fontSize: "14px" }}
                                     data-text="Explore"
-                                  ></span>
-                                  <span className="btn-icon ms-1"></span>
-                                </a>
+                                  >
+                                    Explore
+                                  </span>
+                                  <span className="btn-icon ms-1">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                  </span>
+                                </Link>
                               </div>
                             </div>
                           )}
@@ -295,13 +297,9 @@ const AboutHome = ({ bg }) => {
                       <u>&nbsp;call us</u>
                     </a>
                     &nbsp;or
-                    <a
-                      href="#contact-modal"
-                      className="text-slate-300 inner-text-black"
-                      data-lity="#contact-modal"
-                    >
+                    <Link to="/Contact">
                       <u>&nbsp;submit a form.</u>
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>

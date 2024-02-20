@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./ContactHome.css";
 
 const ContactHome = () => {
+  const form = useRef();
+  const [show, setShow] = useState(true);
+
+  const sendEmail = (e) => {
+    setShow(false);
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_3vqpt6q",
+        "template_4hvstrb",
+        form.current,
+        "X9JXI__uGfxd1leot"
+      )
+      .then((result) => {
+        console.log(result.text);
+        setTimeout(() => {
+          setShow(true);
+        }, [5000]);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+  };
   return (
     <section
       className="lqd-section contact-form bg-center bg-cover pt-70 pb-100 snipcss-FHrny style-iyHqK"
@@ -233,106 +258,106 @@ const ContactHome = () => {
           </div>
           <div className="col-lg-6  col-md-12 col-11 ca-initvalues-applied lqd-animations-done koko">
             <div className="ld-fancy-heading position-relative">
-              <h2
-                className="ld-fh-element position-relative mb-1em text-32 lqd-unit-animation-done"
-                style={{}}
-              >
+              <h2 className="ld-fh-element position-relative mb-1em text-32 lqd-unit-animation-done">
                 Send a message
               </h2>
             </div>
-            <div
-              className="lqd-contact-form lqd-contact-form-inputs-underlined lqd-contact-form-button-block lqd-contact-form-button-circle lqd-contact-form-inputs-border-thick bg-white pt-45 pb-50 px-75 rounded-12 animation-element lqd-unit-animation-done"
-              style={{}}
-            >
+            <div className="lqd-contact-form lqd-contact-form-inputs-underlined lqd-contact-form-button-block lqd-contact-form-button-circle lqd-contact-form-inputs-border-thick bg-white pt-45 pb-50 px-75 rounded-12 animation-element lqd-unit-animation-done">
               <div role="form">
-                <div
-                  className="screen-reader-response animation-element lqd-unit-animation-done"
-                  style={{}}
-                >
+                <div className="screen-reader-response animation-element lqd-unit-animation-done">
                   <p role="status" aria-live="polite" aria-atomic="true"></p>
                 </div>
-                <form
-                  action="./assets/php/mailer.php"
-                  method="post"
-                  className="lqd-cf-form"
-                  noValidate="novalidate"
-                  data-status="init"
-                >
-                  <div className="row -mr-15 -ml-15 flex-wrap">
-                    <div className="col col-12 col-md-6 px-15">
-                      <p>
-                        <span className="lqd-form-control-wrap text">
-                          <input
-                            className="border-black-20 text-black text-13"
-                            type="text"
-                            name="name"
-                            defaultValue=""
-                            size={40}
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="What's your name?"
-                          />
-                        </span>
-                      </p>
-                    </div>
-                    <div className="col col-12 col-md-6 px-15">
-                      <p>
-                        <span className="lqd-form-control-wrap email">
-                          <input
-                            className="border-black-20 text-black text-13"
-                            type="email"
-                            name="email"
-                            defaultValue=""
-                            size={40}
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Email Address"
-                          />
-                        </span>
-                      </p>
-                    </div>
-                    <div className="col col-12 col-md-6 px-15">
-                      <p>
-                        <span className="lqd-form-control-wrap tel">
-                          <input
-                            className="border-black-20 text-black text-13"
-                            type="text"
-                            name="phone"
-                            defaultValue=""
-                            size={10}
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Phone Number"
-                          />
-                        </span>
-                      </p>
-                    </div>
+                {show ? (
+                  <form ref={form} onSubmit={sendEmail}>
+                    <div className="row -mr-15 -ml-15 flex-wrap">
+                      <div className="col col-12 col-md-6 px-15">
+                        <p>
+                          <span className="lqd-form-control-wrap text">
+                            <input
+                              className="border-black-20 text-black text-13"
+                              type="text"
+                              name="name"
+                              defaultValue=""
+                              size={40}
+                              aria-required="true"
+                              aria-invalid="false"
+                              placeholder="What's your name?"
+                            />
+                          </span>
+                        </p>
+                      </div>
+                      <div className="col col-12 col-md-6 px-15">
+                        <p>
+                          <span className="lqd-form-control-wrap email">
+                            <input
+                              className="border-black-20 text-black text-13"
+                              type="email"
+                              name="email"
+                              defaultValue=""
+                              size={40}
+                              aria-required="true"
+                              aria-invalid="false"
+                              placeholder="Email Address"
+                            />
+                          </span>
+                        </p>
+                      </div>
+                      <div className="col col-12 col-md-6 px-15">
+                        <p>
+                          <span className="lqd-form-control-wrap tel">
+                            <input
+                              className="border-black-20 text-black text-13"
+                              type="text"
+                              name="subject"
+                              defaultValue=""
+                              size={10}
+                              aria-required="true"
+                              aria-invalid="false"
+                              placeholder="Subject"
+                            />
+                          </span>
+                        </p>
+                      </div>
 
-                    <div className="col col-12 px-15">
-                      <p>
-                        <span className="lqd-form-control-wrap textarea">
-                          <textarea
-                            className="border-black-20 text-black text-13"
-                            name="message"
-                            cols={5}
-                            rows={2}
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Add a Message"
-                          ></textarea>
-                        </span>
-                      </p>
-                    </div>
+                      <div className="col col-12 px-15">
+                        <p>
+                          <span className="lqd-form-control-wrap textarea">
+                            <textarea
+                              className="border-black-20 text-black text-13"
+                              name="message"
+                              cols={5}
+                              rows={2}
+                              aria-required="true"
+                              aria-invalid="false"
+                              placeholder="Add a Message"
+                            ></textarea>
+                          </span>
+                        </p>
+                      </div>
 
-                    <div className="col col-12 px-15">
-                      <input
-                        type="submit"
-                        defaultValue="— send message"
-                        className="lqd-cf-form-control lqd-cf-submit border-0 bg-black text-14 text-white"
-                      />
+                      <div className="col col-12 px-15">
+                        <input
+                          type="submit"
+                          defaultValue="— send message"
+                          className="lqd-cf-form-control lqd-cf-submit border-0 bg-black text-14 text-white"
+                        />
+                      </div>
                     </div>
+                  </form>
+                ) : (
+                  <div
+                    className="d-flex flex-column justify-content-center align-items-center text-center"
+                    style={{ height: "30vh" }}
+                  >
+                    <i
+                      className="fa-solid fa-circle-check text-success mb-3"
+                      style={{ fontSize: "80px" }}
+                    ></i>
+                    <p className="text-dark">
+                      Your Message has been successfully sent!
+                    </p>
                   </div>
-                </form>
+                )}
                 <div className="lqd-cf-response-output"></div>
               </div>
             </div>

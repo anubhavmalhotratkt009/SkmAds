@@ -69,7 +69,10 @@
 }
 
 .-top-145percent {
-  top: -105%;
+  top: -75%;
+  left: -45% !important;
+  max-height: 50px !important;
+  z-index: 0 !important;
 }
 
 .ltr-left-0 {

@@ -225,7 +225,7 @@ const TermsAndConditions = () => {
           {details.map((detail, i) => {
             const temp = detail.desc.split(".");
             return (
-              <div key={i} className="col-lg-10">
+              <div key={i} className="col-lg-10 col-11">
                 <h4 className="split-inner19 fw-bold mt-4 text-start text-dark">
                   {detail.title}
                 </h4>
