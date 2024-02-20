@@ -386,6 +386,13 @@ p {
     letter-spacing: 0px;
     font-weight: bold;
   }
+  .loloo {
+    font-size: 10px;
+  }
+
+  .lolop {
+    font-size: 12px !important;
+  }
   .leading-20 {
     font-size: 12px !important;
     padding: 0px 20px;

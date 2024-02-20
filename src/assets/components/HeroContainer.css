@@ -3,6 +3,11 @@
   font-weight: normal;
 }
 
+.lqd-adv-txt-fig {
+  width: 60px !important;
+  height: 60px !important;
+}
+
 :root {
   --lqd-container-width: 1140px;
   --lqd-row-gutter-x: 0;
@@ -218,7 +223,7 @@ h3 {
     right: 0% !important;
   }
   .split-inner3 {
-    font-size: 30px !important;
+    font-size: 28px !important;
     letter-spacing: -3px !important;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 
@@ -245,7 +250,8 @@ h3 {
     margin-bottom: 10px;
   }
   .lqd-adv-txt-fig {
-    width: 30px;
+    width: 30px !important;
+    height: 30px !important;
     margin: 0px 5px !important;
   }
 
@@ -276,7 +282,7 @@ h3 {
     right: 0% !important;
   }
   .split-inner3 {
-    font-size: 30px !important;
+    font-size: 28px !important;
     letter-spacing: -1px !important;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 
@@ -290,8 +296,10 @@ h3 {
     text-align: start;
   }
   .lqd-adv-txt-fig {
-    width: 40px;
+    width: 30px !important;
+    height: 30px !important;
     margin: 0px 5px !important;
+    margin-top: 10px !important;
   }
   .lolo {
     width: 105% !important;

@@ -35,26 +35,16 @@ const Careers = () => {
           }}
         >
           <div className="d-flex flex-column justify-content-center align-items-center w-100 py-5">
-            <h1 className="text-center">Current Openings</h1>
+            <h3 className="text-center split-inner3">Current Openings</h3>
             <div className="bg-white col-lg-8 col-12 p-4 mt-3">
               <div className="d-flex justify-content-between p-4">
                 <div>
-                  <h6>AdOps Specialist</h6>
+                  <h6 className="lolop">AdOps Specialist</h6>
                 </div>
                 <div>
-                  <small className="text-secondary">Bangalore, India</small>
-                </div>
-                <a href="mailto:sales@skmads.com">
-                  <button className="btn m-0 px-3 btn-secondary">Apply</button>
-                </a>
-              </div>
-
-              <div className="d-flex justify-content-between p-4">
-                <div>
-                  <h6>Account Manager</h6>
-                </div>
-                <div>
-                  <small className="text-secondary">Bangalore, India</small>
+                  <small className="text-secondary loloo">
+                    Bangalore, India
+                  </small>
                 </div>
                 <a href="mailto:sales@skmads.com">
                   <button className="btn m-0 px-3 btn-secondary">Apply</button>
@@ -63,10 +53,26 @@ const Careers = () => {
 
               <div className="d-flex justify-content-between p-4">
                 <div>
-                  <h6>B. Dev Executive</h6>
+                  <h6 className="lolop">Account Manager</h6>
                 </div>
                 <div>
-                  <small className="text-secondary">Bangalore, India</small>
+                  <small className="text-secondary loloo">
+                    Bangalore, India
+                  </small>
+                </div>
+                <a href="mailto:sales@skmads.com">
+                  <button className="btn m-0 px-3 btn-secondary">Apply</button>
+                </a>
+              </div>
+
+              <div className="d-flex justify-content-between p-4">
+                <div>
+                  <h6 className="lolop">B. Dev Executive</h6>
+                </div>
+                <div>
+                  <small className="text-secondary loloo">
+                    Bangalore, India
+                  </small>
                 </div>
 
                 <a href="mailto:sales@skmads.com">

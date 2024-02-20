@@ -21,7 +21,17 @@ const TermsAndConditions = lazy(() =>
 const App = () => {
   return (
     <BrowserRouter basename={"/SkmAds/"}>
-      <Suspense fallback="ok">
+      <Suspense
+        fallback={
+          <div style={{ height: "100vh" }}>
+            <div className=" d-flex justify-content-center align-items-center w-100 h-100">
+              <span className="text-muted" style={{ fontSize: "12px" }}>
+                loading....
+              </span>
+            </div>
+          </div>
+        }
+      >
         <Navbar />
         <Routes basename={"/SkmAds/"}>
           {/* individual routes to respective pages */}

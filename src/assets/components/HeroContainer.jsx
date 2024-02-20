@@ -102,15 +102,14 @@ const HeroContainer = React.memo(() => {
                         className="split-unit lqd-words style-bvGCG"
                         id="style-bvGCG"
                       >
-                        <span className="split-inner3">
+                        <span className="split-inner3 d-flex w-100">
                           Fostering{" "}
                           <img
                             className="lqd-adv-txt-fig position-relative d-inline-flex ms-2 me-2 vertical-align-middle rounded-circle"
-                            width={58}
-                            height={58}
                             src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/banner.jpg"
                             alt="title shape"
-                          />
+                          />{" "}
+                          <span className="split-inner3"> Visionary</span>
                         </span>
                       </div>
                     </span>
@@ -118,9 +117,7 @@ const HeroContainer = React.memo(() => {
                       <div
                         className="split-unit lqd-words style-FD6dt d-inline-block"
                         id="style-FD6dt"
-                      >
-                        <span className="split-inner3">Visionary</span>
-                      </div>
+                      ></div>
                       <br />
 
                       <div
