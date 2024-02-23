@@ -1,7 +1,0 @@
-import{r as t,_,j as o}from"./index-KWXfpCEC.js";import{C as r}from"./ContactHome-C23ietRv.js";import"./index-V4ahzHcC.js";const s=t.lazy(()=>_(()=>import("./HeroContainer-5XD4lxPJ.js"),__vite__mapDeps([0,1,2,3,4]))),e=t.lazy(()=>_(()=>import("./AboutHome-h9zdrzmG.js"),__vite__mapDeps([5,1,2,6]))),i=t.lazy(()=>_(()=>import("./SolutionsHome-7-jA-0dv.js"),__vite__mapDeps([7,1,2,8,9,10,11]))),a=t.lazy(()=>_(()=>import("./ServicesHome-TltIQI54.js"),__vite__mapDeps([12,1,2]))),m=t.lazy(()=>_(()=>import("./TrackingPartnersHome-7chz3Yox.js"),__vite__mapDeps([13,1,2,14]))),n=t.lazy(()=>_(()=>import("./TestimonialsHome-EMZV_pNY.js"),__vite__mapDeps([15,1,2,8,9,10,3,16]))),p=()=>o.jsxs("div",{className:"main-bg",children:[o.jsx(s,{}),o.jsx(e,{}),o.jsx(i,{}),o.jsx(a,{}),o.jsx(m,{}),o.jsx(n,{}),o.jsx(r,{})]});export{p as default};
-function __vite__mapDeps(indexes) {
-  if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/HeroContainer-5XD4lxPJ.js","assets/index-KWXfpCEC.js","assets/index-rUd9kAzf.css","assets/log--CdAlluu.js","assets/HeroContainer-xuFmDVnl.css","assets/AboutHome-h9zdrzmG.js","assets/AboutHome-FZVFHGkj.css","assets/SolutionsHome-7-jA-0dv.js","assets/slick-theme-b2EgNs_U.js","assets/index-UMRQSnGW.js","assets/slick-theme-1WcChfzk.css","assets/SolutionsHome-_RlOs1lL.css","assets/ServicesHome-TltIQI54.js","assets/TrackingPartnersHome-7chz3Yox.js","assets/Tracking-9MDWVsiE.css","assets/TestimonialsHome-EMZV_pNY.js","assets/Testimonials-Nroo6Of6.css"]
-  }
-  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
-}
