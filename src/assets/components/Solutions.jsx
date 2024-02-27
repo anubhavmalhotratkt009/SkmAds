@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from "react";
-import AboutHome from "./AboutHome.jsx";
+import HomeSolutions from "./HomeSolutions.jsx";
 
 import "./Common.css";
 import "./HeroContainer.css";
-import "./AboutHome.css";
+import "./HomeSolutions.css";
 import "./Testimonials.css";
 import "./Tracking.css";
 
@@ -41,7 +41,7 @@ const Solutions = () => {
   return (
     <>
       <div className="main-bg pb-5">
-        <div class="titlebar-inner d-flex flex-column ">
+        <div className="titlebar-inner d-flex flex-column ">
           <div className="d-flex flex-row position-relative">
             <div className="col-3 position-absolute">
               <img
@@ -77,12 +77,12 @@ const Solutions = () => {
               />
             </div>
           </div>
-          <div class="container titlebar-container">
-            <div class="row titlebar-container justify-center">
-              <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center">
+          <div className="container titlebar-container">
+            <div className="row titlebar-container justify-center">
+              <div className="col titlebar-col col-xl-6 col-lg-8 col-12 text-center">
                 <h1>Solutions</h1>
-                {/* <div class="wave w-100"></div> */}
-                <p class="leading-20 text-gray-400">
+                {/* <div className="wave w-100"></div> */}
+                <p className="leading-20 text-gray-400">
                   SKMADS provides targeted and transparent advertising solutions
                   to help businesses grow
                 </p>
@@ -143,18 +143,10 @@ const Solutions = () => {
                                     </span>
                                   </mark>
                                   {ab.title.split(" ").slice(1).join(" ")}
-                                  &nbsp;🔔
+                                  &nbsp;
                                 </h2>
                               </div>
                               <div className="mb-30 iconbox d-flex flex-grow-1  iconbox-circle iconbox-icon-ripple lqd-unit-animation-done">
-                                <div className="iconbox-icon-wrap me-2">
-                                  <div className="iconbox-icon-container inline-flex  z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md">
-                                    <i
-                                      aria-hidden="true"
-                                      className="fa fa-circle text-success fs-6"
-                                    />
-                                  </div>
-                                </div>
                                 <p className="text-13 leading-16 m-0 lqd-iconbox-heading ">
                                   {ab.desc}
                                 </p>
@@ -202,18 +194,10 @@ const Solutions = () => {
                                     </span>
                                   </mark>
                                   {ab.title.split(" ").slice(1).join(" ")}
-                                  &nbsp;🔔
+                                  &nbsp;
                                 </h2>
                               </div>
                               <div className="mb-30 iconbox d-flex flex-grow-1 position-relative iconbox-circle iconbox-icon-ripple lqd-unit-animation-done">
-                                <div className="iconbox-icon-wrap me-2">
-                                  <div className="iconbox-icon-container inline-flex position-relative z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md">
-                                    <i
-                                      aria-hidden="true"
-                                      className="fa fa-circle text-success fs-6"
-                                    />
-                                  </div>
-                                </div>
                                 <p className="text-13 leading-16 m-0 lqd-iconbox-heading">
                                   {ab.desc}
                                 </p>

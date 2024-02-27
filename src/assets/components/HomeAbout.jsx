@@ -5,7 +5,7 @@ const aboutTypes = [
   {
     header: "optimal impact",
     title:
-      "SKMADS harnesses innovative strategies, we empower advertising excellence for optimal impact",
+      "SKMADS  harnesses innovative strategies, we empower advertising excellence for optimal impact",
     desc: "SKMADS leads the way in advertising, specializing in in-app and web services through our robust dashboards. With a team of skilled professionals dedicated to delivering exceptional results, we pride ourselves on offering innovative solutions tailored to each client's unique needs, ensuring advertising excellence every step of the way.",
     img: "h-1.png",
     left: true,
@@ -13,7 +13,7 @@ const aboutTypes = [
   {
     header: "creative ingenuity",
     title:
-      "SKMADS empowers advertising excellence through innovative strategies and creative ingenuity.",
+      "SKMADS  empowers advertising excellence through innovative strategies and creative ingenuity.",
     desc: `At SKMADS, we're dedicated to empowering advertising success. Our expertise lies in providing in-app and web advertising services through dynamic dashboards. With a committed team of professionals, we offer tailored solutions that drive exceptional results, ensuring our clients achieve advertising excellence with every campaign.`,
     img: "h-2.png",
     left: false,
@@ -21,14 +21,14 @@ const aboutTypes = [
   {
     header: "creative brilliance",
     title:
-      "SKMADS drives advertising success through dynamic strategies and creative brilliance instantly.",
+      "SKMADS  drives advertising success through dynamic strategies and creative brilliance instantly.",
     desc: `SKMADS is your partner in driving advertising success. Specializing in in-app and web advertising services through cutting-edge dashboards, our skilled team is committed to delivering outstanding results. With a focus on innovation and tailored solutions, we empower clients to achieve their advertising goals and excel in their campaigns.`,
     img: "h-3.png",
     left: true,
   },
 ];
 
-const TrackingPartnersHome = () => {
+const HomeAbout = () => {
   return (
     <>
       <div className=" d-flex justify-content-center">
@@ -48,7 +48,7 @@ const TrackingPartnersHome = () => {
                           />
                         </div>
                       </div>
-                      <div className="col-lg-6 col-11 col-md-10 py-5 align-items-center text-start d-flex align-items-center ab-3  px-5">
+                      <div className="col-lg-6 col-11 col-md-10 py-5 align-items-center text-start d-flex align-items-center ab-3 ">
                         <div className="d-flex flex-wrap ca-initvalues-applied lqd-animations-done solutions-inner">
                           <div className="d-flex flex-wrap module-content ">
                             <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading position-relative animation-element lqd-unit-animation-done">
@@ -83,7 +83,7 @@ const TrackingPartnersHome = () => {
                                   </span>
                                 </mark>
                                 {ab.title.split(" ").slice(1).join(" ")}
-                                &nbsp;🔔
+                                &nbsp;
                               </h2>
                             </div>
                             <div
@@ -91,13 +91,7 @@ const TrackingPartnersHome = () => {
                               style={{ marginLeft: "-30px" }}
                             >
                               <div className="iconbox-icon-wrap me-2">
-                                <div className="iconbox-icon-container inline-flex position-relative z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md">
-                                  <i
-                                    aria-hidden="true"
-                                    className="fa fa-circle text-success"
-                                    style={{ fontSize: "8px" }}
-                                  />
-                                </div>
+                                <div className="iconbox-icon-container inline-flex position-relative z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md"></div>
                               </div>
                               <p className="text-13 leading-16 m-0 lqd-iconbox-heading ">
                                 {ab.desc}
@@ -111,7 +105,7 @@ const TrackingPartnersHome = () => {
                 ) : (
                   <>
                     <div className="d-flex flex-row flex-nowrap about-inner1 gap-5 justify-content-center ab-inner">
-                      <div className="col-lg-6 col-11 col-md-10 py-5 align-items-center text-start d-flex align-items-center  px-5 ab-1">
+                      <div className="col-lg-6 col-11 col-md-10 py-5 align-items-center text-start d-flex align-items-center  ab-1">
                         <div className="d-flex flex-wrap ca-initvalues-applied lqd-animations-done solutions-inner">
                           <div className="d-flex flex-wrap module-content">
                             <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading position-relative animation-element lqd-unit-animation-done">
@@ -146,7 +140,7 @@ const TrackingPartnersHome = () => {
                                   </span>
                                 </mark>
                                 {ab.title.split(" ").slice(1).join(" ")}
-                                &nbsp;🔔
+                                &nbsp;
                               </h2>
                             </div>
                             <div
@@ -154,13 +148,7 @@ const TrackingPartnersHome = () => {
                               style={{ marginLeft: "-30px" }}
                             >
                               <div className="iconbox-icon-wrap me-2">
-                                <div className="iconbox-icon-container inline-flex position-relative z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md">
-                                  <i
-                                    aria-hidden="true"
-                                    className="fa fa-circle text-success "
-                                    style={{ fontSize: "8px" }}
-                                  />
-                                </div>
+                                <div className="iconbox-icon-container inline-flex position-relative z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md"></div>
                               </div>
                               <p className="text-13 leading-16 m-0 lqd-iconbox-heading">
                                 {ab.desc}
@@ -190,4 +178,4 @@ const TrackingPartnersHome = () => {
   );
 };
 
-export default TrackingPartnersHome;
+export default HomeAbout;

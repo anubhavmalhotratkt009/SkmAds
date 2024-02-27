@@ -2,7 +2,7 @@ import React from "react";
 
 import "./ContactHome.css";
 import "./HeroContainer.css";
-import "./AboutHome.css";
+import "./HomeSolutions.css";
 import "./Testimonials.css";
 import ContactHome from "./ContactHome";
 

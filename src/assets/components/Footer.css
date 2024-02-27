@@ -1,32 +1,28 @@
 /* 4.footer css below */
 .footer-con {
-  background: black;
-  height: 100% !important;
+  background: #386c9d;
+  text-align: start !important;
   padding: 60px 20px 110px 20px;
   z-index: 99 !important;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 .add-foot {
   font-size: 15px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 .add-foot2 {
   font-size: 14px;
   font-weight: bold;
   margin-top: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 .credits {
   font-size: 12px;
   padding: 0px !important;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 .footer-btn {
-  background-color: #b8531e;
+  background-color: #f75b29;
 }
 
 @media screen and (max-width: 480px) {
@@ -41,7 +37,6 @@
 
   .add-foot {
     font-size: 12px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   }
   .credits {
     font-size: 8px;

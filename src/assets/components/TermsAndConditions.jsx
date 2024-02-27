@@ -1,7 +1,7 @@
 import React from "react";
 import "./Common.css";
 import "./HeroContainer.css";
-import "./AboutHome.css";
+import "./HomeSolutions.css";
 import "./Testimonials.css";
 
 const details = [
@@ -171,7 +171,7 @@ const TermsAndConditions = () => {
   return (
     <>
       <div className="main-bg">
-        <div class="titlebar-inner d-flex flex-column">
+        <div className="titlebar-inner d-flex flex-column">
           <div className="d-flex flex-row position-relative">
             <div className="col-3 position-absolute">
               <img
@@ -207,12 +207,12 @@ const TermsAndConditions = () => {
               />
             </div>
           </div>
-          <div class="container titlebar-container">
-            <div class="row titlebar-container justify-center">
-              <div class="col titlebar-col col-xl-12 col-lg-8 col-12 text-center">
+          <div className="container titlebar-container">
+            <div className="row titlebar-container justify-center">
+              <div className="col titlebar-col col-xl-12 col-lg-8 col-12 text-center">
                 <h1 className="w-100">Terms and Conditions</h1>
-                {/* <div class="wave w-100"></div> */}
-                {/* <p class="leading-20 text-gray-400">
+                {/* <div className="wave w-100"></div> */}
+                {/* <p className="leading-20 text-gray-400">
                 SKMADS provides targeted and transparent advertising solutions
                 to help businesses grow
               </p> */}

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./AboutHome.css";
+import "./HomeSolutions.css";
 import { Link } from "react-router-dom";
 
-const AboutHome = ({ bg }) => {
+const HomeSolutions = ({ bg }) => {
   const [skmTypes, setSkmTypes] = useState([
     {
       id: 1,
@@ -56,15 +56,12 @@ const AboutHome = ({ bg }) => {
         className="lqd-section design-services pt-5 pb-4 ca-initvalues-applied lqd-animations-done snipcss-2jZQn"
         id="services"
         style={{ background: bg ? bg : "#fff" }}
-        data-custom-animations="true"
       >
         <div className="position-relative top-0">
           <div className="ld-particles-container position-relative w-100">
             <div
               className="ld-particles-inner lqd-overlay d-flex pointer-events-auto"
               id="lqd-particle-design-services"
-              data-particles="true"
-              data-particles-options='{"particles": {"number": {"value" : 5} , "color": {"value" : ["#604CFD", "#F85976", "#FDA44C", "#A2B2C9"]} , "shape": {"type" : ["circle"]} , "opacity": {"value" : 1} , "size": {"value" : 2} , "move": {"enable": true, "direction": "right", "random": true, "out_mode": "out"}} , "interactivity": {"detect_on": "window", "events": {"onhover": {"enable": true, "mode" : ["bubble"]}} , "modes": {"bubble": {"size" : 15}}} , "retina_detect": true}'
             >
               <canvas
                 className="particles-js-canvas-el style-J9j6G"
@@ -78,24 +75,13 @@ const AboutHome = ({ bg }) => {
         <div className="container">
           <div className="row">
             <div className="w-450 d-flex flex-column position-relative items-center max-w-100 text-center mx-auto">
-              <div
-                className="ld-fancy-heading position-relative w-auto  animation-element lqd-unit-animation-done"
-                style={{}}
-              >
+              <div className="ld-fancy-heading position-relative w-auto  animation-element lqd-unit-animation-done">
                 <h6 className="ld-fh-element position-relative text-12 py-2 px-3 rounded-4  bg-gray  uppercase tracking-1 text-slate-500 m-0">
                   How we Advertise
                 </h6>
               </div>
               <div className="ld-fancy-heading position-relative mask-text">
-                <h2
-                  className="ld-fh-element position-relative lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-lines mb-1 mt-1 split-text-applied is-in-view"
-                  data-inview="true"
-                  data-transition-delay="true"
-                  data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'
-                  data-split-text="true"
-                  data-split-options='{"type": "lines"}'
-                  style={{}}
-                >
+                <h2 className="ld-fh-element position-relative lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-lines mb-1 mt-1 split-text-applied is-in-view">
                   <div
                     className="split-unit lqd-lines lqd-unit-animation-done style-jwcoH"
                     id="style-jwcoH"
@@ -122,10 +108,7 @@ const AboutHome = ({ bg }) => {
               <div className="position-absolute -top-5percent module-shape">
                 <div className="lqd-imggrp-single d-block position-relative">
                   <div className="lqd-imggrp-img-container d-inline-flex position-relative items-center justify-content-center">
-                    <figure
-                      className="w-100 position-relative lqd-unit-animation-done"
-                      style={{}}
-                    >
+                    <figure className="w-100 position-relative lqd-unit-animation-done">
                       <img
                         width={67}
                         height={73}
@@ -141,7 +124,6 @@ const AboutHome = ({ bg }) => {
                   className="ld-fh-element position-relative lqd-split-lines text-17 leading-1/3em split-text-applied"
                   data-split-text="true"
                   data-split-options='{"type": "lines"}'
-                  style={{}}
                 ></p>
                 <div
                   className="split-unit lqd-lines lqd-unit-animation-done style-1sYgN"
@@ -169,11 +151,11 @@ const AboutHome = ({ bg }) => {
             </div>
 
             <div className="d-flex col-12 flex-row d-flex gap-3 flex-wrap  module-iconbo mt-1 mb-4 justify-content-center">
-              {skmTypes.map((skm) => {
+              {skmTypes.map((skm, index) => {
                 return (
                   <div
                     className="max-w-100 col-lg-4  col-10 animation-element lqd-unit-animation-done"
-                    key={skm.id}
+                    key={index}
                     onMouseEnter={() => showBtn(skm.id)}
                     onMouseLeave={() => notShowBtn(skm.id)}
                   >
@@ -189,7 +171,7 @@ const AboutHome = ({ bg }) => {
                           >
                             <div className="iconbox-icon-wrap">
                               <div className="w-35 text-36 mb-40 text-36 mb-40 iconbox-icon-container d-inline-flex text-primary">
-                                <i class={skm.class}></i>
+                                <i className={skm.class}></i>
                               </div>
                             </div>
                           </div>
@@ -247,7 +229,7 @@ const AboutHome = ({ bg }) => {
                                     Explore
                                   </span>
                                   <span className="btn-icon ms-1">
-                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <i className="fa-solid fa-arrow-right"></i>
                                   </span>
                                 </a>
                               </div>
@@ -270,7 +252,7 @@ const AboutHome = ({ bg }) => {
                                     Explore
                                   </span>
                                   <span className="btn-icon ms-1">
-                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <i className="fa-solid fa-arrow-right"></i>
                                   </span>
                                 </a>
                               </div>
@@ -315,4 +297,4 @@ const AboutHome = ({ bg }) => {
   );
 };
 
-export default AboutHome;
+export default HomeSolutions;

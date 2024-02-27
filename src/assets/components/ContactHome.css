@@ -113,7 +113,6 @@ h2 {
 }
 
 h2 {
-  font-family: var(--lqd-h2-font-family, var(--lqd-heading-font-family));
   font-size: var(--lqd-h2-font-size, var(--lqd-heading-font-size));
   line-height: var(--lqd-h2-line-height, var(--lqd-heading-line-height));
   font-weight: var(--lqd-h2-font-weight, var(--lqd-heading-font-weight));
@@ -276,7 +275,7 @@ a:hover {
 
 input {
   margin: 0;
-  font-family: inherit;
+
   font-size: inherit;
   line-height: inherit;
 }
@@ -325,7 +324,7 @@ input {
 }
 
 .text-13 {
-  font-size: 13px;
+  font-size: 15px;
 }
 .lqd-contact-form textarea {
   display: flex;
@@ -417,11 +416,14 @@ label {
     width: 100% !important;
     line-height: 2px;
     text-align: center !important;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .kilk div {
+    flex-wrap: wrap !important;
+    padding-bottom: 70px !important;
   }
 
   .text-32 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px !important;
   }
 
@@ -458,7 +460,10 @@ label {
     font-size: 55px;
     width: 100% !important;
   }
-
+  .kilk div {
+    flex-wrap: wrap !important;
+    padding-bottom: 70px !important;
+  }
   #style-MByDF {
     margin-top: -30px !important;
   }
@@ -484,7 +489,10 @@ label {
     font-size: 55px;
     width: 100% !important;
   }
-
+  .kilk div {
+    flex-wrap: wrap !important;
+    padding-bottom: 70px !important;
+  }
   #style-MByDF {
     margin-top: -30px !important;
   }

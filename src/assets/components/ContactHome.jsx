@@ -45,7 +45,7 @@ const ContactHome = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 800 600"
                     width={800}
-                    height={600}
+                    height={400}
                     preserveAspectRatio="xMidYMid meet"
                     style={{
                       width: "100%",
@@ -329,7 +329,7 @@ const ContactHome = () => {
                               className="border-black-20 text-black text-13"
                               name="message"
                               cols={5}
-                              rows={2}
+                              rows={10}
                               aria-required="true"
                               aria-invalid="false"
                               placeholder="Add a Message"

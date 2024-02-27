@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import "./SolutionsHome.css";
+import "./HomeAbout.css";
 const servicesDetails = [
   {
     title: "Programmatic Buying",
@@ -59,7 +59,7 @@ const servicesDetails = [
   },
 ];
 
-const SolutionsHome = () => {
+const HomeServices = () => {
   let sliderRef = useRef(null);
   const next = () => {
     sliderRef.slickNext();
@@ -222,9 +222,9 @@ const SolutionsHome = () => {
               }}
               {...settings}
             >
-              {servicesDetails.map((ser) => {
+              {servicesDetails.map((ser, index) => {
                 return (
-                  <div className="w-90 ">
+                  <div className="w-90" key={index}>
                     <div
                       className="py-4 rounded-1 d-flex flex-column align-items-center services-home-con col-12"
                       style={{ backgroundColor: `${ser.newBg}` }}
@@ -252,7 +252,12 @@ const SolutionsHome = () => {
                         <div className="my-4">
                           <i className={`${ser.class} icon-services`} />
                         </div>
-                        <p className="mb-5 slider-desc">{ser.desc}</p>
+                        <p
+                          className="mb-5 slider-desc"
+                          style={{ fontSize: "13px" }}
+                        >
+                          {ser.desc}
+                        </p>
                       </div>
                       <div className="divider w-full snipcss0-12-80-89">
                         <span className="w-full my-25 border-top border-black-20 snipcss0-13-89-90"></span>
@@ -292,4 +297,4 @@ const SolutionsHome = () => {
   );
 };
 
-export default SolutionsHome;
+export default HomeServices;

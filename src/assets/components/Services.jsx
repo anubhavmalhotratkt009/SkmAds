@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import "./Common.css";
 import "./HeroContainer.css";
-import "./AboutHome.css";
+import "./HomeSolutions.css";
 import "./Testimonials.css";
 
 const servicesDetails = [
@@ -86,7 +86,7 @@ const Services = () => {
   return (
     <>
       <div className="main-bg">
-        <div class="titlebar-inner d-flex flex-column">
+        <div className="titlebar-inner d-flex flex-column">
           <div className="d-flex flex-row position-relative">
             <div className="col-3 position-absolute">
               <img
@@ -122,12 +122,12 @@ const Services = () => {
               />
             </div>
           </div>
-          <div class="container titlebar-container">
-            <div class="row titlebar-container justify-center">
-              <div class="col titlebar-col col-xl-6 col-lg-8 col-12 text-center">
+          <div className="container titlebar-container">
+            <div className="row titlebar-container justify-center">
+              <div className="col titlebar-col col-xl-6 col-lg-8 col-12 text-center">
                 <h1>Services</h1>
-                {/* <div class="wave w-100"></div> */}
-                <p class="leading-20 text-gray-400">
+                {/* <div className="wave w-100"></div> */}
+                <p className="leading-20 text-gray-400">
                   SKMADS provides targeted and transparent advertising solutions
                   to help businesses grow
                 </p>
@@ -155,11 +155,7 @@ const Services = () => {
                         <div className="col-lg-6 py-5 px-5 align-items-center text-start sol-main-inn">
                           <div className="d-flex flex-wrap ca-initvalues-applied lqd-animations-done solutions-inner">
                             <div className="d-flex flex-wrap module-content px-3">
-                              <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading position-relative animation-element lqd-unit-animation-done">
-                                <h6 className=" ld-fh-element d-inline-block position-relative bg-gray py-2 px-3 rounded-5 text-12 -tracking-0/5 text-slate-500 text-uppercase">
-                                  {ab.header}
-                                </h6>
-                              </div>
+                              <div className="m-0 mb-4 rounded-1 position-relative animation-element lqd-unit-animation-done"></div>
                               <div className="ld-fancy-heading position-relative mb-3">
                                 <h2 className="ld-fh-element position-relative lqd-highlight-custom lqd-highlight-custom-2 mt-0/25em mb-0/75em text-26 is-in-view lqd-unit-animation-done text-center">
                                   <mark
@@ -190,25 +186,17 @@ const Services = () => {
                                     </span>
                                   </mark>
                                   {ab.title.split(" ").slice(1).join(" ")}
-                                  &nbsp;🔔
+                                  &nbsp;
                                 </h2>
                               </div>
                               <div className="mb-30 iconbox d-flex flex-grow-1 position-relative iconbox-circle iconbox-icon-ripple lqd-unit-animation-done">
-                                <div className="iconbox-icon-wrap me-2">
-                                  <div className="iconbox-icon-container inline-flex position-relative z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md">
-                                    <i
-                                      aria-hidden="true"
-                                      className="fa fa-circle text-success fs-6"
-                                    />
-                                  </div>
-                                </div>
                                 <p className="text-17 leading-16 m-0 lqd-iconbox-heading ">
                                   {ab.desc}
                                 </p>
                               </div>
                               {ab.highlights.map((a, index) => (
                                 <React.Fragment key={index}>
-                                  <h6 className="px-5 text-15 leading-16 mt-2 lqd-iconbox-heading">
+                                  <h6 className="px-1 py-2 text-15 leading-16 mt-2 lqd-iconbox-heading">
                                     <i className="fa-regular fa-circle-check text-success"></i>{" "}
                                     &nbsp;{a}
                                   </h6>
@@ -225,11 +213,6 @@ const Services = () => {
                         <div className="col-lg-6 py-5 px-5 align-items-center text-start sol-main-inn">
                           <div className="d-flex flex-wrap ca-initvalues-applied lqd-animations-done solutions-inner">
                             <div className="d-flex flex-wrap module-content px-3">
-                              <div className="m-0 mb-4 rounded-1 bg-slate-200 ld-fancy-heading position-relative animation-element lqd-unit-animation-done">
-                                <h6 className=" ld-fh-element d-inline-block position-relative bg-gray py-2 px-3 rounded-5 text-12 -tracking-0/5 text-slate-500 text-uppercase">
-                                  {ab.header}
-                                </h6>
-                              </div>
                               <div className="ld-fancy-heading position-relative mb-3">
                                 <h2 className="ld-fh-element position-relative lqd-highlight-custom lqd-highlight-custom-2 mt-0/25em mb-0/75em text-26 is-in-view lqd-unit-animation-done text-center">
                                   <mark
@@ -260,25 +243,17 @@ const Services = () => {
                                     </span>
                                   </mark>
                                   {ab.title.split(" ").slice(1).join(" ")}
-                                  &nbsp;🔔
+                                  &nbsp;
                                 </h2>
                               </div>
                               <div className="mb-30 iconbox d-flex flex-grow-1 position-relative iconbox-circle iconbox-icon-ripple lqd-unit-animation-done">
-                                <div className="iconbox-icon-wrap me-2">
-                                  <div className="iconbox-icon-container inline-flex position-relative z-1 rounded-full text-24 w-30 h-30 text-accent bg-white shadow-md">
-                                    <i
-                                      aria-hidden="true"
-                                      className="fa fa-circle text-success fs-6"
-                                    />
-                                  </div>
-                                </div>
                                 <p className="text-17 leading-16 m-0 lqd-iconbox-heading ">
                                   {ab.desc}
                                 </p>
                               </div>
                               {ab.highlights.map((a, index) => (
                                 <React.Fragment key={index}>
-                                  <p className="px-5 text-15 leading-16 mt-2 lqd-iconbox-heading">
+                                  <p className="px-1 py-2 text-15 leading-16 mt-2 lqd-iconbox-heading">
                                     <i className="fa-regular fa-circle-check text-success"></i>{" "}
                                     &nbsp;{a}
                                   </p>

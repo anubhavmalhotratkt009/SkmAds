@@ -25,16 +25,19 @@ const AppNavbar = () => {
   };
 
   return (
-    <Navbar expand="xl" className="px-4 py-2 navbar">
+    <Navbar
+      expand="xl"
+      className="px-4 py-2 navbar d-flex justify-space-around"
+    >
       <Navbar.Brand href="#">
         <img src={Logo} className="img-fluid logo" alt="Logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarNav" className="nav-tog">
-        <i class="fas fa-bars fs-1"></i>
+        <i className="fas fa-bars fs-1"></i>
       </Navbar.Toggle>
       <Navbar.Collapse id="navbarNav">
         <div className="d-flex justify-content-between w-100">
-          <Nav className=" " style={{ marginLeft: "40px", gap: "12px" }}>
+          <Nav className=" " style={{ marginLeft: "40px", gap: "22px" }}>
             <Nav.Item>
               <Nav.Link
                 href="/SkmAds/"
@@ -92,6 +95,17 @@ const AppNavbar = () => {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
+                href="/SkmAds/careers"
+                className="nav-link"
+                style={getItemStyle("Careers")}
+                onMouseEnter={() => handleMouseEnter("Careers")}
+                onMouseOut={handleMouseOut}
+              >
+                Careers
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
                 href="https://skmdsp.com/"
                 className="nav-link"
                 style={getItemStyle("SKMDSP")}
@@ -110,7 +124,7 @@ const AppNavbar = () => {
                 className="nav-link"
               >
                 <i
-                  class="fa-brands fa-linkedin fs-5"
+                  className="fa-brands fa-linkedin fs-5"
                   style={{ color: "#0d62bc" }}
                 ></i>
               </Nav.Link>{" "}
@@ -118,7 +132,7 @@ const AppNavbar = () => {
             <Nav.Item>
               <Nav.Link href="mailto:sales@skmads.com" className="nav-link">
                 <i
-                  class="fa-solid fa-envelope-open-text fs-5"
+                  className="fa-solid fa-envelope-open-text fs-5"
                   style={{ color: "#f95d2b" }}
                 ></i>
               </Nav.Link>{" "}

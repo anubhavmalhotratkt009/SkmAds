@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./HeroContainer.css";
+import Logo from "../../../public/images/log.png";
 
 const HeroContainer = React.memo(() => {
   return (
@@ -11,6 +12,7 @@ const HeroContainer = React.memo(() => {
       <div
         className="module-section col-lg-8 col-md-12 col-11 d-flex align-items-center justify-content-center rounded-3 bg-bottom-left bg-no-repeat bg-cover py-5 style-fNtSU"
         id="style-fNtSU"
+        style={{ height: "100vh !important" }}
       >
         <div className="container h-100">
           <div className="row h-100 content-between justify-center">
@@ -106,7 +108,7 @@ const HeroContainer = React.memo(() => {
                           Fostering{" "}
                           <img
                             className="lqd-adv-txt-fig position-relative d-inline-flex ms-2 me-2 vertical-align-middle rounded-circle"
-                            src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/banner.jpg"
+                            src={Logo}
                             alt="title shape"
                           />{" "}
                           <span className="split-inner3"> Visionary</span>
@@ -126,10 +128,10 @@ const HeroContainer = React.memo(() => {
                       >
                         <span className="split-inner3">
                           &nbsp;&nbsp;&nbsp;creativity with&nbsp;
-                          <mark class="lqd-highlight">
-                            <span class="split-inner3"> SKMADS</span>
+                          <mark className="lqd-highlight">
+                            <span className="split-inner3"> SKMADS</span>
                             <span
-                              class="bottom-0 left-0 lqd-highlight-inner bg-purple-101 style-9pqpl"
+                              className="bottom-0 left-0 lqd-highlight-inner bg-purple-101 style-9pqpl"
                               style={{ zIndex: "-1" }}
                               id="style-9pqpl"
                             ></span>
@@ -176,11 +178,6 @@ const HeroContainer = React.memo(() => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={6}
-                        initial={{ pathLength: 0 }}
-                        whileInView={{ pathLength: 1 }}
-                        transition={{
-                          duration: 2,
-                        }}
                       />
                     </svg>
                   </figure>

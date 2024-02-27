@@ -108,7 +108,6 @@ button:not(:disabled) {
 }
 
 .border-thin {
-  font-family: var(--lqd-accent-font-family), Sans-serif;
   font-style: var(--lqd-accent-font-style);
 }
 
@@ -118,7 +117,6 @@ h4 {
 }
 
 h4 {
-  font-family: var(--lqd-h4-font-family, var(--lqd-heading-font-family));
   font-size: var(--lqd-h4-font-size, var(--lqd-heading-font-size));
   line-height: var(--lqd-h4-line-height, var(--lqd-heading-line-height));
   font-weight: var(--lqd-h4-font-weight, var(--lqd-heading-font-weight));
@@ -218,7 +216,7 @@ h4 {
 .icon-services {
   background-color: white;
   border: 1px solid #d3d3d3;
-  color: black;
+  color: #003c71 !important;
   padding: 20px;
   font-size: 80px !important;
   border-radius: 50%;

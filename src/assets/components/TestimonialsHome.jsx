@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import Marquee from "react-fast-marquee";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Testimonials.css";
+import Logo from "../../../public/images/log.png";
 
 const testimonialsDetails = [
   {
@@ -87,7 +87,7 @@ const TestimonialsHome = () => {
   return (
     <>
       <div
-        className="pb-5 d-flex flex-column justify-content-center"
+        className="d-flex flex-column justify-content-center"
         style={{ backgroundColor: "#fff" }}
       >
         <div className="d-flex flex-column align-align-items-center px-5 snipcss-VioC9">
@@ -139,44 +139,19 @@ const TestimonialsHome = () => {
                 <span className="split-inner5 ">
                   <span className="lqd-adv-txt-item1">People have</span>
                   <span className="relative z-3 lqd-adv-txt-item">
-                    <span className="relative d-inline-flex rounded-circle vertical-top -mr-30 ms-3">
+                    <span className="relative d-inline-flex rounded-circle vertical-top  ms-2">
                       <img
-                        className="lqd-adv-txt-fig w-55 border-5 border-white rounded-circle"
+                        className="lqd-adv-txt-fig2 w-55 border-5 border-white rounded-circle"
                         decoding="async"
                         width={58}
                         height={58}
-                        src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/Shape-avatar-2.jpg"
+                        src={Logo}
                         alt="testimonials avatar"
-                        style={{ opacity: ".8", filter: "hue-rotate(665deg)" }}
+                        style={{ opacity: ".8" }}
                       />
                     </span>
                   </span>
-                  <span className="relative z-2 lqd-adv-txt-item">
-                    <span className="relative d-inline-flex rounded-circle vertical-top -mr-35">
-                      <img
-                        className="lqd-adv-txt-fig w-55 border-5 border-white rounded-circle"
-                        decoding="async"
-                        width={58}
-                        height={58}
-                        src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/Shape-avatar-2.jpg"
-                        alt="testimonials avatar"
-                        style={{ opacity: ".8", filter: "hue-rotate(665deg)" }}
-                      />
-                    </span>
-                  </span>
-                  <span className="relative z-1 lqd-adv-txt-item">
-                    <span className="relative d-inline-flex rounded-circle vertical-top">
-                      <img
-                        className="lqd-adv-txt-fig w-55 border-5 border-white rounded-circle"
-                        decoding="async"
-                        width={58}
-                        height={58}
-                        src="https://hubhtml.liquid-themes.com/assets/images/demo/start-hub-8/Shape-avatar-2.jpg"
-                        alt="testimonials avatar"
-                        style={{ opacity: ".8", filter: "hue-rotate(665deg)" }}
-                      />
-                    </span>
-                  </span>
+
                   <span className="lqd-adv-txt-item1">&nbsp;been talking.</span>
                 </span>
               </div>
@@ -191,10 +166,11 @@ const TestimonialsHome = () => {
               }}
               {...settings}
             >
-              {testimonialsDetails.map((test) => {
+              {testimonialsDetails.map((test, index) => {
                 return (
                   <div
                     className={`${test.class} w-90 lqd-testi  lqd-testi-style-1 d-flex flex-column rounded-3 mb-3 py-4 px-4 module-content`}
+                    key={index}
                   >
                     <div className=" d-flex  justify-content-between mb-1">
                       <div className="lqd-testi-details d-flex align-items-center py-2 px-4">
@@ -229,7 +205,7 @@ const TestimonialsHome = () => {
         <div className="d-flex flex-column mt-2">
           <div>
             <h3
-              class="ld-fh-element  lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-lines mb-1 mt-1 split-text-applied is-in-view"
+              className="ld-fh-element  lqd-highlight-classic lqd-highlight-grow-bottom lqd-highlight-reset-onhover lqd-split-lines mb-1 mt-1 split-text-applied is-in-view"
               data-inview="true"
               data-transition-delay="true"
               data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'
@@ -237,18 +213,18 @@ const TestimonialsHome = () => {
               data-split-options='{"type": "lines"}'
             >
               <div
-                class="split-unit lqd-lines lqd-unit-animation-done mb-5 style-jwcoH"
+                className="split-unit lqd-lines lqd-unit-animation-done mb-5 style-jwcoH"
                 id="style-jwcoH"
               >
-                <span class="split-inner5 mt-2 text-dark">
+                <span className="split-inner5 mt-2 text-dark">
                   Tracking
-                  <mark class="lqd-highlight">
-                    <span class="lqd-highlight-txt" style={{ zIndex: "1" }}>
+                  <mark className="lqd-highlight">
+                    <span className="lqd-highlight-txt" style={{ zIndex: "1" }}>
                       {" "}
                       Partners
                     </span>
                     <span
-                      class="bottom-0 left-0 lqd-highlight-inner bg-purple-100 style-9pqpl"
+                      className="bottom-0 left-0 lqd-highlight-inner bg-purple-100 style-9pqpl"
                       id="style-9pqpl"
                     ></span>
                   </mark>
@@ -258,32 +234,23 @@ const TestimonialsHome = () => {
             <span className="split-inner snipcss-WxzCR fs-2 fw-bold mt-5 text-dark"></span>
           </div>
           <div className="pb-5 kilk">
-            <Marquee
-              speed={50} // Speed of the marquee (Optional)
-              loop={0}
-              autoFill={true}
+            <div
+              className="d-flex justify-content-center "
               style={{
-                height: 50, // Your own styling (Optional)
+                gap: "40px",
               }}
             >
-              <div
-                className="d-flex  "
-                style={{
-                  gap: "250px",
-                }}
-              >
-                {imagesDetails.map((i, index) => {
-                  return (
-                    <img
-                      key={index}
-                      src={`images/${i.img}`}
-                      width={190}
-                      className="ok"
-                    />
-                  );
-                })}
-              </div>
-            </Marquee>
+              {imagesDetails.map((i, index) => {
+                return (
+                  <img
+                    key={index}
+                    src={`images/${i.img}`}
+                    width={170}
+                    className="ok"
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

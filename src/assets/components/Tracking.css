@@ -88,7 +88,11 @@
   flex-shrink: 0;
 }
 .text-13 {
-  font-size: 15px !important;
+  font-size: 16px !important;
+}
+.lqd-adv-txt-fig2 {
+  height: 40px !important;
+  width: 40px !important;
 }
 
 .iconbox p {
@@ -305,7 +309,7 @@ mark {
     margin-top: 0px !important;
   }
   .text-38 {
-    font-size: 24px;
+    font-size: 22px;
     padding: 0px !important;
   }
   .ab-3 {
